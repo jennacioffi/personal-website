@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.styles.js';
 import { Card } from './components';
 

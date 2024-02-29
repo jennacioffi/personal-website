@@ -1,5 +1,9 @@
 const styles = {
-  card: {
+  cardContainer: {
+    display: "flex",
+    justifyContent: "center",
+  },
+  outerCard: {
     width: "400px",
     height: "200px",
     backgroundColor: "#ccc", // Use camelCase for CSS properties
