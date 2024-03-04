@@ -1,19 +1,30 @@
 const styles = {
   cardContainer: {
+    alignItems: "center",
     display: "flex",
     justifyContent: "center",
   },
   outerCard: {
-    width: "400px",
-    height: "200px",
-    backgroundColor: "#ccc", // Use camelCase for CSS properties
-    borderRadius: "8px", // Use quotes for property values
-    padding: "20px",
-    boxSizing: "border-box", // Use camelCase for CSS properties
-    display: "flex", // Use camelCase for CSS properties
-    justifyContent: "center", // Use camelCase for CSS properties
-    alignItems: "center", // Use camelCase for CSS properties
-    color: "#333", // Use camelCase for CSS properties
+    alignItems: "center",
+    backgroundColor: "blue", 
+    borderRadius: "8px",
+    color: "white", // Text Color
+    display: "flex",
+    height: "250px",
+    justifyContent: "center",
+    position: "relative",
+    width: "450px",
+  },
+  innerRectangle: {
+    alignItems: "center",
+    border: "2px dashed #FFFFFF",
+    borderRadius: "6px",
+    color: "red",
+    height: "10%",
+    padding: "22%",
+    position: "absolute",
+    textAlign: "center",
+    width: "50%",
   },
 };
 
