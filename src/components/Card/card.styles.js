@@ -1,12 +1,13 @@
 const styles = {
-  mainContainer: { // parent to all children below
+  mainContainer: {
     display: "flex",
     justifyContent: "center",
-    padding: '20px',
+    padding: "20px",
   },
   cardBackgroundContainer: {
-    display: "flex", // makes whole card compress with browser window movement
-    maxWidth: "100%", // ^
+    display: "flex",
+    maxWidth: "100%",
+    position: "relative",
   },
   outerCard: {
     alignItems: "center",
@@ -28,22 +29,27 @@ const styles = {
     textAlign: "center",
     width: "90%",
   },
+  contentContainer: {
+    left: "0",
+    position: "absolute",
+    top: "50%",
+    transform: "translateY(-160%)",
+    width: "100%",
+  },
   bulletPointTitleContainer: {
     display: "flex",
-    margin: "25px", // Add some margin for spacing
-    position: "absolute",
+    justifyContent: "center",
   },
   bulletPointTitle: {
-    alignContent: "center",
     color: "black",
   },
-  bulletPointItemsContainer: { 
-    justifyContent: 'flex-start' ,
-    margin: '50px', 
-    position: "absolute", 
+  bulletPointItemsContainer: {
+    alignItems: "flex-start",
+    display: "flex",
+    flexDirection: "column",
+    marginLeft: "50px",
   },
   bulletPointItem: {
-    alignContent: "flex-start",
     color: "black",
   },
 };

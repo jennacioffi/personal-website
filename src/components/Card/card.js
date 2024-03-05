@@ -10,15 +10,17 @@ export default function Card() {
             {/* This is the inner rectangle. */}
           </div>
         </div>
-      </div>
-      <div style={styles.bulletPointTitleContainer}>
-        <div style={styles.bulletPointTitle}> Skills </div>
-      </div>
-      <div style={styles.bulletPointItemsContainer}>
-        <div style={styles.bulletPointItem}>- 1st Bullet Point Item</div>
-        <div style={styles.bulletPointItem}>- 2nd Bullet Point Item</div>
-        <div style={styles.bulletPointItem}>- 3rd Bullet Point Item</div>
+        <div style={styles.contentContainer}>
+          <div style={styles.bulletPointTitleContainer}>
+            <div style={styles.bulletPointTitle}> Skills </div>
+          </div>
+          <div style={styles.bulletPointItemsContainer}>
+            <div style={styles.bulletPointItem}>- 1st Bullet Point Item</div>
+            <div style={styles.bulletPointItem}>- 2nd Bullet Point Item</div>
+            <div style={styles.bulletPointItem}>- 3rd Bullet Point Item</div>
+          </div>
+        </div>
       </div>
     </div>
   );
-};
+}
