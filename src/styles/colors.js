@@ -1,5 +1,5 @@
 const colors = {
-  blueLapis: "#007bff",
-};
+  blueLapis: '#007bff',
+}
 
-export default colors;
+export default colors
