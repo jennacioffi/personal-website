@@ -1,5 +1,6 @@
-import './App.styles.js';
-import { Card } from './components';
+import React from 'react'
+import './App.styles.js'
+import { Card } from './components'
 
 function App() {
   return (
@@ -9,4 +10,4 @@ function App() {
   );
 }
 
-export default App;
+export default App

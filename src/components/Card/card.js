@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./card.styles.js"; // Import your CSS styles
+import React from 'react'
+import styles from './card.styles.js' // Import your CSS styles
 
 export default function Card() {
   return (
@@ -22,5 +22,5 @@ export default function Card() {
         </div>
       </div>
     </div>
-  );
+  )
 }
