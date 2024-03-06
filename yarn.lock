@@ -87,7 +87,7 @@
     "@jridgewell/trace-mapping" "^0.3.17"
     jsesc "^2.5.1"
 
-"@babel/helper-annotate-as-pure@^7.22.5":
+"@babel/helper-annotate-as-pure@^7.18.6", "@babel/helper-annotate-as-pure@^7.22.5":
   version "7.22.5"
   resolved "https://registry.npmjs.org/@babel/helper-annotate-as-pure/-/helper-annotate-as-pure-7.22.5.tgz"
   integrity sha512-LvBTxu8bQSQkcyKOU+a1btnNFQ1dMAd0R6PyW3arXes06F6QLWLIrd681bxRPIXlrMGR3XYnW9JyML7dP3qgxg==
@@ -116,6 +116,21 @@
   version "7.23.10"
   resolved "https://registry.npmjs.org/@babel/helper-create-class-features-plugin/-/helper-create-class-features-plugin-7.23.10.tgz"
   integrity sha512-2XpP2XhkXzgxecPNEEK8Vz8Asj9aRxt08oKOqtiZoqV2UGZ5T+EkyP9sXQ9nwMxBIG34a7jmasVqoMop7VdPUw==
+  dependencies:
+    "@babel/helper-annotate-as-pure" "^7.22.5"
+    "@babel/helper-environment-visitor" "^7.22.20"
+    "@babel/helper-function-name" "^7.23.0"
+    "@babel/helper-member-expression-to-functions" "^7.23.0"
+    "@babel/helper-optimise-call-expression" "^7.22.5"
+    "@babel/helper-replace-supers" "^7.22.20"
+    "@babel/helper-skip-transparent-expression-wrappers" "^7.22.5"
+    "@babel/helper-split-export-declaration" "^7.22.6"
+    semver "^6.3.1"
+
+"@babel/helper-create-class-features-plugin@^7.21.0":
+  version "7.24.0"
+  resolved "https://registry.yarnpkg.com/@babel/helper-create-class-features-plugin/-/helper-create-class-features-plugin-7.24.0.tgz#fc7554141bdbfa2d17f7b4b80153b9b090e5d158"
+  integrity sha512-QAH+vfvts51BCsNZ2PhY6HAggnlS6omLLFTsIpeqZk/MmJ6cW7tgz5yRv0fMJThcr6FmbMrENh1RgrWPTYA76g==
   dependencies:
     "@babel/helper-annotate-as-pure" "^7.22.5"
     "@babel/helper-environment-visitor" "^7.22.20"
@@ -368,6 +383,16 @@
   version "7.21.0-placeholder-for-preset-env.2"
   resolved "https://registry.npmjs.org/@babel/plugin-proposal-private-property-in-object/-/plugin-proposal-private-property-in-object-7.21.0-placeholder-for-preset-env.2.tgz"
   integrity sha512-SOSkfJDddaM7mak6cPEpswyTRnuRltl429hMraQEglW+OkovnCzsiszTmsrlY//qLFjCpQDFRvjdm2wA5pPm9w==
+
+"@babel/plugin-proposal-private-property-in-object@^7.21.11":
+  version "7.21.11"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-private-property-in-object/-/plugin-proposal-private-property-in-object-7.21.11.tgz#69d597086b6760c4126525cfa154f34631ff272c"
+  integrity sha512-0QZ8qP/3RLDVBwBFoWAwCtgcDZJVwA5LUJRZU8x2YFfKNuFq161wK3cuGrALu5yiPu+vzwTAg/sMWVNeWeNyaw==
+  dependencies:
+    "@babel/helper-annotate-as-pure" "^7.18.6"
+    "@babel/helper-create-class-features-plugin" "^7.21.0"
+    "@babel/helper-plugin-utils" "^7.20.2"
+    "@babel/plugin-syntax-private-property-in-object" "^7.14.5"
 
 "@babel/plugin-syntax-async-generators@^7.8.4":
   version "7.8.4"
@@ -1666,11 +1691,6 @@
   version "0.11.0"
   resolved "https://registry.npmjs.org/@pkgjs/parseargs/-/parseargs-0.11.0.tgz"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
-
-"@pkgr/core@^0.1.0":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@pkgr/core/-/core-0.1.1.tgz#1ec17e2edbec25c8306d424ecfbf13c7de1aaa31"
-  integrity sha512-cq8o4cWH0ibXh9VGi5P20Tu9XF/0fFXl9EUinr9QfTM7a7p0oTA4iJRCQWppXR1Pg8dSM0UCItCkPwsk9qWWYA==
 
 "@pmmmwh/react-refresh-webpack-plugin@^0.5.3":
   version "0.5.11"
@@ -4372,7 +4392,7 @@ eslint-config-prettier@^9.1.0:
 
 eslint-config-react-app@^7.0.1:
   version "7.0.1"
-  resolved "https://registry.npmjs.org/eslint-config-react-app/-/eslint-config-react-app-7.0.1.tgz"
+  resolved "https://registry.yarnpkg.com/eslint-config-react-app/-/eslint-config-react-app-7.0.1.tgz#73ba3929978001c5c86274c017ea57eb5fa644b4"
   integrity sha512-K6rNzvkIeHaTd8m/QEh1Zko0KI7BACWkkneSs6s9cKZC/J27X3eZR6Upt1jkmZ/4FK+XUOPPxMEN7+lbUXfSlA==
   dependencies:
     "@babel/core" "^7.16.0"
@@ -4465,14 +4485,6 @@ eslint-plugin-jsx-a11y@^6.5.1:
     minimatch "^3.1.2"
     object.entries "^1.1.7"
     object.fromentries "^2.0.7"
-
-eslint-plugin-prettier@^5.1.3:
-  version "5.1.3"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-5.1.3.tgz#17cfade9e732cef32b5f5be53bd4e07afd8e67e1"
-  integrity sha512-C9GCVAs4Eq7ZC/XFQHITLiHJxQngdtraXaM+LoUFoFp/lHNl2Zn8f3WQbe9HvTBBQ9YnKFB0/2Ajdqwo5D1EAw==
-  dependencies:
-    prettier-linter-helpers "^1.0.0"
-    synckit "^0.8.6"
 
 eslint-plugin-react-hooks@^4.3.0:
   version "4.6.0"
@@ -4807,11 +4819,6 @@ fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   version "3.1.3"
   resolved "https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz"
   integrity sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==
-
-fast-diff@^1.1.2:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/fast-diff/-/fast-diff-1.3.0.tgz#ece407fa550a64d638536cd727e129c61616e0f0"
-  integrity sha512-VxPP4NqbUjj6MaAOafWeUn2cXWLcCtljklUtZf0Ind4XQ+QPtmA0b18zZy0jIQx+ExRVCR/ZQpBmik5lXshNsw==
 
 fast-glob@^3.2.9, fast-glob@^3.3.0:
   version "3.3.2"
@@ -7987,13 +7994,6 @@ prelude-ls@~1.1.2:
   resolved "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.1.2.tgz"
   integrity sha512-ESF23V4SKG6lVSGZgYNpbsiaAkdab6ZgOxe52p7+Kid3W3u3bxR4Vfd/o21dmN7jSt0IwgZ4v5MUd26FEtXE9w==
 
-prettier-linter-helpers@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/prettier-linter-helpers/-/prettier-linter-helpers-1.0.0.tgz#d23d41fe1375646de2d0104d3454a3008802cf7b"
-  integrity sha512-GbK2cP9nraSSUF9N2XwUwqfzlAFlMNYYl+ShE/V+H8a9uNl/oUqB1w2EL54Jh0OlyRSd8RfWYJ3coVS4TROP2w==
-  dependencies:
-    fast-diff "^1.1.2"
-
 pretty-bytes@^5.3.0, pretty-bytes@^5.4.1:
   version "5.6.0"
   resolved "https://registry.npmjs.org/pretty-bytes/-/pretty-bytes-5.6.0.tgz"
@@ -9193,14 +9193,6 @@ symbol-tree@^3.2.4:
   resolved "https://registry.npmjs.org/symbol-tree/-/symbol-tree-3.2.4.tgz"
   integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
 
-synckit@^0.8.6:
-  version "0.8.8"
-  resolved "https://registry.yarnpkg.com/synckit/-/synckit-0.8.8.tgz#fe7fe446518e3d3d49f5e429f443cf08b6edfcd7"
-  integrity sha512-HwOKAP7Wc5aRGYdKH+dw0PRRpbO841v2DENBtjnR5HFWoiNByAl7vrx3p0G/rCyYXQsrxqtX48TImFtPcIHSpQ==
-  dependencies:
-    "@pkgr/core" "^0.1.0"
-    tslib "^2.6.2"
-
 tailwindcss@^3.0.2:
   version "3.4.1"
   resolved "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.4.1.tgz"
@@ -9392,7 +9384,7 @@ tslib@^1.8.1:
   resolved "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
-tslib@^2.0.3, tslib@^2.6.2:
+tslib@^2.0.3:
   version "2.6.2"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.6.2.tgz"
   integrity sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==

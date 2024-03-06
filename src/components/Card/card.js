@@ -1,26 +1,50 @@
-import React from 'react'
-import styles from './card.styles.js' // Import your CSS styles
+import React from 'react';
+import { colors } from '../../styles/colors.js'; // Import colors from colors.js
+import styles from './card.styles.js'; // Import your CSS styles
 
-export default function Card() {
+export default function Card({ title, bulletPoints, color }) {
+  const backgroundColor = colors[color] || colors.defaultColor;
+
+  // Calculate the minimum height dynamically based on the number of bullet points
+  let minHeight;
+  if (title === 'Experience') {
+    minHeight = 250; // Set the minimum height for Experience card
+  } else if (title === 'Skills') {
+    minHeight = 200; // Set the minimum height for Skills card
+  } else if (title === 'Education') {
+    minHeight = 175; // Set the minimum height for Education card
+  } else {
+    minHeight = 200; // Default minimum height
+  }
+
+  const bulletPointItems = bulletPoints.map((item, index) => (
+    <div key={index} style={styles.bulletPointItemsContainer}>
+      <div style={styles.bulletPointItem1}>{item.title}</div>
+      {item.subtitle && (
+        <div style={styles.bulletPointItem2}>{item.subtitle}</div>
+      )}
+      {item.date && <div style={styles.bulletPointItem3}>{item.date}</div>}
+    </div>
+  ));
+
   return (
-    <div style={styles.mainContainer}>
-      <div style={styles.cardBackgroundContainer}>
-        <div style={styles.outerCard}>
-          <div style={styles.innerRectangle}>
-            {/* This is the inner rectangle. */}
-          </div>
+    <div
+      style={{
+        ...styles.mainContainer,
+        height: `${Math.max(minHeight, bulletPoints.length * 80)}px`,
+      }}
+    >
+      <div style={{ ...styles.cardBackgroundContainer, backgroundColor }}>
+        <div style={styles.dashedBorderContainer}>
+          <div style={styles.dashedBorder}></div>
         </div>
         <div style={styles.contentContainer}>
-          <div style={styles.bulletPointTitleContainer}>
-            <div style={styles.bulletPointTitle}> Skills </div>
+          <div style={styles.cardTitleContainer}>
+            <div style={styles.cardTitle}>{title}</div>
           </div>
-          <div style={styles.bulletPointItemsContainer}>
-            <div style={styles.bulletPointItem}>- 1st Bullet Point Item</div>
-            <div style={styles.bulletPointItem}>- 2nd Bullet Point Item</div>
-            <div style={styles.bulletPointItem}>- 3rd Bullet Point Item</div>
-          </div>
+          {bulletPointItems}
         </div>
       </div>
     </div>
-  )
+  );
 }

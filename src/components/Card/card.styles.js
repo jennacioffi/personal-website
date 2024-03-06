@@ -1,57 +1,73 @@
+import { fonts } from '../../styles/fonts.js';
+
 const styles = {
   mainContainer: {
     display: 'flex',
-    justifyContent: 'center',
-    padding: '20px',
+    justifyContent: 'center', // centers the card in the webpage
+    padding: '20px', // adds 20px of padding around all edges from other elements
   },
   cardBackgroundContainer: {
-    display: 'flex',
-    maxWidth: '100%',
-    position: 'relative',
-  },
-  outerCard: {
-    alignItems: 'center',
-    backgroundColor: '#6E8DFF',
     borderRadius: '8px',
     display: 'flex',
-    height: '300px',
+    maxWidth: '100%', // this helps maintain the card when making the webpage smaller
+    position: 'relative', // this positions child elements relative to the box itself, rather than the webpage
+  },
+  dashedBorderContainer: {
+    alignItems: 'center', // aligns the dashed edging inside the card
+    borderRadius: '8px',
+    display: 'flex',
     justifyContent: 'center',
     position: 'relative',
     width: '850px',
   },
-  innerRectangle: {
+  dashedBorder: {
     border: '2px dashed #FFFFFF',
     borderRadius: '6px',
     color: 'red',
-    height: '85%',
-    padding: '1%',
     position: 'absolute',
     textAlign: 'center',
-    width: '90%',
+    top: '15px', // 10px from the top edge of the outer container
+    left: '15px', // 10px from the left edge of the outer container
+    right: '15px', // 10px from the right edge of the outer container
+    bottom: '15px', // 10px from the bottom edge of the outer container
   },
   contentContainer: {
     left: '0',
     position: 'absolute',
-    top: '50%',
-    transform: 'translateY(-160%)',
     width: '100%',
+    paddingTop: '25px',
   },
-  bulletPointTitleContainer: {
+  cardTitleContainer: {
     display: 'flex',
+    fontFamily: fonts.cardTitle,
     justifyContent: 'center',
   },
-  bulletPointTitle: {
+  cardTitle: {
     color: 'black',
+    fontSize: '40px',
   },
   bulletPointItemsContainer: {
     alignItems: 'flex-start',
     display: 'flex',
     flexDirection: 'column',
+    fontFamily: fonts.cardBulletPointItems,
     marginLeft: '50px',
+    padding: '10px',
   },
-  bulletPointItem: {
+  bulletPointItem1: {
     color: 'black',
+    fontSize: '22px',
+  },
+  bulletPointItem2: {
+    color: 'black',
+    fontSize: '18px',
+    paddingLeft: '12px',
+  },
+  bulletPointItem3: {
+    color: 'black',
+    fontSize: '14px',
+    paddingLeft: '12px',
   },
 };
 
-export default styles
+export default styles;
