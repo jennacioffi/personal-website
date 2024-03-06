@@ -40,8 +40,7 @@ module.exports = {
       'single'
     ],
     'semi': [
-      'error',
-      'never'
+      'off'
     ]
   }
 }
