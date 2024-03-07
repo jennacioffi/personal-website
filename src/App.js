@@ -23,7 +23,6 @@ function App() {
         bulletPoints={experienceBulletPoints}
         color="ceruleanBlue"
       />
-      {/* Pass the color name as a prop */}
     </div>
   );
 }

@@ -1,4 +1,3 @@
-import { colors } from '../../styles/colors.js';
 import { fonts } from '../../styles/fonts.js';
 
 const styles = {
@@ -8,11 +7,12 @@ const styles = {
     padding: '20px', // adds 20px of padding around all edges from other elements
   },
   cardBackgroundContainer: {
+    borderRadius: '8px',
     display: 'flex',
     maxWidth: '100%', // this helps maintain the card when making the webpage smaller
     position: 'relative', // this positions child elements relative to the box itself, rather than the webpage
   },
-  outerCard: {
+  dashedBorderContainer: {
     alignItems: 'center', // aligns the dashed edging inside the card
     borderRadius: '8px',
     display: 'flex',
@@ -20,7 +20,7 @@ const styles = {
     position: 'relative',
     width: '850px',
   },
-  innerRectangle: {
+  dashedBorder: {
     border: '2px dashed #FFFFFF',
     borderRadius: '6px',
     color: 'red',

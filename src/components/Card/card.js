@@ -3,7 +3,7 @@ import { colors } from '../../styles/colors.js'; // Import colors from colors.js
 import styles from './card.styles.js'; // Import your CSS styles
 
 export default function Card({ title, bulletPoints, color }) {
-  const backgroundColor = colors[color] || colors.defaultColor; // Use the color from colors.js or default to ceruleanBlue
+  const backgroundColor = colors[color] || colors.defaultColor;
   const bulletPointItems = bulletPoints.map((item, index) => (
     <div key={index} style={styles.bulletPointItemsContainer}>
       <div style={styles.bulletPointItem1}>{item.title}</div>
@@ -20,8 +20,8 @@ export default function Card({ title, bulletPoints, color }) {
       }}
     >
       <div style={{ ...styles.cardBackgroundContainer, backgroundColor }}>
-        <div style={styles.outerCard}>
-          <div style={styles.innerRectangle}></div>
+        <div style={styles.dashedBorderContainer}>
+          <div style={styles.dashedBorder}></div>
         </div>
         <div style={styles.contentContainer}>
           <div style={styles.cardTitleContainer}>
