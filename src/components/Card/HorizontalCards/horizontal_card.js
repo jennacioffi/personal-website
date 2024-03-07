@@ -1,8 +1,8 @@
 import React from 'react';
-import { colors } from '../../styles/colors.js'; // Import colors from colors.js
-import styles from './card.styles.js'; // Import your CSS styles
+import { colors } from '../../../styles/colors.js'; // Import colors from colors.js
+import styles from './horizontal_card.styles.js'; // Import your CSS styles
 
-export default function Card({ title, bulletPoints, color }) {
+export default function HorizontalCards({ title, bulletPoints, color }) {
   const backgroundColor = colors[color] || colors.defaultColor;
 
   // Calculate the minimum height dynamically based on the number of bullet points
