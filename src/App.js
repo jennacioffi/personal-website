@@ -1,6 +1,6 @@
 import React from 'react';
-import './App.styles.js';
-import { Card } from './components';
+import styles from './App.styles.js';
+import { HorizontalCards } from './components';
 
 function App() {
   const experienceBulletPoints = [
@@ -74,18 +74,18 @@ function App() {
   ];
 
   return (
-    <div>
-      <Card
+    <div style={styles.websiteBackgroundContainer}>
+      <HorizontalCards
         title="Experience"
         bulletPoints={experienceBulletPoints}
         color="azureBlue"
       />
-      <Card
+      <HorizontalCards
         title="Skills"
         bulletPoints={skillsBulletPoints}
         color="ceruleanBlue"
       />
-      <Card title="Education" bulletPoints={eduBulletPoints} color="deepBlue" />
+      <HorizontalCards title="Education" bulletPoints={eduBulletPoints} color="deepBlue" />
     </div>
   );
 }

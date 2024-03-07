@@ -1,1 +1,1 @@
-export { default as Card } from './Card/card'
+export { default as HorizontalCards } from './Card/HorizontalCards/horizontal_card'

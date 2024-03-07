@@ -1,4 +1,4 @@
-import { fonts } from '../../styles/fonts.js';
+import { fonts } from '../../../styles/fonts.js';
 
 const styles = {
   mainContainer: {
