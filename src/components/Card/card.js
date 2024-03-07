@@ -4,6 +4,19 @@ import styles from './card.styles.js'; // Import your CSS styles
 
 export default function Card({ title, bulletPoints, color }) {
   const backgroundColor = colors[color] || colors.defaultColor;
+
+  // Calculate the minimum height dynamically based on the number of bullet points
+  let minHeight;
+  if (title === 'Experience') {
+    minHeight = 250; // Set the minimum height for Experience card
+  } else if (title === 'Skills') {
+    minHeight = 200; // Set the minimum height for Skills card
+  } else if (title === 'Education') {
+    minHeight = 175; // Set the minimum height for Education card
+  } else {
+    minHeight = 200; // Default minimum height
+  }
+
   const bulletPointItems = bulletPoints.map((item, index) => (
     <div key={index} style={styles.bulletPointItemsContainer}>
       <div style={styles.bulletPointItem1}>{item.title}</div>
@@ -18,7 +31,7 @@ export default function Card({ title, bulletPoints, color }) {
     <div
       style={{
         ...styles.mainContainer,
-        height: `${Math.max(260, bulletPoints.length * 78)}px`,
+        height: `${Math.max(minHeight, bulletPoints.length * 70)}px`,
       }}
     >
       <div style={{ ...styles.cardBackgroundContainer, backgroundColor }}>

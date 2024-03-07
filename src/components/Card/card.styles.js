@@ -53,7 +53,7 @@ const styles = {
     fontFamily: fonts.cardBulletPointItems,
     marginLeft: '50px',
     padding: '10px',
-    paddingTop: '10px',
+    // paddingTop: '10px',
   },
   bulletPointItem1: {
     color: 'black',
@@ -62,12 +62,12 @@ const styles = {
   bulletPointItem2: {
     color: 'black',
     fontSize: '18px',
-    paddingLeft: '10px',
+    paddingLeft: '12px',
   },
   bulletPointItem3: {
     color: 'black',
     fontSize: '14px',
-    paddingLeft: '10px',
+    paddingLeft: '12px',
   },
 };
 

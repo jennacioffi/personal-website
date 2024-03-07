@@ -65,14 +65,27 @@ function App() {
     },
   ];
 
+  const eduBulletPoints = [
+    {
+      title: '- Utah State University',
+      subtitle: 'Bachlors in Computer Science',
+      date: 'August 2017 - May 2023',
+    },
+  ];
+
   return (
     <div>
       <Card
         title="Experience"
         bulletPoints={experienceBulletPoints}
+        color="azureBlue"
+      />
+      <Card
+        title="Skills"
+        bulletPoints={skillsBulletPoints}
         color="ceruleanBlue"
       />
-      <Card title="Skills" bulletPoints={skillsBulletPoints} color="blue" />
+      <Card title="Education" bulletPoints={eduBulletPoints} color="deepBlue" />
     </div>
   );
 }
