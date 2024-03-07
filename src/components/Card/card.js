@@ -1,31 +1,33 @@
-import React from 'react'
-import styles from './card.styles.js' // Import your CSS styles
+import React from 'react';
+import { colors } from '../../styles/colors.js'; // Import colors from colors.js
+import styles from './card.styles.js'; // Import your CSS styles
 
-export default function Card() {
+export default function Card({ title, bulletPoints, color }) {
+  const backgroundColor = colors[color] || colors.defaultColor; // Use the color from colors.js or default to ceruleanBlue
+  const bulletPointItems = bulletPoints.map((item, index) => (
+    <div key={index} style={styles.bulletPointItemsContainer}>
+      <div style={styles.bulletPointItem1}>{item.title}</div>
+      <div style={styles.bulletPointItem2}>{item.subtitle}</div>
+      <div style={styles.bulletPointItem3}>{item.date}</div>
+    </div>
+  ));
+
   return (
-    <div style={styles.mainContainer}>
-      <div style={styles.cardBackgroundContainer}>
+    <div
+      style={{
+        ...styles.mainContainer,
+        height: `${200 + bulletPoints.length * 50}px`,
+      }}
+    >
+      <div style={{ ...styles.cardBackgroundContainer, backgroundColor }}>
         <div style={styles.outerCard}>
-          <div style={styles.innerRectangle}>
-            {/* This is the inner rectangle. */}
-          </div>
+          <div style={styles.innerRectangle}></div>
         </div>
         <div style={styles.contentContainer}>
           <div style={styles.cardTitleContainer}>
-            <div style={styles.cardTitle}> Experience </div>
+            <div style={styles.cardTitle}>{title}</div>
           </div>
-          <div style={styles.bulletPointItemsContainer}>
-            <div style={styles.bulletPointItem1}>- Atomic Jolt, Logan UT</div>
-            <div style={styles.bulletPointItem2}>Software Developer</div>
-            <div style={styles.bulletPointItem3}>August 2022 - Jan 2024</div>
-          </div>
-          <div style={styles.bulletPointItemsContainer}>
-            <div style={styles.bulletPointItem1}>- USU Teaching Assistant</div>
-            <div style={styles.bulletPointItem2}>
-              CS 1440 - Methods in Computer Science
-            </div>
-            <div style={styles.bulletPointItem3}>August 2022 - Jan 2024</div>
-          </div>
+          {bulletPointItems}
         </div>
       </div>
     </div>

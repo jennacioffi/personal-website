@@ -4,20 +4,18 @@ import { fonts } from '../../styles/fonts.js';
 const styles = {
   mainContainer: {
     display: 'flex',
-    justifyContent: 'center',
-    padding: '20px',
+    justifyContent: 'center', // centers the card in the webpage
+    padding: '20px', // adds 20px of padding around all edges from other elements
   },
   cardBackgroundContainer: {
     display: 'flex',
-    maxWidth: '100%',
-    position: 'relative',
+    maxWidth: '100%', // this helps maintain the card when making the webpage smaller
+    position: 'relative', // this positions child elements relative to the box itself, rather than the webpage
   },
   outerCard: {
-    alignItems: 'center',
-    backgroundColor: colors.ceruleanBlue,
+    alignItems: 'center', // aligns the dashed edging inside the card
     borderRadius: '8px',
     display: 'flex',
-    height: '300px',
     justifyContent: 'center',
     position: 'relative',
     width: '850px',
@@ -35,9 +33,8 @@ const styles = {
   contentContainer: {
     left: '0',
     position: 'absolute',
-    top: '121%',
-    transform: 'translateY(-160%)',
     width: '100%',
+    paddingTop: '25px',
   },
   cardTitleContainer: {
     display: 'flex',
@@ -52,9 +49,10 @@ const styles = {
     alignItems: 'flex-start',
     display: 'flex',
     flexDirection: 'column',
+    fontFamily: fonts.cardBulletPointItems,
     marginLeft: '50px',
     padding: '10px',
-    fontFamily: fonts.cardBulletPointItems,
+    paddingTop: '10px',
   },
   bulletPointItem1: {
     color: 'black',
