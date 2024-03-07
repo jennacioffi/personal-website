@@ -11,16 +11,23 @@ export default function Card() {
           </div>
         </div>
         <div style={styles.contentContainer}>
-          <div style={styles.bulletPointTitleContainer}>
-            <div style={styles.bulletPointTitle}> Skills </div>
+          <div style={styles.cardTitleContainer}>
+            <div style={styles.cardTitle}> Experience </div>
           </div>
           <div style={styles.bulletPointItemsContainer}>
-            <div style={styles.bulletPointItem}>- 1st Bullet Point Item</div>
-            <div style={styles.bulletPointItem}>- 2nd Bullet Point Item</div>
-            <div style={styles.bulletPointItem}>- 3rd Bullet Point Item</div>
+            <div style={styles.bulletPointItem1}>- Atomic Jolt, Logan UT</div>
+            <div style={styles.bulletPointItem2}>Software Developer</div>
+            <div style={styles.bulletPointItem3}>August 2022 - Jan 2024</div>
+          </div>
+          <div style={styles.bulletPointItemsContainer}>
+            <div style={styles.bulletPointItem1}>- USU Teaching Assistant</div>
+            <div style={styles.bulletPointItem2}>
+              CS 1440 - Methods in Computer Science
+            </div>
+            <div style={styles.bulletPointItem3}>August 2022 - Jan 2024</div>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }

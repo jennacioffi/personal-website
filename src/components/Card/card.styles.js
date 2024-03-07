@@ -1,3 +1,6 @@
+import { colors } from '../../styles/colors.js';
+import { fonts } from '../../styles/fonts.js';
+
 const styles = {
   mainContainer: {
     display: 'flex',
@@ -11,7 +14,7 @@ const styles = {
   },
   outerCard: {
     alignItems: 'center',
-    backgroundColor: '#6E8DFF',
+    backgroundColor: colors.ceruleanBlue,
     borderRadius: '8px',
     display: 'flex',
     height: '300px',
@@ -23,35 +26,50 @@ const styles = {
     border: '2px dashed #FFFFFF',
     borderRadius: '6px',
     color: 'red',
-    height: '85%',
+    height: '80%',
     padding: '1%',
     position: 'absolute',
     textAlign: 'center',
-    width: '90%',
+    width: '92%',
   },
   contentContainer: {
     left: '0',
     position: 'absolute',
-    top: '50%',
+    top: '121%',
     transform: 'translateY(-160%)',
     width: '100%',
   },
-  bulletPointTitleContainer: {
+  cardTitleContainer: {
     display: 'flex',
+    fontFamily: fonts.cardTitle,
     justifyContent: 'center',
   },
-  bulletPointTitle: {
+  cardTitle: {
     color: 'black',
+    fontSize: '40px',
   },
   bulletPointItemsContainer: {
     alignItems: 'flex-start',
     display: 'flex',
     flexDirection: 'column',
     marginLeft: '50px',
+    padding: '10px',
+    fontFamily: fonts.cardBulletPointItems,
   },
-  bulletPointItem: {
+  bulletPointItem1: {
     color: 'black',
+    fontSize: '22px',
+  },
+  bulletPointItem2: {
+    color: 'black',
+    fontSize: '18px',
+    paddingLeft: '10px',
+  },
+  bulletPointItem3: {
+    color: 'black',
+    fontSize: '14px',
+    paddingLeft: '10px',
   },
 };
 
-export default styles
+export default styles;

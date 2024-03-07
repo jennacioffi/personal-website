@@ -1,5 +1,3 @@
-const colors = {
-  blueLapis: '#007bff',
-}
-
-export default colors
+export const colors = {
+  ceruleanBlue: '#6E8DFF',
+};
