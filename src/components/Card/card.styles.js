@@ -24,11 +24,12 @@ const styles = {
     border: '2px dashed #FFFFFF',
     borderRadius: '6px',
     color: 'red',
-    height: '80%',
-    padding: '1%',
     position: 'absolute',
     textAlign: 'center',
-    width: '92%',
+    top: '15px', // 10px from the top edge of the outer container
+    left: '15px', // 10px from the left edge of the outer container
+    right: '15px', // 10px from the right edge of the outer container
+    bottom: '15px', // 10px from the bottom edge of the outer container
   },
   contentContainer: {
     left: '0',

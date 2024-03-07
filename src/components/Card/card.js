@@ -7,8 +7,10 @@ export default function Card({ title, bulletPoints, color }) {
   const bulletPointItems = bulletPoints.map((item, index) => (
     <div key={index} style={styles.bulletPointItemsContainer}>
       <div style={styles.bulletPointItem1}>{item.title}</div>
-      <div style={styles.bulletPointItem2}>{item.subtitle}</div>
-      <div style={styles.bulletPointItem3}>{item.date}</div>
+      {item.subtitle && (
+        <div style={styles.bulletPointItem2}>{item.subtitle}</div>
+      )}
+      {item.date && <div style={styles.bulletPointItem3}>{item.date}</div>}
     </div>
   ));
 
@@ -16,7 +18,7 @@ export default function Card({ title, bulletPoints, color }) {
     <div
       style={{
         ...styles.mainContainer,
-        height: `${200 + bulletPoints.length * 50}px`,
+        height: `${Math.max(260, bulletPoints.length * 78)}px`,
       }}
     >
       <div style={{ ...styles.cardBackgroundContainer, backgroundColor }}>

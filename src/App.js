@@ -16,6 +16,55 @@ function App() {
     },
   ];
 
+  const skillsBulletPoints = [
+    {
+      title: '- Programming Languages:',
+      subtitle: 'Python, C++, JavaScript, Type Script',
+      date: '',
+    },
+    {
+      title: '- Design Tools:',
+      subtitle: 'Figma',
+      date: '',
+    },
+    {
+      title: '- Frameworks/Libraries:',
+      subtitle: 'React Native.',
+      date: '',
+    },
+    {
+      title: '- Database:',
+      subtitle: 'Familiar with SQL syntax.',
+      date: '',
+    },
+    {
+      title: '- Version Control/Command Line:',
+      subtitle: 'Proficient in Git, adept at command line usage.',
+      date: '',
+    },
+    {
+      title: '- Testing:',
+      subtitle: 'Cypress, manual testing, spreadsheet management.',
+      date: '',
+    },
+    {
+      title: '- Project Management:',
+      subtitle: 'Experience with Pivotal Tracker and GitHub project boards.',
+      date: '',
+    },
+    {
+      title: '- Mobile App Development:',
+      subtitle: 'iOS and Android (build creation, releases to app stores).',
+      date: '',
+    },
+    {
+      title: '- Soft Skills:',
+      subtitle:
+        'Open-minded, adaptable, values transparent communication. Emphasizes documentation, organization, and up-to-date information. Confidence and ability to lead.',
+      date: '',
+    },
+  ];
+
   return (
     <div>
       <Card
@@ -23,6 +72,7 @@ function App() {
         bulletPoints={experienceBulletPoints}
         color="ceruleanBlue"
       />
+      <Card title="Skills" bulletPoints={skillsBulletPoints} color="blue" />
     </div>
   );
 }
