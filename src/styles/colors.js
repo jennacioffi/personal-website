@@ -5,6 +5,7 @@ export const colors = {
   deepBlue: '#436CFF',
   deepIndigo: '#050A1D',
   defaultColor: '#FF0000',
+  lightGrey: '#ccc',
   pastelBlue: '#A4B8FF',
   sapphireBlue: '#274DDA',
 };

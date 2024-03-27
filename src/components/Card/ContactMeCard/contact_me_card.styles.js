@@ -1,4 +1,5 @@
 import { fonts } from '../../../styles/fonts.js';
+import { colors } from '../../../styles/colors.js';
 
 const styles = {
   mainContainer: {
@@ -11,8 +12,8 @@ const styles = {
     alignContent: 'flex-start',
     backgroundColor: 'red',
     borderRadius: '10px',
-    display: 'flex', // Add display flex to the outer card
-    flexDirection: 'column', // Set flex direction to column
+    display: 'flex',
+    flexDirection: 'column',
   },
   cardHeader: {
     display: 'flex',
@@ -40,11 +41,10 @@ const styles = {
   },
   textareaField: {
     resize: 'none',
-    flex: '1',
     width: '100%',
     padding: '8px',
     borderRadius: '5px',
-    border: '1px solid #ccc',
+    border: `1px solid ${colors.lightGrey}`,
     boxSizing: 'border-box',
     marginTop: '5px',
   },

@@ -31,6 +31,7 @@ export default function ContactMeCard() {
             value={formData.name}
             onChange={handleChange}
             style={styles.inputField}
+            maxLength="100"
           />
         </div>
         <div style={styles.input}>
@@ -42,6 +43,7 @@ export default function ContactMeCard() {
             value={formData.email}
             onChange={handleChange}
             style={styles.inputField}
+            maxLength="100"
           />
         </div>
         <div style={styles.input}>
@@ -54,6 +56,7 @@ export default function ContactMeCard() {
             rows="4"
             cols="50"
             style={styles.textareaField}
+            maxLength="250"
           ></textarea>
         </div>
       </div>
