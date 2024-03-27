@@ -6,13 +6,10 @@ const styles = {
     display: 'flex',
     justifyContent: 'space-around',
     paddingTop: '20px',
-    padding: '1%',
-  },
-  outerCard: {
+    margin: '1%',
     alignContent: 'flex-start',
-    backgroundColor: 'red',
+    backgroundColor: colors.sapphireBlue,
     borderRadius: '10px',
-    display: 'flex',
     flexDirection: 'column',
   },
   cardHeader: {
