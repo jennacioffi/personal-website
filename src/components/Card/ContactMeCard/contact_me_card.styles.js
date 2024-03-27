@@ -3,16 +3,16 @@ import { fonts } from '../../../styles/fonts.js';
 const styles = {
   mainContainer: {
     display: 'flex',
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
     paddingTop: '20px',
+    padding: '1%',
   },
   outerCard: {
     alignContent: 'flex-start',
     backgroundColor: 'red',
     borderRadius: '10px',
-    paddingVertical: '50px',
-    width: '100%',
-    height: '340px'
+    display: 'flex', // Add display flex to the outer card
+    flexDirection: 'column', // Set flex direction to column
   },
   cardHeader: {
     display: 'flex',
@@ -25,28 +25,28 @@ const styles = {
   input: {
     marginBottom: '20px', 
     marginLeft: '5%',
-    marginRight: '5%'
+    marginRight: '5%',
+    fontFamily: fonts.contactMeInputHeaders,
+    fontSize: '18px',
   },
   inputField: {
     display: 'flex',
-    width: '90%',
+    width: '100%',
     padding: '2%',
     borderRadius: '5px',
     border: '1px solid #ccc',
     boxSizing: 'border-box',
     marginTop: '5px',
-    // marginLeft: '5%',
-    // marginRight: '5%'
   },
   textareaField: {
-    width: '90%',
+    resize: 'none',
+    flex: '1',
+    width: '100%',
     padding: '8px',
     borderRadius: '5px',
     border: '1px solid #ccc',
     boxSizing: 'border-box',
     marginTop: '5px',
-    // marginRight: '5%',
-    // marginLeft: '5%',
   },
 };
 

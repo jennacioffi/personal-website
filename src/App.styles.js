@@ -1,10 +1,12 @@
+import { colors } from './styles/colors.js'
+
 const styles = {
   websiteBackgroundContainer: {
-    background: 'linear-gradient(#A4B8FF, #2D5AFF, #050A1D)',
+    background: `linear-gradient(${colors.pastelBlue}, ${colors.brightBlue}, ${colors.deepIndigo})`,
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-around',
-    padding: '5%',
+    padding: '10%',
   },
   multiCards: {
     display: 'flex',

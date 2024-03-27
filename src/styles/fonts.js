@@ -1,4 +1,5 @@
 export const fonts = {
-  cardTitle: 'serif',
   cardBulletPointItems: 'serif',
+  cardTitle: 'serif',
+  contactMeInputHeaders: 'serif',
 };
