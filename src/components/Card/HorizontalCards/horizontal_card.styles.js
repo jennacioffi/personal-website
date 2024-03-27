@@ -40,7 +40,7 @@ const styles = {
   },
   bulletPointItemsContainer: {
     fontFamily: fonts.cardBulletPointItems,
-    marginBottom: '20px',
+    marginBottom: '2%',
     marginLeft: '5%',
     marginRight: '5%', 
   },
