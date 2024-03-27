@@ -1,28 +1,30 @@
 import { fonts } from '../../../styles/fonts.js';
+import { colors } from '../../../styles/colors.js';
 
 const styles = {
   mainContainer: {
     display: 'flex',
     justifyContent: 'center',
-    padding: '20px', 
+    paddingBottom: '15px',
+    paddingTop: '15px', 
   },
   cardBackgroundContainer: {
+    alignItems: 'center',
     borderRadius: '8px',
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center',
     maxWidth: '100%', 
     overflowX: 'hidden',
     overflowY: 'auto',
     position: 'relative',
-    width: '80%',
+    width: '100%',
   },
   dashedBorder: {
-    border: '2px dashed #FFFFFF',
+    border: `2px dashed ${colors.white}`,
     borderRadius: '6px',
-    width: '95%',
     height: '95%',
     margin: '15px',
+    width: '95%',
   },
   contentContainer: {
     paddingTop: '2%', 
@@ -35,7 +37,7 @@ const styles = {
     justifyContent: 'center',
   },
   cardTitle: {
-    color: 'black',
+    color: colors.black,
     fontSize: '40px',
   },
   bulletPointItemsContainer: {
@@ -45,16 +47,16 @@ const styles = {
     marginRight: '5%', 
   },
   bulletPointItem1: {
-    color: 'black',
+    color: colors.black,
     fontSize: '22px',
   },
   bulletPointItem2: {
-    color: 'black',
+    color: colors.black,
     fontSize: '18px',
     paddingLeft: '12px',
   },
   bulletPointItem3: {
-    color: 'black',
+    color: colors.black,
     fontSize: '14px',
     paddingLeft: '12px',
   },
