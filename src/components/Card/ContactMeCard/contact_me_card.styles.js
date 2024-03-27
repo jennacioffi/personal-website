@@ -33,7 +33,7 @@ const styles = {
     width: '100%',
     padding: '2%',
     borderRadius: '5px',
-    border: '1px solid #ccc',
+    border: `1px solid ${colors.lightGrey}`,
     boxSizing: 'border-box',
     marginTop: '5px',
   },

@@ -1,4 +1,5 @@
 import { fonts } from '../../../styles/fonts.js';
+import { colors } from '../../../styles/colors.js';
 
 const styles = {
   mainContainer: {
@@ -19,7 +20,7 @@ const styles = {
     width: '100%',
   },
   dashedBorder: {
-    border: '2px dashed #FFFFFF',
+    border: `2px dashed ${colors.white}`,
     borderRadius: '6px',
     width: '95%',
     height: '95%',
@@ -36,7 +37,7 @@ const styles = {
     justifyContent: 'center',
   },
   cardTitle: {
-    color: 'black',
+    color: colors.black,
     fontSize: '40px',
   },
   bulletPointItemsContainer: {
@@ -46,16 +47,16 @@ const styles = {
     marginRight: '5%', 
   },
   bulletPointItem1: {
-    color: 'black',
+    color: colors.black,
     fontSize: '22px',
   },
   bulletPointItem2: {
-    color: 'black',
+    color: colors.black,
     fontSize: '18px',
     paddingLeft: '12px',
   },
   bulletPointItem3: {
-    color: 'black',
+    color: colors.black,
     fontSize: '14px',
     paddingLeft: '12px',
   },

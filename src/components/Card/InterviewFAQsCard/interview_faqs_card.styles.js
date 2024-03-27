@@ -1,5 +1,6 @@
 import { fonts } from '../../../styles/fonts.js';
-
+import { colors } from '../../../styles/colors.js';
+ 
 const styles = {
   mainContainer: {
     display: 'flex',
@@ -37,7 +38,7 @@ const styles = {
     margin: '2.5%',
   },
   cardTitle: {
-    color: 'black',
+    color: colors.white,
     fontSize: '40px',
   },
   bulletPointItemsContainer: {
@@ -47,13 +48,14 @@ const styles = {
     marginRight: '5%', 
   },
   question: {
-    color: 'white',
+    color: colors.white,
     fontSize: '18px',
   },
   answer: {
-    color: 'white',
+    color: colors.lightGrey,
     fontSize: '18px',
-    paddingLeft: '12px',
+
+    // paddingLeft: '12px',
   },
   arrowIcon: {
     marginLeft: '5px', // Adjust the margin as needed
