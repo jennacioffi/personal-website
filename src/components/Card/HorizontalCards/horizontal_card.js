@@ -14,7 +14,7 @@ export default function HorizontalCards({ title, bulletPoints, color }) {
   } else if (title === 'Education') {
     minHeight = 200; // Set the minimum height for Education card
   } else {
-    minHeight = 225; // Default minimum height
+    minHeight = 200; // Default minimum height
   }
 
   const bulletPointItems = bulletPoints.map((item, index) => (
