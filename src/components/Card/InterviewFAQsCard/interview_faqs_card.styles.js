@@ -51,10 +51,13 @@ const styles = {
     fontSize: '18px',
   },
   answer: {
-    color: 'black',
+    color: 'white',
     fontSize: '18px',
     paddingLeft: '12px',
   },
+  arrowIcon: {
+    marginLeft: '5px', // Adjust the margin as needed
+  }
 };
 
 export default styles;
