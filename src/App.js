@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './App.styles.js';
-import { HorizontalCards } from './components';
+import { HorizontalCards, ContactMeCard, InterviewFAQsCard } from './components';
 
 function App() {
   const experienceBulletPoints = [
@@ -73,6 +73,49 @@ function App() {
     },
   ];
 
+  const interviewFAQs = [
+    {
+      question: '1. Tell me about yourself and your background in software/web development',
+      answer: '- Answer 1'
+    },
+    {
+      question: '2. What motivated you to pursue a career in softare/web development?',
+      answer: '- Answer 2'
+    },
+    {
+      question: '3. Describe a time when you had to work under pressure to meet a tight deadline. How did you handle it?',
+      answer: '- Answer 3'
+    },
+    {
+      question: '4. How do you handle constructive criticism or feedback on your code?',
+      answer: '- Answer 4'
+    },
+    {
+      question: '5. Describe a time when you faced a challenge and what you did to overcome it.',
+      answer: '- Answer 5'
+    },
+    {
+      question: '6. Can you discuss a situation where you had to learn a new technology or programming language quickly? How did you approach it?',
+      answer: '- Answer 6'
+    },
+    {
+      question: '7. Describe a time when you had a disagreement with a team member during a project. How did you handle it?',
+      answer: '- Answer 7'
+    },
+    {
+      question: '8. How do you prioritize tasks and manage your time effectively when working on multiple projects or deadlines?',
+      answer: '- Answer 8'
+    },
+    {
+      question: '9. How do you approach documentation in your projects?',
+      answer: '- Answer 9'
+    },
+    {
+      question: '10. What do you enjoy most about software/web development, and what do you find most challenging?',
+      answer: '- Answer 10'
+    },
+  ]
+
   return (
     <div style={styles.websiteBackgroundContainer}>
       <HorizontalCards
@@ -86,6 +129,14 @@ function App() {
         color="ceruleanBlue"
       />
       <HorizontalCards title="Education" bulletPoints={eduBulletPoints} color="deepBlue" />
+      <div style={styles.multiCards}>
+        <ContactMeCard/>
+        <InterviewFAQsCard
+          title="Interview FAQs"
+          bulletPoints={interviewFAQs}
+          color="midnightNavy"
+        />
+      </div>
     </div>
   );
 }
