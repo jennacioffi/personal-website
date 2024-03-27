@@ -86,7 +86,10 @@ function App() {
         color="ceruleanBlue"
       />
       <HorizontalCards title="Education" bulletPoints={eduBulletPoints} color="deepBlue" />
-      <ContactMeCard/>
+      <div style={styles.multiCards}>
+        <ContactMeCard/>
+        <ContactMeCard/>
+      </div>
     </div>
   );
 }

@@ -3,17 +3,16 @@ import { fonts } from '../../../styles/fonts.js';
 const styles = {
   mainContainer: {
     display: 'flex',
-    justifyContent: 'flex-start',
-    padding: '20px',
-    paddingLeft: '11.5%',
+    justifyContent: 'space-between',
+    paddingTop: '20px',
   },
   outerCard: {
     alignContent: 'flex-start',
     backgroundColor: 'red',
     borderRadius: '10px',
     paddingVertical: '50px',
-    width: '50%',
-    height: '320px'
+    width: '100%',
+    height: '340px'
   },
   cardHeader: {
     display: 'flex',
@@ -21,6 +20,7 @@ const styles = {
     justifyContent: 'center',
     fontSize: '30px',
     marginBottom: '20px',
+    marginTop: '10px',
   },
   input: {
     marginBottom: '20px', 

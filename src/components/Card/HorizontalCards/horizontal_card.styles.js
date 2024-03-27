@@ -4,7 +4,8 @@ const styles = {
   mainContainer: {
     display: 'flex',
     justifyContent: 'center',
-    padding: '20px', 
+    paddingTop: '15px', 
+    paddingBottom: '15px',
   },
   cardBackgroundContainer: {
     borderRadius: '8px',
@@ -15,7 +16,7 @@ const styles = {
     overflowX: 'hidden',
     overflowY: 'auto',
     position: 'relative',
-    width: '80%',
+    width: '100%',
   },
   dashedBorder: {
     border: '2px dashed #FFFFFF',
