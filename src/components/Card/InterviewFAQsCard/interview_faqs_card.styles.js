@@ -46,18 +46,13 @@ const styles = {
     marginLeft: '5%',
     marginRight: '5%', 
   },
-  bulletPointItem1: {
-    color: 'black',
-    fontSize: '22px',
+  question: {
+    color: 'white',
+    fontSize: '18px',
   },
-  bulletPointItem2: {
+  answer: {
     color: 'black',
     fontSize: '18px',
-    paddingLeft: '12px',
-  },
-  bulletPointItem3: {
-    color: 'black',
-    fontSize: '14px',
     paddingLeft: '12px',
   },
 };

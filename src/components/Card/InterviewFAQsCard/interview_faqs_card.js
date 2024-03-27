@@ -7,9 +7,9 @@ export default function InterviewFAQsCard({ title, bulletPoints, color }) {
 
   const bulletPointItems = bulletPoints.map((item, index) => (
     <div key={index} style={styles.bulletPointItemsContainer}>
-      <div style={styles.bulletPointItem1}>{item.title}</div>
+      <div style={styles.question}>{item.question}</div>
       {item.subtitle && (
-        <div style={styles.bulletPointItem2}>{item.subtitle}</div>
+        <div style={styles.answer}>{item.answer}</div>
       )}
       {item.date && <div style={styles.bulletPointItem3}>{item.date}</div>}
     </div>
