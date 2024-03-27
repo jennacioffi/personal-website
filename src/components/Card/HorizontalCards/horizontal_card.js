@@ -8,11 +8,11 @@ export default function HorizontalCards({ title, bulletPoints, color }) {
   // Calculate the minimum height dynamically based on the number of bullet points
   let minHeight;
   if (title === 'Experience') {
-    minHeight = 250; // Set the minimum height for Experience card
+    minHeight = 275; // Set the minimum height for Experience card
   } else if (title === 'Skills') {
-    minHeight = 200; // Set the minimum height for Skills card
+    minHeight = 225; // Set the minimum height for Skills card
   } else if (title === 'Education') {
-    minHeight = 175; // Set the minimum height for Education card
+    minHeight = 200; // Set the minimum height for Education card
   } else {
     minHeight = 200; // Default minimum height
   }
@@ -35,8 +35,7 @@ export default function HorizontalCards({ title, bulletPoints, color }) {
       }}
     >
       <div style={{ ...styles.cardBackgroundContainer, backgroundColor }}>
-        <div style={styles.dashedBorder}></div>
-        <div style={styles.contentContainer}>
+        <div style={styles.dashedBorder}>
           <div style={styles.cardTitleContainer}>
             <div style={styles.cardTitle}>{title}</div>
           </div>

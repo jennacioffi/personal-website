@@ -24,17 +24,15 @@ const styles = {
     borderRadius: '6px',
     height: '95%',
     margin: '15px',
+    overflow: 'auto',
+    paddingHorizontal: '1%',
     width: '95%',
-  },
-  contentContainer: {
-    paddingTop: '2%', 
-    position: 'absolute',
-    width: '100%', 
   },
   cardTitleContainer: {
     display: 'flex',
     fontFamily: fonts.cardTitle,
     justifyContent: 'center',
+    margin: '1%',
   },
   cardTitle: {
     color: colors.black,
@@ -42,7 +40,7 @@ const styles = {
   },
   bulletPointItemsContainer: {
     fontFamily: fonts.cardBulletPointItems,
-    marginBottom: '20px',
+    marginBottom: '2%',
     marginLeft: '5%',
     marginRight: '5%', 
   },
