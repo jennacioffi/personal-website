@@ -3,9 +3,12 @@ import styles from './contact_me_card.styles';
 
 export default function ContactMeCard({}) {
 
-    return (
-        <div>
-            // Put Stuff here
-        </div>
-    )
+  return (
+    <div style={styles.mainContainer}>
+      <div style={styles.outerCard}>
+        {/* // Put Stuff here */}
+        Test Words
+      </div>
+    </div>
+  )
 }
