@@ -10,7 +10,7 @@ export default function LinkCard({ icon, link }) {
           {link ? (
             <a href={link} target="_blank" rel="noopener noreferrer" style={styles.link}>{link}</a>
           ) : (
-            <div style={styles.link}>Look at the bottom of the page</div>
+            <div style={styles.link}>Send me an email in the "Contact Me" Card! </div>
           )}
         </div>
       </div>

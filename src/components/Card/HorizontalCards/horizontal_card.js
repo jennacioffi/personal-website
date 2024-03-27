@@ -35,8 +35,7 @@ export default function HorizontalCards({ title, bulletPoints, color }) {
       }}
     >
       <div style={{ ...styles.cardBackgroundContainer, backgroundColor }}>
-        <div style={styles.dashedBorder}></div>
-        <div style={styles.contentContainer}>
+        <div style={styles.dashedBorder}>
           <div style={styles.cardTitleContainer}>
             <div style={styles.cardTitle}>{title}</div>
           </div>

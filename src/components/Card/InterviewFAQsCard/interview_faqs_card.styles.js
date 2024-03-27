@@ -5,14 +5,14 @@ const styles = {
   mainContainer: {
     display: 'flex',
     justifyContent: 'center',
-    width: '100%',
     margin: '1%',
+    width: '100%',
   },
   cardBackgroundContainer: {
+    alignItems: 'center',
     borderRadius: '8px',
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center',
     maxWidth: '100%', 
     overflowX: 'hidden',
     overflowY: 'auto',
@@ -22,12 +22,12 @@ const styles = {
   dashedBorder: {
     border: '2px dashed #FFFFFF',
     borderRadius: '6px',
-    width: '95%',
     height: '95%',
     margin: '2%',
+    overflow: 'auto',
     paddingHorizontal: '2%', 
     position: 'absolute',
-    overflow: 'auto',
+    width: '95%',
   },
   cardTitleContainer: {
     display: 'flex',
