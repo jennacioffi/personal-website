@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './App.styles.js';
-import { HorizontalCards, ContactMeCard } from './components';
+import { HorizontalCards, ContactMeCard, InterviewFAQsCard } from './components';
 
 function App() {
   const experienceBulletPoints = [
@@ -88,7 +88,11 @@ function App() {
       <HorizontalCards title="Education" bulletPoints={eduBulletPoints} color="deepBlue" />
       <div style={styles.multiCards}>
         <ContactMeCard/>
-        <ContactMeCard/>
+        <InterviewFAQsCard
+          title="Interview FAQs"
+          bulletPoints={[1,2,3]}
+          color="midnightNavy"
+        />
       </div>
     </div>
   );

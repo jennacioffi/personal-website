@@ -11,14 +11,15 @@ const styles = {
     backgroundColor: colors.sapphireBlue,
     borderRadius: '10px',
     flexDirection: 'column',
+    width: '100%',
   },
   cardHeader: {
     display: 'flex',
     fontFamily: fonts.cardTitle,
     justifyContent: 'center',
-    fontSize: '30px',
+    fontSize: '40px',
     marginBottom: '20px',
-    marginTop: '10px',
+    marginTop: '2.5%',
   },
   input: {
     marginBottom: '20px', 
