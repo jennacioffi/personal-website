@@ -24,12 +24,10 @@ const styles = {
     borderRadius: '6px',
     width: '95%',
     height: '95%',
-    margin: '15px',
-  },
-  contentContainer: {
+    margin: '2%',
     paddingTop: '2%', 
     position: 'absolute',
-    width: '100%', 
+    overflow: 'auto',
   },
   cardTitleContainer: {
     display: 'flex',
@@ -54,11 +52,9 @@ const styles = {
   answer: {
     color: colors.lightGrey,
     fontSize: '18px',
-
-    // paddingLeft: '12px',
   },
   arrowIcon: {
-    marginLeft: '5px', // Adjust the margin as needed
+    marginLeft: '5px',
   }
 };
 

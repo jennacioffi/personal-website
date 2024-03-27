@@ -33,8 +33,7 @@ export default function InterviewFAQsCard({ title, bulletPoints, color }) {
   return (
     <div style={styles.mainContainer}>
       <div style={{ ...styles.cardBackgroundContainer, backgroundColor }}>
-        <div style={styles.dashedBorder}></div>
-        <div style={styles.contentContainer}>
+        <div style={styles.dashedBorder}>
           <div style={styles.cardTitleContainer}>
             <div style={styles.cardTitle}>{title}</div>
           </div>
