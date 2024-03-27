@@ -25,7 +25,7 @@ const styles = {
     width: '95%',
     height: '95%',
     margin: '2%',
-    paddingTop: '2%', 
+    paddingHorizontal: '2%', 
     position: 'absolute',
     overflow: 'auto',
   },
