@@ -10,6 +10,7 @@ const styles = {
     width: '100%',
     position: 'relative',
     right: '12%',
+    overflow: 'auto',
   },
   cardBackgroundContainer: {
     alignContent: 'space-between',
