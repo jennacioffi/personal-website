@@ -5,14 +5,14 @@ const styles = {
   mainContainer: {
     display: 'flex',
     justifyContent: 'center',
-    width: '100%',
     margin: '1%',
+    width: '100%',
   },
   cardBackgroundContainer: {
+    alignItems: 'center',
     borderRadius: '8px',
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center',
     maxWidth: '100%', 
     overflowX: 'hidden',
     overflowY: 'auto',
@@ -22,14 +22,12 @@ const styles = {
   dashedBorder: {
     border: '2px dashed #FFFFFF',
     borderRadius: '6px',
-    width: '95%',
     height: '95%',
-    margin: '15px',
-  },
-  contentContainer: {
-    paddingTop: '2%', 
+    margin: '2%',
+    overflow: 'auto',
+    paddingHorizontal: '2%', 
     position: 'absolute',
-    width: '100%', 
+    width: '95%',
   },
   cardTitleContainer: {
     display: 'flex',
@@ -54,11 +52,9 @@ const styles = {
   answer: {
     color: colors.lightGrey,
     fontSize: '18px',
-
-    // paddingLeft: '12px',
   },
   arrowIcon: {
-    marginLeft: '5px', // Adjust the margin as needed
+    marginLeft: '5px',
   }
 };
 
