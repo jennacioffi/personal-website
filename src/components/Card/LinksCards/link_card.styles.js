@@ -40,7 +40,7 @@ const styles = {
     width: '56px',
   },
   link: {
-    alignText: 'center',
+    textAlign: 'center',
     color: colors.black,
     fontFamily: fonts.cardTitle,
     fontSize: '22px',

@@ -33,6 +33,8 @@ const styles = {
     borderRadius: '5px',
     boxSizing: 'border-box',
     display: 'flex',
+    fontFamily: fonts.contactMeInputHeaders,
+    fontSize: '18px',
     marginTop: '5px',
     padding: '2%',
     width: '100%',
@@ -41,28 +43,26 @@ const styles = {
     border: `1px solid ${colors.lightGrey}`,
     borderRadius: '5px',
     boxSizing: 'border-box',
+    fontFamily: fonts.contactMeInputHeaders,
+    fontSize: '18px',
     marginTop: '5px',
     padding: '8px',
     resize: 'none',
     width: '100%',
   },
   submitButton: {
-    backgroundColor: colors.deepIndigo, /* You can replace 'colors.green' with your desired color */
+    alignSelf: 'center',
+    backgroundColor: colors.deepIndigo, 
     border: 'none',
     borderRadius: '5px',
     color: 'white',
     cursor: 'pointer',
     fontFamily: fonts.cardTitle,
     fontSize: '18px',
-    padding: '10px 20px',
     marginBottom: '20px',
-    // width: 'fit-content',
-    alignSelf: 'center',
+    padding: '10px 20px',
     transition: 'background-color 0.3s ease',
   },
-  submitButtonHover: {
-    backgroundColor: colors.darkGreen, /* You can replace 'colors.darkGreen' with your desired color */
-  }
 };
 
 export default styles;
