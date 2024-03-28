@@ -46,6 +46,23 @@ const styles = {
     resize: 'none',
     width: '100%',
   },
+  submitButton: {
+    backgroundColor: colors.deepIndigo, /* You can replace 'colors.green' with your desired color */
+    border: 'none',
+    borderRadius: '5px',
+    color: 'white',
+    cursor: 'pointer',
+    fontFamily: fonts.cardTitle,
+    fontSize: '18px',
+    padding: '10px 20px',
+    marginBottom: '20px',
+    // width: 'fit-content',
+    alignSelf: 'center',
+    transition: 'background-color 0.3s ease',
+  },
+  submitButtonHover: {
+    backgroundColor: colors.darkGreen, /* You can replace 'colors.darkGreen' with your desired color */
+  }
 };
 
 export default styles;

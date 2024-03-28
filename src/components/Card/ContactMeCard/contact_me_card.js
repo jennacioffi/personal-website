@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './contact_me_card.styles';
 
 export default function ContactMeCard() {
@@ -8,12 +8,24 @@ export default function ContactMeCard() {
     message: ''
   });
 
+  const [isFormFilled, setIsFormFilled] = useState(false);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prevState => ({
       ...prevState,
       [name]: value
     }));
+  };
+
+  useEffect(() => {
+    // Check if all fields are filled whenever formData changes
+    setIsFormFilled(formData.name !== '' && formData.email !== '' && formData.message !== '');
+  }, [formData]);
+
+  const handleSubmit = () => {
+    // Handle form submission here
+    console.log('Form Submitted:', formData);
   };
 
   return (
@@ -58,6 +70,11 @@ export default function ContactMeCard() {
           maxLength="250"
         ></textarea>
       </div>
+      {isFormFilled && (
+        <button onClick={handleSubmit} style={styles.submitButton}>
+          Submit
+        </button>
+      )}
     </div>
   );
 }
