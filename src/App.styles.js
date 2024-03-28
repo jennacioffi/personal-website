@@ -7,10 +7,28 @@ const styles = {
     flexDirection: 'column',
     justifyContent: 'space-around',
     padding: '10%',
+    minWidth: '600px',
+    overflow: 'auto',
   },
   multiCards: {
+    overflow: 'auto',
     display: 'flex',
     justifyContent: 'space-between',
+    alignContent: 'space-between',
+    minWidth: '50%',
+
+  },
+  leftCards: {
+    flex: 2,
+  },
+  rightCards: {
+    minWidth: '45%',
+    width: '100%', 
+    display: 'flex', 
+    flexDirection: 'column', 
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'flex-start',
   },
 };
 

@@ -1,11 +1,13 @@
 import React from 'react';
 import styles from './App.styles.js';
-import { HorizontalCards, ContactMeCard, InterviewFAQsCard, LinkCard } from './components';
+import { HorizontalCards, ContactMeCard, InterviewFAQsCard, LinkCard, ProfileInfo } from './components';
 
 function App() {
-  const linkedInLogo = require('./images/linkedin_logo.png');
+  const profileImage = require('./images/jenna-image.jpeg')
+  const linkedInLogo = require('./images/linkedin_logo.png')
   const githubLogo = require('./images/github_logo.png')
   const emailLogo = require('./images/email-logo.jpg')
+
   const experienceBulletPoints = [
     {
       title: '- Atomic Jolt, Logan UT',
@@ -123,12 +125,13 @@ function App() {
     <div style={styles.websiteBackgroundContainer}>
       <div style={styles.multiCards}>
         {/* Profile Pic & Name Component */}
-        <LinkCard
-          icon={linkedInLogo}
-          link="https://www.linkedin.com/in/jenna-cioffi/"
-
-        />
-        <div style={{width: '100%', display: 'flex', flexDirection: 'column'}}>
+        <div style={styles.leftCards}>
+          <ProfileInfo
+            image={profileImage}
+            name="Jenna"
+          />
+        </div>
+        <div style={styles.rightCards}>
           <LinkCard
             icon={emailLogo}
             link=""

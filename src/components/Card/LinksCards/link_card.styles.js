@@ -5,9 +5,12 @@ const styles = {
   mainContainer: {
     display: 'flex',
     height: '100px',
-    margin: '1%',
-    paddingBottom: '15px',
+    margin: '2%',
+    marginBottom: '6%',
     width: '100%',
+    position: 'relative',
+    right: '12%',
+    overflow: 'auto',
   },
   cardBackgroundContainer: {
     alignContent: 'space-between',
@@ -41,10 +44,10 @@ const styles = {
     color: colors.black,
     fontFamily: fonts.cardTitle,
     fontSize: '22px',
-    overflowX: 'hidden',
-    overflowY: 'auto',
-    padding: '3%',
+    overflow: 'auto',
+    padding: '5%',
     textDecoration: 'none',
+    wordWrap: 'break-word',
   },
 };
 
