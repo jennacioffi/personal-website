@@ -50,8 +50,9 @@ const styles = {
     fontSize: '18px',
   },
   answer: {
-    color: colors.lightGrey,
+    color: colors.azureBlue,
     fontSize: '18px',
+    whiteSpace: 'pre-line',
   },
   arrowIcon: {
     marginLeft: '5px',

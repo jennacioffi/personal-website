@@ -18,6 +18,10 @@ export default function InterviewFAQsCard({ title, bulletPoints, color }) {
     }
   };
 
+  const collapseAnswer = () => {
+    setExpandedIndex(null); // Collapse the answer when clicked directly
+  };
+
   const bulletPointItems = bulletPoints.map((item, index) => (
     <div key={index} style={styles.bulletPointItemsContainer}>
       <div style={styles.question} onClick={() => toggleAnswer(index)}>
@@ -25,7 +29,7 @@ export default function InterviewFAQsCard({ title, bulletPoints, color }) {
         <FontAwesomeIcon icon={faAngleDown} style={styles.arrowIcon} />
       </div>
       {expandedIndex === index && item.answer && (
-        <div style={styles.answer}>{item.answer}</div>
+        <div style={styles.answer}onClick={collapseAnswer}>{item.answer}</div>
       )}
     </div>
   ));
