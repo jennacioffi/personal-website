@@ -11,6 +11,7 @@ const styles = {
   multiCards: {
     display: 'flex',
     justifyContent: 'space-between',
+    alignContent: 'space-between',
   },
 };
 

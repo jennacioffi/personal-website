@@ -12,11 +12,14 @@ const styles = {
   circle: {
     width: '300px', 
     height: '300px', 
-    borderRadius: '50%', 
+    borderRadius: '100%', 
     overflow: 'hidden',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    border: '10px solid transparent', /* adjust the width of the border as needed */
+    borderImage: 'linear-gradient(to right, #ff7e5f, #feb47b)', /* define your gradient */
+    borderImageSlice: 1
   },
   image: {
     width: '100%', 
@@ -26,8 +29,9 @@ const styles = {
   },
   text: {
     marginTop: '10px',
-    fontFamily: fonts.primary,
+    fontFamily: fonts.cardTitle,
     color: colors.text, 
+    fontSize: '36px',
   },
 };
 

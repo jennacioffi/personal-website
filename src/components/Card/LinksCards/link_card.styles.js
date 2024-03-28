@@ -6,7 +6,7 @@ const styles = {
     display: 'flex',
     height: '100px',
     margin: '1%',
-    paddingBottom: '15px',
+    marginBottom: '5%',
     width: '100%',
   },
   cardBackgroundContainer: {
