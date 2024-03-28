@@ -13,6 +13,17 @@ const styles = {
     justifyContent: 'space-between',
     alignContent: 'space-between',
   },
+  leftCards: {
+    flex: 2,
+  },
+  rightCards: {
+    width: '100%', 
+    display: 'flex', 
+    flexDirection: 'column', 
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'flex-start',
+  },
 };
 
 export default styles;

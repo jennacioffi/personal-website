@@ -8,17 +8,19 @@ const styles = {
     alignItems: 'center',
     flexDirection: 'column', 
     width: '100%',
+    position: 'relative',
+    right: '6%',
   },
   circle: {
-    width: '300px', 
-    height: '300px', 
+    width: '250px', 
+    height: '250px', 
     borderRadius: '100%', 
     overflow: 'hidden',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    border: '10px solid transparent', /* adjust the width of the border as needed */
-    borderImage: 'linear-gradient(to right, #ff7e5f, #feb47b)', /* define your gradient */
+    border: '10px solid transparent', 
+    borderImage: 'linear-gradient(to right, #ff7e5f, #feb47b)',
     borderImageSlice: 1
   },
   image: {

@@ -125,11 +125,13 @@ function App() {
     <div style={styles.websiteBackgroundContainer}>
       <div style={styles.multiCards}>
         {/* Profile Pic & Name Component */}
-        <ProfileInfo
-          image={profileImage}
-          name="Jenna"
-        />
-        <div style={{width: '100%', display: 'flex', flexDirection: 'column'}}>
+        <div style={styles.leftCards}>
+          <ProfileInfo
+            image={profileImage}
+            name="Jenna"
+          />
+        </div>
+        <div style={styles.rightCards}>
           <LinkCard
             icon={emailLogo}
             link=""
