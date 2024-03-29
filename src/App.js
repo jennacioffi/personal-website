@@ -2,8 +2,6 @@ import React from 'react';
 import styles from './App.styles.js';
 import { HorizontalCards, ContactMeCard, InterviewFAQsCard, LinkCard, ProfileInfo } from './components';
 
-// require('dotenv').config();
-
 function App() {
   const profileImage = require('./images/jenna-image.jpeg')
   const linkedInLogo = require('./images/linkedin_logo.png')
