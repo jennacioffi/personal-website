@@ -5,7 +5,7 @@ module.exports = {
   },
   extends: ['react-app'],
   parserOptions: {
-    ecmaVersion: 'latest',
+    ecmaVersion: 12,
     sourceType: 'module',
   },
   rules: {

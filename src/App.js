@@ -2,14 +2,12 @@ import React from 'react';
 import styles from './App.styles.js';
 import { HorizontalCards, ContactMeCard, InterviewFAQsCard, LinkCard, ProfileInfo } from './components';
 
-// require('dotenv').config();
+import linkedInLogo from './images/linkedin_logo.png'
+import githubLogo from './images/github_logo.png'
+import emailLogo from './images/email-logo.jpg'
+
 
 function App() {
-  const profileImage = require('./images/jenna-image.jpeg')
-  const linkedInLogo = require('./images/linkedin_logo.png')
-  const githubLogo = require('./images/github_logo.png')
-  const emailLogo = require('./images/email-logo.jpg')
-
   const experienceBulletPoints = [
     {
       title: '- Atomic Jolt, Logan UT',
@@ -131,7 +129,6 @@ function App() {
         {/* Profile Pic & Name Component */}
         <div style={styles.leftCards}>
           <ProfileInfo
-            image={profileImage}
             name="Jenna"
           />
         </div>

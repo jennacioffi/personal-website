@@ -1,11 +1,12 @@
 import React from 'react';
 import styles from './profile_info.styles';
+import profileImage from '../../../images/jenna-image.jpeg'
 
-const ProfileInfo = ({ name, image }) => {
+const ProfileInfo = ({ name }) => {
   return (
     <div style={styles.container}>
       <div style={styles.circle}>
-        <img src={image} alt={name} style={styles.image} />
+        <img src={profileImage} alt={name} style={styles.image} />
       </div>
       <div>
         <div style={styles.text}>Hey!</div>

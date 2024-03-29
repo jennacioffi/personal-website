@@ -33,6 +33,7 @@ const styles = {
     fontFamily: fonts.cardTitle,
     color: colors.text, 
     fontSize: '36px',
+    textAlign: 'center',
   },
 };
 

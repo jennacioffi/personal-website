@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import styles from './contact_me_card.styles';
+import dotenv from 'dotenv';
 
 export default function ContactMeCard() {
-  // const WEB3FORMS_ACCESS_KEY = process.env.WEB3FORMS_ACCESS_KEY;
-  const WEB3FORMS_ACCESS_KEY = 'NOT-THE-KEY';
+  dotenv.config();
+  const WEB3FORMS_ACCESS_KEY = process.env.REACT_APP_WEB3FORMS_ACCESS_KEY;
 
   const [isFormFilled, setIsFormFilled] = useState(false);
 
