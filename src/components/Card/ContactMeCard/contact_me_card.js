@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import styles from './contact_me_card.styles';
 
 export default function ContactMeCard() {
+  const WEB3FORMS_ACCESS_KEY = process.env.WEB3FORMS_ACCESS_KEY;
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -23,9 +25,36 @@ export default function ContactMeCard() {
     setIsFormFilled(formData.name !== '' && formData.email !== '' && formData.message !== '');
   }, [formData]);
 
-  const handleSubmit = () => {
-    // Handle form submission here
-    console.log('Form Submitted:', formData);
+  const handleSubmit = async () => {
+    try {
+      // Create a FormData object
+      const formDataObj = new FormData();
+      formDataObj.append('name', formData.name);
+      formDataObj.append('email', formData.email);
+      formDataObj.append('message', formData.message);
+      formDataObj.append('access_key', WEB3FORMS_ACCESS_KEY);
+
+      // Send form data to Web3Forms API
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formDataObj
+      });
+
+      const data = await response.json();
+      if (data.success) {
+        console.log('Form submitted successfully:', data);
+        // Reset form after successful submission
+        setFormData({
+          name: '',
+          email: '',
+          message: ''
+        });
+      } else {
+        console.error('Error submitting form:', data);
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    }
   };
 
   return (
