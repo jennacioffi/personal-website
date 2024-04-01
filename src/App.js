@@ -80,12 +80,12 @@ function App() {
 
   const volunteerExpBulletPoints = [
     {
-      title: 'Humane Society of Northern Nevada',
+      title: '- Humane Society of Northern Nevada',
       subtitle: 'Animal Shelter',
       date: 'August 2013 - May 2017',
     },
     {
-      title: 'Various Homeless Aid Areas',
+      title: '- Various Homeless Aid Areas',
       subtitle: 'Homeless Shelters & Soup Kitchens',
       date: 'August 2013 - May 2017',
     }
