@@ -78,6 +78,19 @@ function App() {
     },
   ];
 
+  const volunteerExpBulletPoints = [
+    {
+      title: '- Humane Society of Northern Nevada',
+      subtitle: 'Animal Shelter',
+      date: 'August 2013 - May 2017',
+    },
+    {
+      title: '- Various Homeless Aid Areas',
+      subtitle: 'Homeless Shelters & Soup Kitchens',
+      date: 'August 2013 - May 2017',
+    }
+  ]
+
   const interviewFAQs = [
     {
       question: '1. Tell me about yourself and your background in software/web development',
@@ -160,6 +173,11 @@ function App() {
       <HorizontalCards
         title="Skills"
         bulletPoints={skillsBulletPoints}
+        color="ceruleanBlue"
+      />
+      <HorizontalCards
+        title="Volunteer Experience"
+        bulletPoints={volunteerExpBulletPoints}
         color="ceruleanBlue"
       />
       <HorizontalCards title="Education" bulletPoints={eduBulletPoints} color="deepBlue" />

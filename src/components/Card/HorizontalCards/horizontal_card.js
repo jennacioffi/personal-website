@@ -5,17 +5,7 @@ import styles from './horizontal_card.styles.js'; // Import your CSS styles
 export default function HorizontalCards({ title, bulletPoints, color }) {
   const backgroundColor = colors[color] || colors.defaultColor;
 
-  // Calculate the minimum height dynamically based on the number of bullet points
-  let minHeight;
-  if (title === 'Experience') {
-    minHeight = 275; // Set the minimum height for Experience card
-  } else if (title === 'Skills') {
-    minHeight = 225; // Set the minimum height for Skills card
-  } else if (title === 'Education') {
-    minHeight = 200; // Set the minimum height for Education card
-  } else {
-    minHeight = 200; // Default minimum height
-  }
+  const  containerHeight = bulletPoints.length * .75
 
   const bulletPointItems = bulletPoints.map((item, index) => (
     <div key={index} style={styles.bulletPointItemsContainer}>
@@ -31,7 +21,7 @@ export default function HorizontalCards({ title, bulletPoints, color }) {
     <div
       style={{
         ...styles.mainContainer,
-        height: `${Math.max(minHeight, bulletPoints.length * 80)}px`,
+        height: `${containerHeight}%`,
       }}
     >
       <div style={{ ...styles.cardBackgroundContainer, backgroundColor }}>
