@@ -1,7 +1,7 @@
 {
   "name": "personalwebsite",
   "version": "0.1.0",
-  "homepage": "https://jennacioffi.github.io/react-gh-pages",
+  "homepage": "https://jennacioffi.github.io/personal-website/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",

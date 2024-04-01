@@ -73,7 +73,7 @@ function App() {
   const eduBulletPoints = [
     {
       title: '- Utah State University',
-      subtitle: 'Bachlors in Computer Science',
+      subtitle: 'Bachelors in Computer Science',
       date: 'August 2017 - May 2023',
     },
   ];
