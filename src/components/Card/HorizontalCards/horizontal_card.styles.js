@@ -58,6 +58,20 @@ const styles = {
     fontSize: '14px',
     paddingLeft: '12px',
   },
+  expInfo: {
+    color: colors.black,
+    fontSize: '18px',
+    whiteSpace: 'pre-line',
+    padding: '2%',
+  },
+  arrowIcon: {
+    paddingLeft: '2%',
+    alignContent: 'center',
+  },
+  infoBulletPoints: {
+    color: colors.black,
+    fontSize: '16px',
+  },
 };
 
 export default styles;
