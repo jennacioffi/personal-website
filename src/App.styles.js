@@ -2,7 +2,7 @@ import { colors } from './styles/colors.js'
 
 const styles = {
   websiteBackgroundContainer: {
-    background: `linear-gradient(${colors.pastelBlue}, ${colors.brightBlue}, ${colors.deepIndigo})`,
+    background: `linear-gradient(${colors.lighterBlue}, ${colors.blue}, ${colors.darkerIntermediateBlue})`,
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-around',

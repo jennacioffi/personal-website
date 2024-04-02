@@ -4,6 +4,9 @@ import { colors } from '../../../styles/colors.js';
 const styles = {
   mainContainer: {
     display: 'flex',
+    justifyContent: 'center',
+    paddingBottom: '15px',
+    paddingTop: '15px', 
   },
   cardBackgroundContainer: {
     alignItems: 'center',

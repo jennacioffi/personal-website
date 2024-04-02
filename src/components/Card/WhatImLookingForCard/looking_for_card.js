@@ -3,7 +3,7 @@ import { colors } from '../../../styles/colors.js'; // Import colors from colors
 import styles from './looking_for_card.styles.js'
 
 export default function LookingForCard({ title, bulletPoints, color }) {
-  const backgroundColor = colors[color] || colors.defaultColor;
+  const backgroundColor = `${color}` || colors.defaultColor;
 
   const  containerHeight = bulletPoints.length * .75
 
@@ -18,7 +18,6 @@ export default function LookingForCard({ title, bulletPoints, color }) {
       style = {{
         ...styles.mainContainer,
         height: `${containerHeight}%`,
-        backgroundColor,
       }}>
       <div style={{ ...styles.cardBackgroundContainer, backgroundColor }}>
         <div style={styles.dashedBorder}>

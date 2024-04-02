@@ -3,7 +3,7 @@ import { colors } from '../../../styles/colors.js'; // Import colors from colors
 import styles from './horizontal_card.styles.js'; // Import your CSS styles
 
 export default function HorizontalCards({ title, bulletPoints, color }) {
-  const backgroundColor = colors[color] || colors.defaultColor;
+  const backgroundColor = `${color}` || colors.defaultColor;
 
   const  containerHeight = bulletPoints.length * .75
 
