@@ -50,7 +50,7 @@ const styles = {
     fontSize: '18px',
   },
   answer: {
-    color: colors.azureBlue,
+    color: colors.lighterBlue,
     fontSize: '18px',
     whiteSpace: 'pre-line',
   },

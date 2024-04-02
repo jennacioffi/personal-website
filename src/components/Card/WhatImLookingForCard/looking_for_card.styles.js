@@ -44,33 +44,11 @@ const styles = {
     marginLeft: '5%',
     marginRight: '5%', 
   },
-  bulletPointItem1: {
-    color: colors.black,
-    fontSize: '22px',
-  },
-  bulletPointItem2: {
+  paragraph: {
     color: colors.black,
     fontSize: '18px',
     paddingLeft: '12px',
-  },
-  bulletPointItem3: {
-    color: colors.black,
-    fontSize: '14px',
-    paddingLeft: '12px',
-  },
-  expInfo: {
-    color: colors.black,
-    fontSize: '18px',
-    whiteSpace: 'pre-line',
-    padding: '2%',
-  },
-  arrowIcon: {
-    paddingLeft: '2%',
-    alignContent: 'center',
-  },
-  infoBulletPoints: {
-    color: colors.black,
-    fontSize: '16px',
+    textAlign: 'center',
   },
 };
 

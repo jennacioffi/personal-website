@@ -4,7 +4,6 @@ import { colors } from '../../../styles/colors.js';
 const styles = {
   mainContainer: {
     alignContent: 'flex-start',
-    backgroundColor: colors.sapphireBlue,
     borderRadius: '10px',
     display: 'flex',
     flexDirection: 'column',
@@ -20,6 +19,7 @@ const styles = {
     justifyContent: 'center',
     marginBottom: '20px',
     marginTop: '2.5%',
+    color: colors.white,
   },
   input: {
     fontFamily: fonts.contactMeInputHeaders,
@@ -52,7 +52,7 @@ const styles = {
   },
   submitButton: {
     alignSelf: 'center',
-    backgroundColor: colors.deepIndigo, 
+    backgroundColor: colors.darkerIntermediateBlue, 
     border: 'none',
     borderRadius: '5px',
     color: 'white',
@@ -62,6 +62,21 @@ const styles = {
     marginBottom: '20px',
     padding: '10px 20px',
     transition: 'background-color 0.3s ease',
+    textAlign: 'center',
+  },
+  failSubmitButton: {
+    alignSelf: 'center',
+    backgroundColor: colors.red, 
+    border: 'none',
+    borderRadius: '5px',
+    color: 'white',
+    cursor: 'pointer',
+    fontFamily: fonts.cardTitle,
+    fontSize: '18px',
+    marginBottom: '20px',
+    padding: '10px 20px',
+    transition: 'background-color 0.3s ease',
+    textAlign: 'center',
   },
 };
 

@@ -7,7 +7,7 @@ import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 
 export default function InterviewFAQsCard({ title, bulletPoints, color }) {
-  const backgroundColor = colors[color] || colors.defaultColor;
+  const backgroundColor = `${color}` || colors.defaultColor;
   const [expandedIndex, setExpandedIndex] = useState(null);
 
   const toggleAnswer = (index) => {

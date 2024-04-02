@@ -1,13 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import styles from './contact_me_card.styles';
 import dotenv from 'dotenv';
+import { colors } from '../../../styles/colors.js'; // Import colors from colors.js
 
-export default function ContactMeCard() {
+export default function ContactMeCard({ color }) {
   dotenv.config();
+  const backgroundColor = `${color}` || colors.defaultColor;
   const WEB3FORMS_ACCESS_KEY = process.env.REACT_APP_WEB3FORMS_ACCESS_KEY;
 
   const [isFormFilled, setIsFormFilled] = useState(false);
+  const [isEmailValid, setIsEmailValid] = useState(true);
 
+  const validateEmail = (email) => {
+    const re = /\S+@\S+\.\S+/;
+    return re.test(email);
+  };
 
   const [formData, setFormData] = useState({
     name: '',
@@ -17,6 +24,11 @@ export default function ContactMeCard() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+
+    if (name === 'email') {
+      setIsEmailValid(validateEmail(value));
+    }
+
     setFormData(prevState => ({
       ...prevState,
       [name]: value
@@ -25,8 +37,8 @@ export default function ContactMeCard() {
 
   useEffect(() => {
     // Check if all fields are filled whenever formData changes
-    setIsFormFilled(formData.name !== '' && formData.email !== '' && formData.message !== '');
-  }, [formData]);
+    setIsFormFilled(formData.name !== '' && formData.email !== '' && formData.message !== '' && isEmailValid);
+  }, [formData, isEmailValid]);
 
   const handleSubmit = async () => {
     try {
@@ -61,12 +73,12 @@ export default function ContactMeCard() {
   };
 
   return (
-    <div style={styles.mainContainer}>
+    <div style={{...styles.mainContainer, backgroundColor}}>
       <div style={styles.cardHeader}>
           Contact Me
       </div>
       <div style={styles.input}>
-        <label htmlFor="name">Your Name:</label><br />
+        <label htmlFor="name" style={{'color': colors.white}}>Your Name:</label><br />
         <input
           type="text"
           id="name"
@@ -78,7 +90,7 @@ export default function ContactMeCard() {
         />
       </div>
       <div style={styles.input}>
-        <label htmlFor="email">Your Email:</label><br />
+        <label htmlFor="email" style={{'color': colors.white}}>Your Email:</label><br />
         <input
           type="email"
           id="email"
@@ -90,7 +102,7 @@ export default function ContactMeCard() {
         />
       </div>
       <div style={styles.input}>
-        <label htmlFor="message">Your Message:</label><br />
+        <label htmlFor="message" style={{'color': colors.white}}>Your Message:</label><br />
         <textarea
           id="message"
           name="message"
@@ -102,9 +114,13 @@ export default function ContactMeCard() {
           maxLength="250"
         ></textarea>
       </div>
-      {isFormFilled && (
+      {isFormFilled ? (
         <button onClick={handleSubmit} style={styles.submitButton}>
-          Submit
+          {'Submit'}
+        </button>
+      ) : (
+        <button style={styles.failSubmitButton}>
+          {'Something is Invalid or Empty'}
         </button>
       )}
     </div>

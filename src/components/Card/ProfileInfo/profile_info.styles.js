@@ -20,7 +20,7 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     border: '10px solid transparent', 
-    borderImage: `linear-gradient(to bottom, ${colors.white}, ${colors.azureBlue})`,
+    borderImage: `linear-gradient(to bottom, ${colors.white}, ${colors.lightBlue})`,
     borderImageSlice: 1,
   },
   image: {

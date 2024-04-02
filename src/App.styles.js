@@ -2,13 +2,13 @@ import { colors } from './styles/colors.js'
 
 const styles = {
   websiteBackgroundContainer: {
-    background: `linear-gradient(${colors.pastelBlue}, ${colors.brightBlue}, ${colors.deepIndigo})`,
+    background: `linear-gradient(${colors.lighterBlue}, ${colors.blue}, ${colors.darkerIntermediateBlue})`,
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-around',
-    padding: '10%',
+    padding: '4%',
     minWidth: '600px',
-    overflow: 'auto',
+    overflowX: 'scroll',
   },
   multiCards: {
     overflow: 'auto',
