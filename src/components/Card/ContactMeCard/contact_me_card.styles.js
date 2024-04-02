@@ -64,6 +64,20 @@ const styles = {
     transition: 'background-color 0.3s ease',
     textAlign: 'center',
   },
+  failSubmitButton: {
+    alignSelf: 'center',
+    backgroundColor: colors.red, 
+    border: 'none',
+    borderRadius: '5px',
+    color: 'white',
+    cursor: 'pointer',
+    fontFamily: fonts.cardTitle,
+    fontSize: '18px',
+    marginBottom: '20px',
+    padding: '10px 20px',
+    transition: 'background-color 0.3s ease',
+    textAlign: 'center',
+  },
 };
 
 export default styles;

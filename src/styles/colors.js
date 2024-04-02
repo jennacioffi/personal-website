@@ -8,5 +8,6 @@ export const colors = {
   'darkerBlue': '#354DFF',
   'intermediateBlue': '#274DDA',
   'darkerIntermediateBlue': '#0A2F99',
-  'black': '#000000'
+  'black': '#000000',
+  'red': '#AD0042',
 };
