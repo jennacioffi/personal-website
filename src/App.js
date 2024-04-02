@@ -98,6 +98,21 @@ function App() {
     }
   ]
 
+  const pastProjectsBulletPoints = [
+    {
+      title: '- Know Your Lemons Breast Cancer App',
+      subtitle: 'https://www.knowyourlemons.org/app',
+    },
+    {
+      title: '- MIT Learner Credential Wallet',
+      subtitle: 'https://lcw.app/'
+    },
+    {
+      title: '- Atomic Jolt\'s Products',
+      subtitle: 'https://www.atomicjolt.com/atomic-jolt-apps'
+    }
+  ]
+
   const interviewFAQs = [
     {
       question: '1. Tell me about yourself and your background in software/web development',
@@ -195,6 +210,11 @@ function App() {
       <HorizontalCards 
         title="Education" 
         bulletPoints={eduBulletPoints} 
+        color={colors.darkerBlue} 
+      />
+      <HorizontalCards 
+        title="Past Projects" 
+        bulletPoints={pastProjectsBulletPoints} 
         color={colors.darkerBlue} 
       />
       <div style={styles.multiCards}>

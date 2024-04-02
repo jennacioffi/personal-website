@@ -13,8 +13,16 @@ export default function HorizontalCards({ title, bulletPoints, color }) {
       >
         {item.title}
       </div>
-      {item.subtitle && (
-        <div style={styles.bulletPointItem2}>{item.subtitle}</div>
+      {item.subtitle && item.subtitle.startsWith('http') ? (
+        <div style={styles.bulletPointItem2}>
+          <a href={item.subtitle} target="_blank" rel="noopener noreferrer" >
+            {item.subtitle}
+          </a>
+        </div>
+      ) : (
+        <div style={styles.bulletPointItem2}>
+          {item.subtitle}
+        </div>
       )}
       {item.date && <div style={styles.bulletPointItem3}>{item.date}</div>}
     </div>
