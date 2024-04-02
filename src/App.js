@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './App.styles.js';
-import { HorizontalCards, ContactMeCard, InterviewFAQsCard, LinkCard, ProfileInfo } from './components';
+import { HorizontalCards, ContactMeCard, InterviewFAQsCard, LinkCard, ProfileInfo, LookingForCard } from './components';
 
 import linkedInLogo from './images/linkedin_logo.png'
 import githubLogo from './images/github_logo.png'
@@ -8,6 +8,12 @@ import emailLogo from './images/email-logo.jpg'
 
 
 function App() {
+  const whatImLookingForBulletPoints = [
+    {
+      paragraph: 'I am looking for an in office job. The role of web developer.'
+    }
+  ]
+
   const experienceBulletPoints = [
     {
       title: '- Atomic Jolt, Logan UT',
@@ -165,6 +171,11 @@ function App() {
           {/* triple stacked white boxes with links */}
         </div>
       </div>
+      <LookingForCard 
+        title= "What I'm Looking For"
+        color="azureBlue" 
+        bulletPoints={whatImLookingForBulletPoints}
+      />
       <HorizontalCards
         title="Experience"
         bulletPoints={experienceBulletPoints}

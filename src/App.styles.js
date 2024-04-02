@@ -6,9 +6,9 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-around',
-    padding: '10%',
+    padding: '4%',
     minWidth: '600px',
-    overflow: 'auto',
+    overflowX: 'scroll',
   },
   multiCards: {
     overflow: 'auto',
