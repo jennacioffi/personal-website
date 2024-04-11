@@ -20,7 +20,7 @@ const styles = {
     width: '100%',
   },
   dashedBorder: {
-    border: `2px dashed ${colors.white}`,
+    border: `2px dashed ${colors.mainStitching}`,
     borderRadius: '6px',
     height: '95%',
     margin: '15px',

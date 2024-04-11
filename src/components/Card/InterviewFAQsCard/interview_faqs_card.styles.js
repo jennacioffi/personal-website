@@ -49,6 +49,17 @@ const styles = {
     color: colors.white,
     fontSize: '18px',
   },
+  infoExpanded: {
+    backgroundColor: colors.expandedInfoBGColor,
+    borderRadius: '8px',
+    paddingBottom: '1.5%',
+    paddingRight: '2%',
+    paddingLeft: '2%',
+    paddingTop: '1%',
+    marginTop: '2%',
+    maxHeight: '200px',
+    overflowY: 'auto',
+  },
   answer: {
     color: colors.lighterBlue,
     fontSize: '18px',

@@ -20,18 +20,31 @@ function App() {
       title: '- Atomic Jolt, Logan UT',
       subtitle: 'Software Developer',
       date: 'August 2022 - Jan 2024',
+      info: {
+        briefSummary: 'Contributed to the development and maintenance of mobile applications for iOS and Android platforms as a Software/App Developer. Engaged in all phases of the software development lifecycle, encompassing coding, testing, and debugging. Proficient in comprehensive testing procedures, including the creation of testing spreadsheets and contributing to Cypress tests. Emphasized meticulous documentation and project organization.',
+        briefSummaryBP1: '- Initiated the creation of a comprehensive GitHub Wiki documentation, streamlining the onboarding process for new developers and providing a centralized resource for all team members to reference when working on projects under my ownership. This initiative significantly reduced the time required for new developers to acclimate and improved code consistency across projects',
+        briefSummaryBP2: '- Assumed a leadership role in the development and management of the Know Your Lemons Breast Cancer Awareness app, serving as the primary point of contact for the client. Directed the creation and deployment of app builds to various app stores, ensuring timely releases. Facilitated bug-fixing efforts and spearheaded client meetings, contributing to the app\'s success and client satisfaction',
+        briefSummaryBP3: '- Collaborated with MIT on the development of the Learner Credential Wallet app, pioneering solutions in the emerging field of digital credential management. Played a pivotal role in conceptualizing and implementing the app\'s functionalities, transforming the way users manage and showcase their educational achievements. This initiative represented a significant step forward in the digitization of academic credentials, positioning MIT at the forefront of innovation in education technology.',
+        link: 'https://www.atomicjolt.com/atomic-jolt-apps'
+      }
     },
     {
       title: '- USU Teaching Assistant',
       subtitle: 'CS 1440 - Methods in Computer Science',
       date: 'August 2022 - Jan 2024',
+      info: {
+        briefSummary: 'Served as a Teaching Assistant for a course focused on teaching students command line usage, git, and problem-solving techniques. Emphasized the importance of documentation throughout the software development process, from initial planning to post-testing analysis, fostering a culture of thoroughness and clarity in project execution.',
+        briefSummaryBP1: '- Conducted regular office hours to provide additional support and assistance to students outside of class, fostering a conducive environment for learning and addressing individual queries and concerns effectively.',
+        briefSummaryBP2: '- Delivered detailed feedback on student assignments, offering valuable insights to enhance their understanding and proficiency in the course material.',
+        briefSummaryBP3: '- Collaborated with colleagues to develop and implement grading scripts, optimizing the grading process and enabling TAs and professors to allocate more time towards student assistance and mentoring.',
+      }
     },
   ];
 
   const skillsBulletPoints = [
     {
       title: '- Programming Languages:',
-      subtitle: 'Python, C++, JavaScript, Type Script',
+      subtitle: 'Python, C++, JavaScript, Type Script, Java',
       date: '',
     },
     {
@@ -41,41 +54,42 @@ function App() {
     },
     {
       title: '- Frameworks/Libraries:',
-      subtitle: 'React Native.',
+      subtitle: 'React Native, Node.js',
       date: '',
     },
     {
       title: '- Database:',
-      subtitle: 'Familiar with SQL syntax.',
+      subtitle: 'Familiar with SQL syntax',
       date: '',
     },
     {
       title: '- Version Control/Command Line:',
-      subtitle: 'Proficient in Git, adept at command line usage.',
+      subtitle: 'Proficient in Git, adept at command line usage',
       date: '',
     },
     {
       title: '- Testing:',
-      subtitle: 'Cypress, manual testing, spreadsheet management.',
+      subtitle: 'Cypress, manual testing, spreadsheet management',
       date: '',
     },
     {
       title: '- Project Management:',
-      subtitle: 'Experience with Pivotal Tracker and GitHub project boards.',
+      subtitle: 'Experience with Pivotal Tracker and GitHub project boards',
       date: '',
     },
     {
       title: '- Mobile App Development:',
-      subtitle: 'iOS and Android (build creation, releases to app stores).',
+      subtitle: 'iOS and Android (build creation, releases to app stores), App Development',
       date: '',
     },
     {
       title: '- Soft Skills:',
       subtitle:
-        'Open-minded, adaptable, values transparent communication. Emphasizes documentation, organization, and up-to-date information. Confidence and ability to lead.',
+      'Open-minded, adaptable, values transparent communication. Emphasizes documentation, organization, and up-to-date information. Confidence and ability to lead, Clear Communication, Initiative, Leadership, Teamwork',
       date: '',
     },
   ];
+
 
   const eduBulletPoints = [
     {
@@ -90,11 +104,24 @@ function App() {
       title: '- Humane Society of Northern Nevada',
       subtitle: 'Animal Shelter',
       date: 'August 2013 - May 2017',
+      info: {
+        briefSummary: 'Fulfilled volunteer hours at the Nevada Humane Society, providing specialized care and support to sick newborn kittens while collaborating with adoption counselors to facilitate successful adoptions.',
+        briefSummaryBP1: '- Delivered specialized care to sick newborn kittens, administering medications and adhering to feeding schedules to promote their health and development.',
+        briefSummaryBP2: '- Collaborated with veterinary professionals to ensure the well-being of kittens, implementing feeding schedules and administering medications as directed.',
+        briefSummaryBP3: '- Worked closely with adoption counselors to facilitate successful adoptions, contributing to increased adoption rates and the placement of kittens into loving homes.',
+        briefSummaryBP4: '- Demonstrated compassion and dedication in providing a nurturing environment for vulnerable animals, fostering positive community impact.'
+      }
     },
     {
       title: '- Various Homeless Aid Areas',
       subtitle: 'Homeless Shelters & Soup Kitchens',
       date: 'August 2013 - May 2017',
+      info: {
+        briefSummary: 'Volunteered at local homeless shelters, assisting in donation drives aimed at collecting essentials for individuals and families in need, demonstrating dedication and compassion.',
+        briefSummaryBP1: '- Provided hands-on assistance during donation drives, aiding in the setup, organization, and execution of events to ensure efficient operations and a positive experience for donors and recipients.',
+        briefSummaryBP2: '- Demonstrated dedication and compassion by actively participating in donation initiatives and contributing personal donations to support individuals and families experiencing homelessness.',
+        briefSummaryBP3: '- Engaged with donors and community members to promote awareness and participation in donation drives, fostering a spirit of generosity and community support for those in need.'
+      }
     }
   ]
 
@@ -102,25 +129,28 @@ function App() {
     {
       title: '- Know Your Lemons Breast Cancer App',
       subtitle: 'https://www.knowyourlemons.org/app',
+      date: 'Related To: Atomic Jolt'
     },
     {
       title: '- MIT Learner Credential Wallet',
-      subtitle: 'https://lcw.app/'
+      subtitle: 'https://lcw.app/',
+      date: 'Related To: Atomic Jolt'
     },
     {
-      title: '- Atomic Jolt\'s Products',
-      subtitle: 'https://www.atomicjolt.com/atomic-jolt-apps'
+      title: '- This Personal Website',
+      subtitle: 'https://github.com/jennacioffi/personal-website',
+      date: 'Related To: Personal Projects'
     }
   ]
 
   const interviewFAQs = [
     {
       question: '1. Tell me about yourself and your background in software/web development',
-      answer: '- I possess a unique background in software and web development that sets me apart from the conventional developer archetype. While I thrive in the world of technology during work hours, I\'m characterized by an extroverted nature and a preference for outdoor activities away from screens outside of professional obligations.\n\nMy journey into software development began with a push from a college advisor, rather than an inherent passion or prior experience. Prior to my first computer science course, I hadn\'t ventured into programming. However, once introduced to the field, I pursued a diverse range of courses encompassing various facets of computer science, including command line operations, system architecture, and web development.\n\nWhile I am not inclined towards generating original ideas independently, I do occasionally find myself creatively engaged in problem-solving within tech-related projects. My exposure to different programming languages and concepts, including an app development course and a particularly intriguing experience with C++, has broadened my understanding and fueled my enthusiasm for the field.\n\nWhat I particularly value in any professional setting is constructive criticism and open communication, which I believe are integral to personal and collective growth.'
+      answer: '- About Myself:\n My hobbies include outdoorsy sports (mountain biking, snowboarding), engaging in art, reading, and spending quality time with friends and family.\n\n - My Background in CS:\n From a young age, I immersed myself in technology, starting with Apple products and gaming consoles like Nintendo 64 and Xbox. Despite being the odd one out in middle and high school for using a tablet instead of textbooks, my interest in technology persisted. In college, an academic advisor\'s suggestion led me to explore computer science, where I found inspiring professors who fueled my curiosity in coding. Most of my time was spent exploring the command line. Post-college, I transitioned into the field of app and web development, where I\'ve discovered immense enjoyment in building projects of this nature.'
     },
     {
-      question: '2. What motivated you to pursue a career in softare/web development?',
-      answer: '- My passion for technology, coupled with a deep interest in psychology, has been a driving force behind my decision to pursue a career in software and web development. From a young age, I\'ve been captivated by the parallels between computers and life, finding immense utility in technology\'s ability to streamline tasks and enhance accessibility, such as using iPads and digital textbooks to ease academic burdens.\n\nWitnessing the tangible results of my work coming to life has consistently provided a gratifying sense of accomplishment. Looking ahead, I am eager to further my education in psychology and channel my technical skills into creating impactful applications and websites aimed at addressing pressing societal issues, particularly in the realm of mental health. My overarching goal is to leverage technology as a catalyst for positive change and personal empowerment, driving forward progress for individuals and society as a whole.'
+      question: '2. What motivated you to pursue a career in software/web development?',
+      answer: '- My motivation to pursue a career in software/web development stems from the realization that coding opens doors to endless possibilities. In today\'s digital age, where most users interact with the internet through various platforms like smartphones, tablets, and computers, web development offers the opportunity to reach the widest audience. Social media platforms exemplify this reach, enabling users to connect and share experiences globally. I am driven by the potential to make a positive impact through technology. My deep interest in psychology fuels my desire to leverage app and web development to create solutions that benefit individuals on a global scale.'
 
 
     },
@@ -160,72 +190,74 @@ function App() {
 
   return (
     <div style={styles.websiteBackgroundContainer}>
-      <div style={styles.multiCards}>
-        {/* Profile Pic & Name Component */}
-        <div style={styles.leftCards}>
-          <ProfileInfo
-            name="Jenna"
-          />
-        </div>
-        <div style={styles.rightCards}>
-          <LinkCard
-            icon={emailLogo}
-            link=""
+      <div style={styles.main}>
+        <div style={styles.multiCards}>
+          {/* Profile Pic & Name Component */}
+          <div style={styles.leftCards}>
+            <ProfileInfo
+              name="Jenna"
+            />
+          </div>
+          <div style={styles.rightCards}>
+            <LinkCard
+              icon={emailLogo}
+              link=""
 
-          />
-          <LinkCard
-            icon={linkedInLogo}
-            link="https://www.linkedin.com/in/jenna-cioffi/"
+            />
+            <LinkCard
+              icon={linkedInLogo}
+              link="https://www.linkedin.com/in/jenna-cioffi/"
 
-          />
-          <LinkCard
-            icon={githubLogo}
-            link="https://github.com/jennacioffi"
+            />
+            <LinkCard
+              icon={githubLogo}
+              link="https://github.com/jennacioffi"
 
-          />
+            />
       
-          {/* triple stacked white boxes with links */}
+            {/* triple stacked white boxes with links */}
+          </div>
         </div>
-      </div>
-      <LookingForCard 
-        title= "What I'm Looking For"
-        bulletPoints={whatImLookingForBulletPoints}
-        color={colors.lighterBlue}
-      />
-      <HorizontalCards
-        title="Experience"
-        bulletPoints={experienceBulletPoints}
-        color={colors.lightBlue}
-      />
-      <HorizontalCards
-        title="Skills"
-        bulletPoints={skillsBulletPoints}
-        color={colors.blue}
-      />
-      <HorizontalCards
-        title="Volunteer Experience"
-        bulletPoints={volunteerExpBulletPoints}
-        color={colors.darkBlue}
-      />
-      <HorizontalCards 
-        title="Education" 
-        bulletPoints={eduBulletPoints} 
-        color={colors.darkerBlue} 
-      />
-      <HorizontalCards 
-        title="Past Projects" 
-        bulletPoints={pastProjectsBulletPoints} 
-        color={colors.darkerBlue} 
-      />
-      <div style={styles.multiCards}>
-        <ContactMeCard
-          color={colors.intermediateBlue}  
+        <LookingForCard 
+          title= "What I'm Looking For"
+          bulletPoints={whatImLookingForBulletPoints}
+          color={colors.lookingForBGColor}
         />
-        <InterviewFAQsCard
-          title="Interview FAQs"
-          bulletPoints={interviewFAQs}
-          color={colors.darkerIntermediateBlue}
+        <HorizontalCards
+          title="Experience"
+          bulletPoints={experienceBulletPoints}
+          color={colors.experienceBGColor}
         />
+        <HorizontalCards
+          title="Skills"
+          bulletPoints={skillsBulletPoints}
+          color={colors.skillsBGColor}
+        />
+        <HorizontalCards
+          title="Volunteer Experience"
+          bulletPoints={volunteerExpBulletPoints}
+          color={colors.volunteerExpBGColor}
+        />
+        <HorizontalCards 
+          title="Education" 
+          bulletPoints={eduBulletPoints} 
+          color={colors.educationBGColor} 
+        />
+        <HorizontalCards 
+          title="Projects" 
+          bulletPoints={pastProjectsBulletPoints} 
+          color={colors.pastWorkProjectsBGColor} 
+        />
+        <div style={styles.multiCards}>
+          <ContactMeCard
+            color={colors.contactMeBGColor}  
+          />
+          <InterviewFAQsCard
+            title="Interview FAQs"
+            bulletPoints={interviewFAQs}
+            color={colors.interviewFQSBGColor}
+          />
+        </div>
       </div>
     </div>
   );

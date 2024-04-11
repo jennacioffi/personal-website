@@ -29,7 +29,9 @@ export default function InterviewFAQsCard({ title, bulletPoints, color }) {
         <FontAwesomeIcon icon={faAngleDown} style={styles.arrowIcon} />
       </div>
       {expandedIndex === index && item.answer && (
-        <div style={styles.answer}onClick={collapseAnswer}>{item.answer}</div>
+        <div style={styles.infoExpanded}>
+          <div style={styles.answer}onClick={collapseAnswer}>{item.answer}</div>
+        </div>
       )}
     </div>
   ));

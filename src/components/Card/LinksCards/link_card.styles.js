@@ -15,7 +15,7 @@ const styles = {
   cardBackgroundContainer: {
     alignContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: colors.white,
+    backgroundColor: colors.linkCardBGColor,
     borderRadius: '8px',
     display: 'flex',
     flexDirection: 'column',
@@ -31,7 +31,6 @@ const styles = {
     display: 'flex',
     height: '89%',
     justifyContent: 'flex-start',
-    overflow: 'auto',
     width: '97%',
   },
   icon: {

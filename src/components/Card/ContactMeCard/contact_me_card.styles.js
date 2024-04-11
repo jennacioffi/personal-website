@@ -29,7 +29,7 @@ const styles = {
     marginRight: '5%',
   },
   inputField: {
-    border: `1px solid ${colors.lightGrey}`,
+    border: `1px solid ${colors.textAreaFieldEntry}`,
     borderRadius: '5px',
     boxSizing: 'border-box',
     display: 'flex',
@@ -40,7 +40,7 @@ const styles = {
     width: '100%',
   },
   textareaField: {
-    border: `1px solid ${colors.lightGrey}`,
+    border: `1px solid ${colors.textAreaFieldEntry}`,
     borderRadius: '5px',
     boxSizing: 'border-box',
     fontFamily: fonts.contactMeInputHeaders,
@@ -52,10 +52,8 @@ const styles = {
   },
   submitButton: {
     alignSelf: 'center',
-    backgroundColor: colors.darkerIntermediateBlue, 
     border: 'none',
     borderRadius: '5px',
-    color: 'white',
     cursor: 'pointer',
     fontFamily: fonts.cardTitle,
     fontSize: '18px',
@@ -66,10 +64,8 @@ const styles = {
   },
   failSubmitButton: {
     alignSelf: 'center',
-    backgroundColor: colors.red, 
     border: 'none',
     borderRadius: '5px',
-    color: 'white',
     cursor: 'pointer',
     fontFamily: fonts.cardTitle,
     fontSize: '18px',
