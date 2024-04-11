@@ -72,6 +72,26 @@ const styles = {
     color: colors.black,
     fontSize: '16px',
   },
+  infoExpanded: {
+    backgroundColor: colors.bluishWhite,
+    borderRadius: '8px',
+    paddingBottom: '1.5%',
+    paddingRight: '2%',
+    paddingLeft: '1%',
+    marginTop: '1%',
+  },
+  briefSummary: {
+    color: colors.black,
+    fontSize: '18px',
+    paddingLeft: '8px',
+    paddingTop: '2%',
+  },
+  briefSummaryBPItems: {
+    color: colors.black,
+    fontSize: '18px',
+    paddingLeft: '20px',
+    paddingTop: '1%',
+  },
 };
 
 export default styles;
