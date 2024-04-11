@@ -69,6 +69,17 @@ export default function HorizontalCards({ title, bulletPoints, color }) {
               {item.info.briefSummaryBP4}
             </div>)
           }
+          {item.info.link && item.info.link.startsWith('http') ? (
+            <div style={styles.briefSummaryBPItems}>
+              <a href={item.info.link} target="_blank" rel="noopener noreferrer">
+                {item.info.link}
+              </a>
+            </div>
+          ) : (
+            <div style={styles.briefSummaryBPItems}>
+              {item.info.link}
+            </div>
+          )}
         </div>
       )}
     </div>

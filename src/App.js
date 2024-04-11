@@ -25,6 +25,7 @@ function App() {
         briefSummaryBP1: '- Initiated the creation of a comprehensive GitHub Wiki documentation, streamlining the onboarding process for new developers and providing a centralized resource for all team members to reference when working on projects under my ownership. This initiative significantly reduced the time required for new developers to acclimate and improved code consistency across projects',
         briefSummaryBP2: '- Assumed a leadership role in the development and management of the Know Your Lemons Breast Cancer Awareness app, serving as the primary point of contact for the client. Directed the creation and deployment of app builds to various app stores, ensuring timely releases. Facilitated bug-fixing efforts and spearheaded client meetings, contributing to the app\'s success and client satisfaction',
         briefSummaryBP3: '- Collaborated with MIT on the development of the Learner Credential Wallet app, pioneering solutions in the emerging field of digital credential management. Played a pivotal role in conceptualizing and implementing the app\'s functionalities, transforming the way users manage and showcase their educational achievements. This initiative represented a significant step forward in the digitization of academic credentials, positioning MIT at the forefront of innovation in education technology.',
+        link: 'https://www.atomicjolt.com/atomic-jolt-apps'
       }
     },
     {
@@ -133,10 +134,6 @@ function App() {
       title: '- MIT Learner Credential Wallet',
       subtitle: 'https://lcw.app/'
     },
-    {
-      title: '- Atomic Jolt\'s Products',
-      subtitle: 'https://www.atomicjolt.com/atomic-jolt-apps'
-    }
   ]
 
   const interviewFAQs = [
@@ -239,7 +236,7 @@ function App() {
         color={colors.darkerBlue} 
       />
       <HorizontalCards 
-        title="Past Projects" 
+        title="Past Work Projects" 
         bulletPoints={pastProjectsBulletPoints} 
         color={colors.darkerBlue} 
       />
