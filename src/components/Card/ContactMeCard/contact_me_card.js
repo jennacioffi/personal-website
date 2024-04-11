@@ -10,6 +10,7 @@ export default function ContactMeCard({ color }) {
 
   const [isFormFilled, setIsFormFilled] = useState(false);
   const [isEmailValid, setIsEmailValid] = useState(true);
+  const [isEmailSent, setIsEmailSent] = useState(false); // New state variable
 
   const validateEmail = (email) => {
     const re = /\S+@\S+\.\S+/;
@@ -64,6 +65,7 @@ export default function ContactMeCard({ color }) {
           email: '',
           message: ''
         });
+        setIsEmailSent(true); // Update state to indicate email sent
       } else {
         console.error('Error submitting form:', data);
       }
@@ -114,7 +116,11 @@ export default function ContactMeCard({ color }) {
           maxLength="250"
         ></textarea>
       </div>
-      {isFormFilled ? (
+      {isEmailSent ? (
+        <div style={{...styles.submitButton, backgroundColor: colors.bluishWhite, color: colors.black}}>
+          {'Email Sent'}
+        </div>
+      ) : isFormFilled ? (
         <button onClick={handleSubmit} style={styles.submitButton}>
           {'Submit'}
         </button>
