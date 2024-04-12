@@ -15,7 +15,7 @@ const styles = {
   cardBackgroundContainer: {
     alignContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: colors.white,
+    backgroundColor: colors.linkCardBGColor,
     borderRadius: '8px',
     display: 'flex',
     flexDirection: 'column',

@@ -20,7 +20,7 @@ const styles = {
     width: '100%',
   },
   dashedBorder: {
-    border: `2px dashed ${colors.white}`,
+    border: `2px dashed ${colors.mainStitching}`,
     borderRadius: '6px',
     height: '95%',
     margin: '15px',
@@ -73,7 +73,7 @@ const styles = {
     fontSize: '16px',
   },
   infoExpanded: {
-    backgroundColor: colors.bluishWhite,
+    backgroundColor: colors.expandedInfoBGColor,
     borderRadius: '8px',
     paddingBottom: '1.5%',
     paddingRight: '2%',

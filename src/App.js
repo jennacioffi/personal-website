@@ -214,41 +214,41 @@ function App() {
         <LookingForCard 
           title= "What I'm Looking For"
           bulletPoints={whatImLookingForBulletPoints}
-          color={colors.lighterBlue}
+          color={colors.lookingForBGColor}
         />
         <HorizontalCards
           title="Experience"
           bulletPoints={experienceBulletPoints}
-          color={colors.lightBlue}
+          color={colors.experienceBGColor}
         />
         <HorizontalCards
           title="Skills"
           bulletPoints={skillsBulletPoints}
-          color={colors.blue}
+          color={colors.skillsBGColor}
         />
         <HorizontalCards
           title="Volunteer Experience"
           bulletPoints={volunteerExpBulletPoints}
-          color={colors.darkBlue}
+          color={colors.volunteerExpBGColor}
         />
         <HorizontalCards 
           title="Education" 
           bulletPoints={eduBulletPoints} 
-          color={colors.darkerBlue} 
+          color={colors.educationBGColor} 
         />
         <HorizontalCards 
           title="Past Work Projects" 
           bulletPoints={pastProjectsBulletPoints} 
-          color={colors.darkerBlue} 
+          color={colors.pastWorkProjectsBGColor} 
         />
         <div style={styles.multiCards}>
           <ContactMeCard
-            color={colors.intermediateBlue}  
+            color={colors.contactMeBGColor}  
           />
           <InterviewFAQsCard
             title="Interview FAQs"
             bulletPoints={interviewFAQs}
-            color={colors.darkerIntermediateBlue}
+            color={colors.interviewFQSBGColor}
           />
         </div>
       </div>

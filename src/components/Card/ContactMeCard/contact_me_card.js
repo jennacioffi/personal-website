@@ -117,15 +117,24 @@ export default function ContactMeCard({ color }) {
         ></textarea>
       </div>
       {isEmailSent ? (
-        <div style={{...styles.submitButton, backgroundColor: colors.bluishWhite, color: colors.black}}>
+        <div style={{
+          ...styles.submitButton, 
+          backgroundColor: colors.contactMeSubmitBtnColorSuccess, 
+          color: colors.black}}>
           {'Email Sent'}
         </div>
       ) : isFormFilled ? (
-        <button onClick={handleSubmit} style={styles.submitButton}>
+        <button onClick={handleSubmit} style={{
+          ...styles.submitButton, 
+          backgroundColor: colors.submitBtnRegular,
+          color: colors.white}}>
           {'Submit'}
         </button>
       ) : (
-        <button style={styles.failSubmitButton}>
+        <button style={{
+          ...styles.failSubmitButton,   
+          backgroundColor: colors.contactMeSubmitBtnColorFailure, 
+          color: colors.white}}>
           {'Something is Invalid or Empty'}
         </button>
       )}

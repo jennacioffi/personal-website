@@ -14,13 +14,12 @@ const styles = {
   circle: {
     width: '250px', 
     height: '250px', 
-    // borderRadius: '50%', 
     overflow: 'hidden',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     border: '10px solid transparent', 
-    borderImage: `linear-gradient(to bottom, ${colors.white}, ${colors.lightBlue})`,
+    borderImage: `linear-gradient(to bottom, ${colors.profilePicGradient1}, ${colors.profilePicGradient2})`,
     borderImageSlice: 1,
   },
   image: {
