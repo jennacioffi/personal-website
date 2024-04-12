@@ -15,12 +15,7 @@ const styles = {
     alignContent: 'center',
     padding: '4%',
     minWidth: '600px',
-    maxWidth: '1000px',
-
-    // Media query for smaller screens
-    '@media only screen and (max-width: 600px)': {
-      minWidth: '100%', // Adjust to take up the entire width for smaller screens
-    },
+    // maxWidth: '1000px',
   },
   multiCards: {
     overflow: 'auto',
