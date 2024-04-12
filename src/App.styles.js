@@ -6,7 +6,6 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    overflowX: 'auto',
   },
   main: {
     display: 'flex',
@@ -15,7 +14,8 @@ const styles = {
     alignContent: 'center',
     padding: '4%',
     minWidth: '600px',
-    // maxWidth: '1000px',
+    maxWidth: '1000px',
+    width: '100%',
   },
   multiCards: {
     overflow: 'auto',
