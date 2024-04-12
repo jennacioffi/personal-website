@@ -13,7 +13,7 @@ module.exports = {
       'error',
       2, // Use 2 spaces for indentation
     ],
-    quotes: ['error', 'single'],
+    quotes: ['warn', 'single'],
     semi: ['off'],
   },
 };
