@@ -15,7 +15,7 @@ const styles = {
     alignContent: 'center',
     padding: '4%',
     minWidth: '600px',
-    maxWidth: '1000px',
+    // maxWidth: '1000px',
     width: '100%',
   },
   multiCards: {
