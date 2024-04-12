@@ -89,7 +89,6 @@ export default function HorizontalCards({ title, bulletPoints, color }) {
     <div
       style={{
         ...styles.mainContainer,
-        // height: `${containerHeight}%`,
       }}
     >
       <div style={{ ...styles.cardBackgroundContainer, backgroundColor }}>

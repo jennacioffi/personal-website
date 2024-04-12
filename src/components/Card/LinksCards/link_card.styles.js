@@ -31,7 +31,6 @@ const styles = {
     display: 'flex',
     height: '89%',
     justifyContent: 'flex-start',
-    overflow: 'auto',
     width: '97%',
   },
   icon: {

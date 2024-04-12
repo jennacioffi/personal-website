@@ -24,7 +24,6 @@ const styles = {
     borderRadius: '6px',
     height: '95%',
     margin: '15px',
-    overflow: 'auto',
     paddingHorizontal: '1%',
     width: '95%',
   },
