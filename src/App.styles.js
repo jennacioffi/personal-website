@@ -6,6 +6,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    overflow: 'hidden',
   },
   main: {
     display: 'flex',
