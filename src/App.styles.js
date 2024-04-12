@@ -1,21 +1,16 @@
 import { colors } from './styles/colors.js'
 
 const styles = {
-  websiteBackgroundContainer: {
-    background: `linear-gradient(${colors.websiteBGGradient1}, ${colors.websiteBGGradient2}, ${colors.websiteBGGradient3})`,
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
   main: {
+    background: `linear-gradient(${colors.websiteBGGradient1}, ${colors.websiteBGGradient2}, ${colors.websiteBGGradient3})`,
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-around',
     alignContent: 'center',
     padding: '4%',
     minWidth: '600px',
-    maxWidth: '1200px',
-    overflowX: 'scroll',
+    maxWidth: '1000px',
+    width: '100%',
   },
   multiCards: {
     overflow: 'auto',
