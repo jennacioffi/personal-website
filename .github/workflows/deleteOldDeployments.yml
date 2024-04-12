@@ -1,0 +1,34 @@
+name: Delete Old Deployments
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+
+jobs:
+  delete_old_deployments:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Delete old deployments
+        run: |
+          TOKEN=${{ secrets.GITHUB_TOKEN }}
+          OWNER=${{ github.repository_owner }}
+          REPO=${{ github.event.repository.name }}
+          
+          # List all deployments
+          DEPLOYMENTS=$(curl -s -X GET -H "Authorization: token $TOKEN" \
+            "https://api.github.com/repos/$OWNER/$REPO/deployments")
+
+          # Get IDs of all but the latest deployment
+          DEPLOYMENT_IDS=$(echo "$DEPLOYMENTS" | jq -r '.[] | .id' | tail -n +2)
+
+          # Delete each deployment
+          for ID in $DEPLOYMENT_IDS; do
+            curl -s -X DELETE -H "Authorization: token $TOKEN" \
+              "https://api.github.com/repos/$OWNER/$REPO/deployments/$ID"
+          done
