@@ -5,9 +5,16 @@ const styles = {
     background: `linear-gradient(${colors.lighterBlue}, ${colors.blue}, ${colors.darkerIntermediateBlue})`,
     display: 'flex',
     flexDirection: 'column',
+    alignItems: 'center',
+  },
+  main: {
+    display: 'flex',
+    flexDirection: 'column',
     justifyContent: 'space-around',
+    alignContent: 'center',
     padding: '4%',
     minWidth: '600px',
+    maxWidth: '1200px',
     overflowX: 'scroll',
   },
   multiCards: {
