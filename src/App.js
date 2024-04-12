@@ -183,72 +183,74 @@ function App() {
 
   return (
     <div style={styles.websiteBackgroundContainer}>
-      <div style={styles.multiCards}>
-        {/* Profile Pic & Name Component */}
-        <div style={styles.leftCards}>
-          <ProfileInfo
-            name="Jenna"
-          />
-        </div>
-        <div style={styles.rightCards}>
-          <LinkCard
-            icon={emailLogo}
-            link=""
+      <div style={styles.main}>
+        <div style={styles.multiCards}>
+          {/* Profile Pic & Name Component */}
+          <div style={styles.leftCards}>
+            <ProfileInfo
+              name="Jenna"
+            />
+          </div>
+          <div style={styles.rightCards}>
+            <LinkCard
+              icon={emailLogo}
+              link=""
 
-          />
-          <LinkCard
-            icon={linkedInLogo}
-            link="https://www.linkedin.com/in/jenna-cioffi/"
+            />
+            <LinkCard
+              icon={linkedInLogo}
+              link="https://www.linkedin.com/in/jenna-cioffi/"
 
-          />
-          <LinkCard
-            icon={githubLogo}
-            link="https://github.com/jennacioffi"
+            />
+            <LinkCard
+              icon={githubLogo}
+              link="https://github.com/jennacioffi"
 
-          />
+            />
       
-          {/* triple stacked white boxes with links */}
+            {/* triple stacked white boxes with links */}
+          </div>
         </div>
-      </div>
-      <LookingForCard 
-        title= "What I'm Looking For"
-        bulletPoints={whatImLookingForBulletPoints}
-        color={colors.lighterBlue}
-      />
-      <HorizontalCards
-        title="Experience"
-        bulletPoints={experienceBulletPoints}
-        color={colors.lightBlue}
-      />
-      <HorizontalCards
-        title="Skills"
-        bulletPoints={skillsBulletPoints}
-        color={colors.blue}
-      />
-      <HorizontalCards
-        title="Volunteer Experience"
-        bulletPoints={volunteerExpBulletPoints}
-        color={colors.darkBlue}
-      />
-      <HorizontalCards 
-        title="Education" 
-        bulletPoints={eduBulletPoints} 
-        color={colors.darkerBlue} 
-      />
-      <HorizontalCards 
-        title="Past Work Projects" 
-        bulletPoints={pastProjectsBulletPoints} 
-        color={colors.darkerBlue} 
-      />
-      <div style={styles.multiCards}>
-        <ContactMeCard
-          color={colors.intermediateBlue}  
+        <LookingForCard 
+          title= "What I'm Looking For"
+          bulletPoints={whatImLookingForBulletPoints}
+          color={colors.lighterBlue}
         />
-        <InterviewFAQsCard
-          title="Interview FAQs"
-          bulletPoints={interviewFAQs}
-          color={colors.darkerIntermediateBlue}
+        <HorizontalCards
+          title="Experience"
+          bulletPoints={experienceBulletPoints}
+          color={colors.lightBlue}
         />
+        <HorizontalCards
+          title="Skills"
+          bulletPoints={skillsBulletPoints}
+          color={colors.blue}
+        />
+        <HorizontalCards
+          title="Volunteer Experience"
+          bulletPoints={volunteerExpBulletPoints}
+          color={colors.darkBlue}
+        />
+        <HorizontalCards 
+          title="Education" 
+          bulletPoints={eduBulletPoints} 
+          color={colors.darkerBlue} 
+        />
+        <HorizontalCards 
+          title="Past Work Projects" 
+          bulletPoints={pastProjectsBulletPoints} 
+          color={colors.darkerBlue} 
+        />
+        <div style={styles.multiCards}>
+          <ContactMeCard
+            color={colors.intermediateBlue}  
+          />
+          <InterviewFAQsCard
+            title="Interview FAQs"
+            bulletPoints={interviewFAQs}
+            color={colors.darkerIntermediateBlue}
+          />
+        </div>
       </div>
     </div>
   );
