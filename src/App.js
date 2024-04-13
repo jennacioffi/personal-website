@@ -218,7 +218,7 @@ function App() {
         </div>
       </div>
       <LookingForCard 
-        title= "What I'm Looking For"
+        title= "My Ideal Job"
         bulletPoints={whatImLookingForBulletPoints}
         color={colors.lookingForBGColor}
       />
