@@ -1,45 +1,40 @@
 import '@openfonts/kurale_all';
 
 export const fonts = {
-  kuraleFont: 'Kurale, serif',
+  kuraleFont: 'Kurale',
 };
 
-export const PageTitleTextWhite = {
-  font: fonts.kuraleFont,
-  fontSize: 96,
-}
-
-export const DropDownMenuItem = {
-  font: fonts.kuraleFont,
-  fontSize: 26,
-}
-
-export const ExperienceH1 = {
-  font: fonts.kuraleFont,
-  fontSize: 40,
-}
-
-export const ExperienceH2 = {
-  font: fonts.kuraleFont,
-  fontSize: 34,
-}
-
-export const ExperienceH3 = {
-  font: fonts.kuraleFont,
-  fontSize: 30,
-}
-
-export const ExperienceH4 = {
-  font: fonts.kuraleFont,
-  fontSize: 34,
-}
-
-export const NavBarItemsText = {
-  font: fonts.kuraleFont,
-  fontSize: 40,
-}
-
-export const ProjectSkillItem = {
-  font: fonts.kuraleFont,
-  fontSize: 40,
-}
+export const TextStyles = {
+  PageTitle: {
+    fontFamily: fonts.kuraleFont,
+    fontSize: 96,
+  },
+  DropDownMenuItem: {
+    fontFamily: fonts.kuraleFont,
+    fontSize: 26,
+  },
+  ExperienceH1: {
+    fontFamily: fonts.kuraleFont,
+    fontSize: 40,
+  },
+  ExperienceH2: {
+    fontFamily: fonts.kuraleFont,
+    fontSize: 34,
+  },
+  ExperienceH3: {
+    fontFamily: fonts.kuraleFont,
+    fontSize: 30,
+  },
+  ExperienceH4: {
+    fontFamily: fonts.kuraleFont,
+    fontSize: 34,
+  },
+  NavBarItems: {
+    fontFamily: fonts.kuraleFont,
+    fontSize: 20,
+  },
+  ProjectSkillItem: {
+    fontFamily: fonts.kuraleFont,
+    fontSize: 40,
+  },
+};

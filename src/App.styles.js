@@ -1,8 +1,9 @@
 // import { colors } from './styles/colors.js'
+// import { fonts } from './styles/fonts.js'
 
 const styles = {
   main: {
-    backgroundColor: 'red',
+    display: 'flex',
   }
 };
 
