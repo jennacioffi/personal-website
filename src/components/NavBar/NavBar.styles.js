@@ -10,7 +10,6 @@ const styles = {
     alignContent: 'flex-start',
     padding: '10px',
     width: '100%',
-    maxWidth: '1440px',
     ...TextStyles.NavBarItems,
   },
   menuItem: {

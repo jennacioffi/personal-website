@@ -7,7 +7,7 @@ export const fonts = {
 export const TextStyles = {
   PageTitle: {
     fontFamily: fonts.kuraleFont,
-    fontSize: 96,
+    fontSize: 70,
   },
   DropDownMenuItem: {
     fontFamily: fonts.kuraleFont,

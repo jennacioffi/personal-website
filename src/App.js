@@ -8,7 +8,9 @@ import { Skills } from './pages/Skills.js';
 
 function App() {
   return (
-    <div>
+    <div 
+      style={{    overflow: 'auto',
+      }}>
       <Routes>
         <Route index element={<AboutMeAndFAQs />} />
         <Route path='/about-me-and-faqs' element={<AboutMeAndFAQs />} />
