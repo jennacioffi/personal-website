@@ -9,7 +9,7 @@ import { Skills } from './pages/Skills.js';
 function App() {
   return (
     <div 
-      style={{    overflow: 'auto',
+      style={{    overflow: 'auto', minWidth: '1200px',
       }}>
       <Routes>
         <Route index element={<AboutMeAndFAQs />} />

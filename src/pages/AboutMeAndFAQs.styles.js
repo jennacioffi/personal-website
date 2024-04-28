@@ -22,8 +22,8 @@ const styles = {
     justifyContent: 'center',
   },
 
-  // LEFT HALF
-  leftHalf: {
+  // LEFT HALF TOP
+  leftHalfTOP: {
     alignItems: 'center',
     display: 'flex',
     flex: 1,
@@ -43,8 +43,8 @@ const styles = {
     ...TextStyles.PageTitle,
   },
 
-  // RIGHT HALF
-  rightHalf: {
+  // RIGHT HALF TOP
+  rightHalfTOP: {
     alignItems: 'center',
     display: 'flex',
     flex: 1,
@@ -57,10 +57,10 @@ const styles = {
     borderRadius: '10px',
     boxShadow: `5px 5px 4px ${colors.darkGrey}`,
     display: 'flex',
-    height: '400px',
+    height: '300px',
     justifyContent: 'center',
     position: 'relative',
-    width: '300px',
+    width: '400px',
   },
   cardContainerStitching: {
     border: '3px dashed black',
@@ -69,27 +69,92 @@ const styles = {
     justifyContent: 'center',
     width: '90%',
   },
-  profilePic: {
+  image: {
     display: 'flex',
     flex: 1,
     height: '100%',
     position: 'relative',
+    objectFit: 'cover',
     width: '100%',
   },
 
   // MIDDLE CONTAINER
   midContainer: {
+    alignItems: 'center',
     display: 'flex',
-    flexDirection: 'row',
     flex: '1',
-    height: '500px',
-    backgroundColor: colors.palette1,
+    flexDirection: 'row',
+    height: '550px',
+    justifyContent: 'center',
+    position: 'relative',
   }, 
+
+  // LEFT HALF MID
+  leftHalfMID: {
+    alignItems: 'center',
+    display: 'flex',
+    flex: 1,
+    justifyContent: 'center',
+    padding: '25px',
+    width: '1000px',
+  },
+
+  // RIGHT HALF MID
+  rightHalfMID: {
+    alignItems: 'center',
+    display: 'flex',
+    flex: 1,
+    justifyContent: 'center',
+    maringLeft: '10%',
+  },
+  icon: {
+    display: 'flex',
+    justifyContent: 'center',
+    paddingTop: '10%',
+  },
+  eduInfoContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignContent: 'center',
+    height: '300px',
+    width: '500px',
+  },
+  eduInfo: {
+    display: 'flex',
+    flex: 1,
+    flexDirection: 'column',
+    textAlign: 'center',
+    borderRadius: '15px',
+    backgroundColor: colors.palette2,
+    boxShadow: `inset 3px 3px 4px ${colors.darkGrey}`,
+    justifyContent: 'center',
+  },
+  eduInfoTextLine1: {
+    color: colors.white,
+    textShadow: `2px 2px 4px ${colors.darkGrey}`, // Add text shadow
+    ...TextStyles.ExperienceH1
+  },
+  eduInfoTextLine2: {
+    color: colors.white,
+    textShadow: `2px 2px 4px ${colors.darkGrey}`, // Add text shadow
+    ...TextStyles.ExperienceH2
+  },
+  eduInfoTextLine3: {
+    color: colors.white,
+    textShadow: `2px 2px 4px ${colors.darkGrey}`, // Add text shadow
+    ...TextStyles.ExperienceH3
+  },
 
   // BOTTOM CONTAINER
   bottomContainer: {
-    flex: 2,
-    // backgroundColor: 'green'
+    alignItems: 'center',
+    display: 'flex',
+    flex: '1',
+    flexDirection: 'row',
+    height: '550px',
+    justifyContent: 'center',
+    position: 'relative',
   },
 }
 

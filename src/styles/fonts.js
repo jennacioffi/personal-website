@@ -15,19 +15,19 @@ export const TextStyles = {
   },
   ExperienceH1: {
     fontFamily: fonts.kuraleFont,
-    fontSize: 40,
+    fontSize: 30,
   },
   ExperienceH2: {
     fontFamily: fonts.kuraleFont,
-    fontSize: 34,
+    fontSize: 26,
   },
   ExperienceH3: {
     fontFamily: fonts.kuraleFont,
-    fontSize: 30,
+    fontSize: 24,
   },
   ExperienceH4: {
     fontFamily: fonts.kuraleFont,
-    fontSize: 34,
+    fontSize: 14,
   },
   NavBarItems: {
     fontFamily: fonts.kuraleFont,
