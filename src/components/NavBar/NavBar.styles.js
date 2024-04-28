@@ -9,7 +9,7 @@ const styles = {
     justifyContent: 'center',
     alignContent: 'flex-start',
     padding: '10px',
-    width: '100%',
+    // width: '100%',
     ...TextStyles.NavBarItems,
   },
   menuItem: {

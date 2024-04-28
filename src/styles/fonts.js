@@ -27,11 +27,15 @@ export const TextStyles = {
   },
   ExperienceH4: {
     fontFamily: fonts.kuraleFont,
-    fontSize: 14,
+    fontSize: 20,
+  },
+  ExperienceH5: {
+    fontFamily: fonts.kuraleFont,
+    fontSize: 16,
   },
   NavBarItems: {
     fontFamily: fonts.kuraleFont,
-    fontSize: 20,
+    fontSize: 24,
   },
   ProjectSkillItem: {
     fontFamily: fonts.kuraleFont,

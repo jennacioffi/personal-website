@@ -1,5 +1,5 @@
-import { colors } from '../styles/colors.js';
-import { TextStyles } from '../styles/fonts.js';
+import { colors } from '../../styles/colors.js';
+import { TextStyles } from '../../styles/fonts.js';
 
 const styles = {
   outerContainer: {
@@ -33,7 +33,7 @@ const styles = {
   textBackgroundContainer: {
     backgroundColor: colors.white,
     borderRadius: '10px',
-    boxShadow: `8px 8px ${colors.black}`,
+    boxShadow: `8px 8px 6px ${colors.black}`,
     height: '100px',
     left: '25%',
     textAlign: 'center',
@@ -151,10 +151,90 @@ const styles = {
     alignItems: 'center',
     display: 'flex',
     flex: '1',
-    flexDirection: 'row',
-    height: '550px',
+    flexDirection: 'column',
     justifyContent: 'center',
     position: 'relative',
+
+    flexWrap: 'wrap',
+    maxWidth: '100%'
+  },
+  FAQsOuterTitleContainer: {
+    display: 'flex',
+    flex: 1,
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+  FAQsTitleContainer: {
+    alignContent: 'center',
+    backgroundColor: colors.white,
+    borderRadius: '10px',
+    boxShadow: `8px 8px 6px ${colors.darkGrey}`,
+    display: 'flex',
+    height: '100px',
+    justifyContent: 'center',
+    marginTop: '8%',
+    width: '500px',
+  },
+  FAQsTitle: {
+    color: colors.black,
+    justifyContent: 'center',
+    alignContent: 'center',
+    ...TextStyles.PageTitle
+  },
+  outerFAQItemContainer: {
+    display: 'flex', 
+    justifyContent: 'center',
+    alignContent: 'center',
+    padding: '2%',
+    flexWrap: 'wrap',
+    overflowX: 'auto',
+  },
+  FAQsCardItem: {
+    display: 'flex',
+    padding: '1%',
+    alignSelf: 'center',
+    justifyContent: 'center',
+    height: '100%',
+  },
+  FAQsCardContainer: {
+    width: '325px',
+    height: '200px',
+    borderRadius: '20px',
+    backgroundColor: colors.white,
+    display: 'flex',
+    boxShadow: `6px 6px 8px ${colors.darkGrey}`
+  },
+  FAQsCardContainerStitching: {
+    border: '2px dashed black',
+    borderRadius: '10px',
+    height: '90%',
+    alignSelf: 'center',
+    alignContent: 'center',
+    width: '93%',
+    margin: 'auto',
+  },
+  FAQquestion: {
+    margin: '10%',
+    display: 'flex',
+    justifyContent: 'center',
+    alignContent: 'center',
+    color: colors.black,
+    ...TextStyles.ExperienceH4,
+    maxHeight: '100%',
+    overflowY: 'auto',
+  },
+  FAQanswerContainer: {
+
+  },
+  FAQanswer: {
+    margin: '5%',
+    display: 'flex',
+    justifyContent: 'center',
+    alignContent: 'center',
+    color: colors.palette1,
+    ...TextStyles.ExperienceH5,
+    maxHeight: '100%',
+    overflowY: 'auto',
   },
 }
 

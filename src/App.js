@@ -1,15 +1,15 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { AboutMeAndFAQs } from './pages/AboutMeAndFAQs.js';
-import { ContactMe } from './pages/ContactMe.js';
-import { Experience } from './pages/Experience.js';
-import { Projects } from './pages/Projects.js';
-import { Skills } from './pages/Skills.js';
+import { AboutMeAndFAQs } from './pages/AbtMeAndFAQs/AboutMeAndFAQs.js';
+import { ContactMe } from './pages/ContactMe/ContactMe.js';
+import { Experience } from './pages/Experience/Experience.js';
+import { Projects } from './pages/Projects/Projects.js';
+import { Skills } from './pages/Skills/Skills.js';
 
 function App() {
   return (
     <div 
-      style={{    overflow: 'auto', minWidth: '1200px',
+      style={{    overflowY: 'auto', minWidth: '800px',
       }}>
       <Routes>
         <Route index element={<AboutMeAndFAQs />} />
