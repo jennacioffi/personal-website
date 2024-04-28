@@ -57,7 +57,7 @@ export function AboutMeAndFAQs() {
   const TopContainer = () => {
     return (
       <div style={{ backgroundColor: colors.palette2 }}>
-        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
+        <div style={styles.inner}>
           <div style={styles.topContainer}>
             <div style={styles.leftHalfTOP}>
               <NameTag />
@@ -109,7 +109,7 @@ export function AboutMeAndFAQs() {
   const MidContainer = () => {
     return (
       <div style={{ boxShadow: `inset 2px 2px 4px ${colors.black}`, backgroundColor: colors.palette1 }}>
-        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
+        <div style={styles.inner}>
           <div style={styles.midContainer}>
             <div style={styles.leftHalfMID}>
               <StitchedCard
@@ -180,7 +180,7 @@ export function AboutMeAndFAQs() {
   const BottomContainer = () => {
     return (
       <div style={{ boxShadow: `inset 2px 2px 4px ${colors.black}`, backgroundColor: colors.palette2 }}>
-        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
+        <div style={styles.inner}>
           <div style={styles.bottomContainer}>
             <Title />
           </div>

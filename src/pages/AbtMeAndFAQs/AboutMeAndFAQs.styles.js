@@ -11,6 +11,10 @@ const styles = {
     height: '100%',
     width: '100%', 
   },
+  inner: {
+    maxWidth: '1440px', 
+    margin: '0 auto'
+  },
 
   // TOP CONTAINER
   topContainer: {
