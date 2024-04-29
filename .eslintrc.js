@@ -10,7 +10,7 @@ module.exports = {
   },
   rules: {
     indent: [
-      'error',
+      'warn',
       2, // Use 2 spaces for indentation
     ],
     quotes: ['warn', 'single'],

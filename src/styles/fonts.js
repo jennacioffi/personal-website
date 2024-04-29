@@ -7,7 +7,7 @@ export const fonts = {
 export const TextStyles = {
   PageTitle: {
     fontFamily: fonts.kuraleFont,
-    fontSize: 70,
+    fontSize: 80,
   },
   DropDownMenuItem: {
     fontFamily: fonts.kuraleFont,
@@ -40,5 +40,9 @@ export const TextStyles = {
   ProjectSkillItem: {
     fontFamily: fonts.kuraleFont,
     fontSize: 40,
+  },
+  skillItem: {
+    fontFamily: fonts.kuraleFont,
+    fontSize: 34,
   },
 };

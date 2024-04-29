@@ -35,6 +35,8 @@ const styles = {
     marginRight: '10%',
   },
   textBackgroundContainer: {
+    display: 'flex',
+    justifyContent: 'center',
     backgroundColor: colors.white,
     borderRadius: '10px',
     boxShadow: `8px 8px 6px ${colors.black}`,
@@ -44,6 +46,7 @@ const styles = {
     width: '500px',
   },
   textBackgroundContainerTEXT: {
+    alignContent: 'center',
     ...TextStyles.PageTitle,
   },
 
@@ -158,7 +161,6 @@ const styles = {
     flexDirection: 'column',
     justifyContent: 'center',
     position: 'relative',
-
     flexWrap: 'wrap',
     maxWidth: '100%'
   },
@@ -177,7 +179,7 @@ const styles = {
     height: '100px',
     justifyContent: 'center',
     marginTop: '8%',
-    width: '500px',
+    width: 'fit-content',
   },
   FAQsTitle: {
     color: colors.black,
