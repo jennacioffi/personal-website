@@ -33,6 +33,10 @@ export const TextStyles = {
     fontFamily: fonts.kuraleFont,
     fontSize: 16,
   },
+  ExperienceH6: {
+    fontFamily: fonts.kuraleFont,
+    fontSize: 14,
+  },
   NavBarItems: {
     fontFamily: fonts.kuraleFont,
     fontSize: 24,

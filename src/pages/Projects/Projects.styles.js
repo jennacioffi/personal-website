@@ -7,7 +7,7 @@ const styles = {
     display: 'flex', 
     justifyContent: 'center',
     backgroundColor: colors.palette2,
-    minHeight: '100vh',
+    minHeight: '150vh',
   },
   main: {
     width: '100%',
@@ -19,14 +19,16 @@ const styles = {
     margin: '0 auto',
   },
 
-  // EXPITEMS
+  // PROJECTITEMS
   ProjectItemsContainer: {
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center',
+    justifyContent: 'center',
+    alignContent: 'center',
+    paddingTop: '2%',
   },
 
-  // ## TITLE SECTION - EXPITEMS
+  // ## TITLE SECTION - PROJECTITEMS
   titleContainer: {
     alignContent: 'center',
     display: 'flex',
@@ -39,16 +41,19 @@ const styles = {
     textShadow: `8px 8px 2px ${colors.darkGrey}`, 
     ...TextStyles.PageTitle,
   },
-  
-  // ## IndvEXPItem - EXPITEMS
+
+  // INDIVIDUALPROJECTITEM - PROJECTITEMS
   IndividualProjectItemContainer: {
+    height: 'fit-content',
     display: 'flex',
-    flexWrap: 'wrap',
+    flexDirection: 'row',
     justifyContent: 'center',
+    flexWrap: 'wrap',
+    paddingBottom: '5%',
   },
 
-  // FRONTCARD
-  ExpItemContainer: { // Also used in BackCard
+  // ## TOP HALF - INDIVIDUALPROJECTITEM
+  ExpItemContainer: {
     alignItems: 'center',
     backgroundColor: colors.white,
     border: '2px solid black',
@@ -56,69 +61,24 @@ const styles = {
     boxShadow: `6px 6px 4px ${colors.darkGrey}`,
     display: 'flex',
     flexDirection: 'column',
-    maxHeight: '400px',
-    minHeight: '350px',
+    height: '300px',
     justifyContent: 'center',
     margin: '20px',
     padding: '1%',
-    width: '500px',
+    width: '450px',
+    ...TextStyles.ExperienceH2,
   },
   topHalfContainer: {
     display: 'flex',
     justifyContent: 'space-around',
-    width: '98%',
+    width: '100%',
     alignItems: 'center',
-    marginTop: '2%',
   },
   bottomHalfContainer: {
     display: 'flex',
     padding: '2%',
     justifyContent: 'center',
-    alignSelf: 'center',
     flexWrap: 'wrap',
-    width: '98%',
-    height: 'fit-content',
-  },
-
-  // SkillItem
-  skillItemContainer: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: '10px',
-    margin: '2%',
-    backgroundColor: colors.palette4,
-    border: '1px solid black',
-    boxShadow: `3px 3px 2px ${colors.darkGrey}`,
-  },
-  skillItemText: {
-    padding: '10px',
-    textAlign: 'center',
-    ...TextStyles.ExperienceH5,
-  },
-
-  // BACKCARD
-  experienceSummaryContainer: {
-    display: 'flex',
-    padding: '2%',
-    margin: '1%',    
-    overflowY: 'auto',
-    flexDirection: 'column',
-    width: '95%',
-  },
-  experienceSummaryText: {
-    backgroundColor: colors.palette5,
-    boxShadow: ` 3px 3px 4px ${colors.darkGrey}`,
-    borderRadius: '3%',
-    marginBottom: '3%',
-    padding: '2%',
-    textAlign: 'center',
-    ...TextStyles.ExperienceH5,
-  },
-  bulletPointItem: {
-    textAlign: 'start',
-    padding: '1%',
-    ...TextStyles.ExperienceH6,
   },
 
   // ## IMAGE - TOPHALF
@@ -152,8 +112,7 @@ const styles = {
   logo: {
     objectFit: 'cover',
   },
-
-  // ## INFOTEXT - TOP HALF
+  // ## INFOTEXT - TOPHALF
   rightSide: {
   },
   infoTextContainer: {
@@ -181,6 +140,27 @@ const styles = {
   },
   infoTimeWorked: {
     ...TextStyles.ExperienceH4,
+  },
+
+  // TLDRSUMMARY
+  TLDRSummaryContainer: {
+    height: '100%',
+    maxHeight: '140px',
+    overflowY: 'auto',
+    display: 'flex',
+    justifyContent: 'center',
+    borderRadius: '10px',
+    backgroundColor: colors.palette4,
+    border: '1px solid black',
+    boxShadow: `3px 3px 2px ${colors.darkGrey}`,
+    ...TextStyles.ExperienceH5,
+  },
+  TLDRSummaryText: {
+    paddingLeft: '1%',
+    paddingRight: '1%',
+    paddingTop: '2%',
+    paddingBottom: '2%',
+    textAlign: 'center',
   },
 }
 
