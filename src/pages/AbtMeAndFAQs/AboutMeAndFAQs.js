@@ -184,11 +184,11 @@ export function AboutMeAndFAQs() {
           <div style={styles.bottomContainer}>
             <Title />
           </div>
-            <div style={styles.outerFAQItemContainer}>
-              {faqQuestions.map((question, index) => (
-                  <FAQItem question={question} answer={faqAnswers[index]} />
-            ))}
-            </div>
+          <div style={styles.outerFAQItemContainer}>
+            {faqQuestions.map((question, index) => (
+                <FAQItem question={question} answer={faqAnswers[index]} />
+          ))}
+          </div>
         </div>
       </div>
     );
