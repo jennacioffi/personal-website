@@ -1,25 +1,29 @@
 {
   "files": {
     "main.css": "/personal-website/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/personal-website/static/js/main.74c1f7b3.chunk.js",
-    "main.js.map": "/personal-website/static/js/main.74c1f7b3.chunk.js.map",
-    "runtime-main.js": "/personal-website/static/js/runtime-main.6730c9b7.js",
-    "runtime-main.js.map": "/personal-website/static/js/runtime-main.6730c9b7.js.map",
-    "static/js/2.434136a5.chunk.js": "/personal-website/static/js/2.434136a5.chunk.js",
-    "static/js/2.434136a5.chunk.js.map": "/personal-website/static/js/2.434136a5.chunk.js.map",
-    "static/js/3.285609e3.chunk.js": "/personal-website/static/js/3.285609e3.chunk.js",
-    "static/js/3.285609e3.chunk.js.map": "/personal-website/static/js/3.285609e3.chunk.js.map",
+    "main.js": "/personal-website/static/js/main.f7772216.chunk.js",
+    "main.js.map": "/personal-website/static/js/main.f7772216.chunk.js.map",
+    "runtime-main.js": "/personal-website/static/js/runtime-main.a9ad89db.js",
+    "runtime-main.js.map": "/personal-website/static/js/runtime-main.a9ad89db.js.map",
+    "static/css/2.e7900cd4.chunk.css": "/personal-website/static/css/2.e7900cd4.chunk.css",
+    "static/js/2.38b4a5ee.chunk.js": "/personal-website/static/js/2.38b4a5ee.chunk.js",
+    "static/js/2.38b4a5ee.chunk.js.map": "/personal-website/static/js/2.38b4a5ee.chunk.js.map",
+    "static/js/3.1ddcc10c.chunk.js": "/personal-website/static/js/3.1ddcc10c.chunk.js",
+    "static/js/3.1ddcc10c.chunk.js.map": "/personal-website/static/js/3.1ddcc10c.chunk.js.map",
     "index.html": "/personal-website/index.html",
+    "static/css/2.e7900cd4.chunk.css.map": "/personal-website/static/css/2.e7900cd4.chunk.css.map",
     "static/css/main.6dea0f05.chunk.css.map": "/personal-website/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.434136a5.chunk.js.LICENSE.txt": "/personal-website/static/js/2.434136a5.chunk.js.LICENSE.txt",
-    "static/media/email-logo.2aa2efaf.jpg": "/personal-website/static/media/email-logo.2aa2efaf.jpg",
-    "static/media/github_logo.37185c9c.png": "/personal-website/static/media/github_logo.37185c9c.png",
-    "static/media/jenna-image.1ca563f4.jpeg": "/personal-website/static/media/jenna-image.1ca563f4.jpeg"
+    "static/js/2.38b4a5ee.chunk.js.LICENSE.txt": "/personal-website/static/js/2.38b4a5ee.chunk.js.LICENSE.txt",
+    "static/media/KYL-LOGO.155dde5d.png": "/personal-website/static/media/KYL-LOGO.155dde5d.png",
+    "static/media/USU.c5c7b9d3.jpeg": "/personal-website/static/media/USU.c5c7b9d3.jpeg",
+    "static/media/jenna-image.1ca563f4.jpeg": "/personal-website/static/media/jenna-image.1ca563f4.jpeg",
+    "static/media/index.css": "/personal-website/static/media/kurale-all-400.d33b29e1.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.6730c9b7.js",
-    "static/js/2.434136a5.chunk.js",
+    "static/js/runtime-main.a9ad89db.js",
+    "static/css/2.e7900cd4.chunk.css",
+    "static/js/2.38b4a5ee.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.74c1f7b3.chunk.js"
+    "static/js/main.f7772216.chunk.js"
   ]
 }
