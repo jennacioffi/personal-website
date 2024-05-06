@@ -79,11 +79,11 @@ const NavBar = () => {
 
   // List of navigation items
   const navItems = [
-    { title: 'Socials', hasDropdown: true, items: ['GitHub', 'LinkedIn', 'Contact Me'] },
+    { title: 'About Me & FAQs', to: '/about-me-and-faqs' },
     { title: 'Experience', to: '/experience' },
-    { title: 'Skills', to: '/skills' },
     { title: 'Projects', to: '/projects' },
-    { title: 'About Me & FAQs', to: '/about-me-and-faqs' }
+    { title: 'Skills', to: '/skills' },
+    { title: 'Socials', hasDropdown: true, items: ['GitHub', 'LinkedIn', 'Contact Me'] },
   ];
 
   return (
@@ -111,7 +111,7 @@ const NavBar = () => {
             </div>
           ) : (
             <Link to={item.to} style={styles.menuItem} onClick={handleItemClick}>
-              {'\u00A0|\u00A0'}{item.title}{'\u00A0'}
+              {'\u00A0'}{item.title}{'\u00A0|\u00A0'}
             </Link>
           )}
         </div>
