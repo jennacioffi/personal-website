@@ -1,5 +1,4 @@
 import React from 'react';
-import NavBar from '../../components/NavBar/NavBar';
 import styles from './Projects.styles';
 import { MdEmojiEmotions } from 'react-icons/md';
 import KYL_LOGO from '../../images/KYL-LOGO.png';
@@ -162,7 +161,6 @@ export function Projects() {
 
   return (
     <div>
-      <NavBar />
       <div style={styles.outerContainer}>
         <div style={styles.main}>
           <div style={styles.inner}>

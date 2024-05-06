@@ -1,6 +1,5 @@
 /* eslint-disable indent */
 import React, { useState } from 'react';
-import NavBar from '../../components/NavBar/NavBar.js';
 import styles from './AboutMeAndFAQs.styles.js';
 import dotenv from 'dotenv';
 import ReactCardFlip from 'react-card-flip';
@@ -56,14 +55,14 @@ export function AboutMeAndFAQs() {
 
   const TopContainer = () => {
     return (
-      <div style={{ backgroundColor: colors.palette2 }}>
+      <div style={{backgroundColor: colors.palette2 }}>
         <div style={styles.inner}>
           <div style={styles.topContainer}>
             <div style={styles.leftHalfTOP}>
               <NameTag />
             </div>
             <div style={styles.rightHalfTOP}>
-              <div style={{ position: 'relative' }}>
+              <div style={{ position: 'relative', display: 'flex', flexWrap: 'wrap'}}>
                 <StitchedCard
                   style={{
                     transform: 'rotate(30deg)',
@@ -82,7 +81,7 @@ export function AboutMeAndFAQs() {
                     left: 0,
                   }}
                 />
-                <StitchedCard img={profilePic} style={{ transform: 'rotate(0deg)', backgroundColor: colors.white }} />
+                <StitchedCard img={profilePic} style={{ transform: 'rotate(0deg)', backgroundColor: colors.white, }} />
               </div>
             </div>
           </div>
@@ -196,13 +195,10 @@ export function AboutMeAndFAQs() {
 
   return (
     <div>
-      <NavBar />
       <div style={styles.outerContainer}>
-        <div style={styles.main}>
-          <TopContainer />
-          <MidContainer />
-          <BottomContainer />
-        </div>
+        <TopContainer />
+        <MidContainer />
+        <BottomContainer />
       </div>
     </div>
   );

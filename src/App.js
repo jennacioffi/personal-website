@@ -5,13 +5,17 @@ import { ContactMe } from './pages/ContactMe/ContactMe.js';
 import { Experience } from './pages/Experience/Experience.js';
 import { Projects } from './pages/Projects/Projects.js';
 import { Skills } from './pages/Skills/Skills.js';
+import NavBar from './components/NavBar/NavBar';
 
 function App() {
   return (
     <div 
-      style={{ 
-        minWidth: '550px',
+      style={{
+        display: 'flex',
+        minWidth: 'max-content', 
+        flexDirection: 'column',
       }}>
+      <NavBar/>
       <Routes>
         <Route index element={<AboutMeAndFAQs />} />
         <Route path='/about-me-and-faqs' element={<AboutMeAndFAQs />} />

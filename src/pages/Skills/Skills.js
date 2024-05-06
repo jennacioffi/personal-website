@@ -1,5 +1,4 @@
 import React from 'react';
-import NavBar from '../../components/NavBar/NavBar';
 import styles from './Skills.styles';
 import { colors } from '../../styles/colors.js';
 import { IoLogoJavascript} from 'react-icons/io';
@@ -105,7 +104,6 @@ export function Skills() {
 
   return (
     <div>
-      <NavBar />
       <div style={styles.outerContainer}>
         <div style={styles.main}>
           <div style={styles.inner}>

@@ -4,10 +4,10 @@ import { TextStyles } from '../../styles/fonts.js';
 const styles = {
   // MAIN CONTAINER
   outerContainer: {
-    display: 'flex', 
+    // display: 'flex', 
     justifyContent: 'center',
     backgroundColor: colors.palette2,
-    minHeight: '100vh',
+    minHeight: '200vh',
   },
   main: {
     width: '100%',

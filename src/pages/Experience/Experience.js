@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import NavBar from '../../components/NavBar/NavBar';
 import styles from './Experience.styles';
 import ReactCardFlip from 'react-card-flip';
 import { FaUniversity, FaHandsHelping } from 'react-icons/fa';
@@ -241,7 +240,6 @@ export function Experience() {
 
   return (
     <div>
-      <NavBar />
       <div style={styles.outerContainer}>
         <div style={styles.main}>
           <div style={styles.inner}>

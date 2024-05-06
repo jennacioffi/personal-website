@@ -111,7 +111,7 @@ const NavBar = () => {
             </div>
           ) : (
             <Link to={item.to} style={styles.menuItem} onClick={handleItemClick}>
-              {'\u00A0'}{item.title}{'\u00A0|\u00A0'}
+              {item.title}{'\u00A0|\u00A0'}
             </Link>
           )}
         </div>

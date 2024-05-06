@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import NavBar from '../../components/NavBar/NavBar';
 import { colors } from '../../styles/colors.js';
 import styles from './ContactMe.styles';
 import dotenv from 'dotenv';
@@ -171,7 +170,6 @@ export function ContactMe() {
 
   return (
     <div>
-      <NavBar />
       <div style={styles.outerContainer}>
         <div style={styles.main}>
           <div style={styles.inner}>

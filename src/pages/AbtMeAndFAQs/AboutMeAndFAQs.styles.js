@@ -4,25 +4,18 @@ import { TextStyles } from '../../styles/fonts.js';
 const styles = {
   outerContainer: {
     display: 'flex', 
+    flexDirection: 'column',
     height: '100%',
     justifyContent: 'center',
-  },
-  main: {
-    height: '100%',
-    width: '100%', 
-  },
-  inner: {
-    maxWidth: '1440px', 
-    margin: '0 auto'
+    minWidth: 'fit-content', 
+    maxWidth: '1440px',
   },
 
   // TOP CONTAINER
   topContainer: {
-    alignItems: 'center',
     display: 'flex',
-    flex: '1',
-    flexDirection: 'row',
-    height: '550px',
+    height: 'max-content',
+    minHeight: '550px',
     justifyContent: 'center',
   },
 
@@ -32,7 +25,7 @@ const styles = {
     display: 'flex',
     flex: 1,
     justifyContent: 'center',
-    marginRight: '10%',
+    padding: '4%',
   },
   textBackgroundContainer: {
     display: 'flex',
@@ -41,7 +34,6 @@ const styles = {
     borderRadius: '10px',
     boxShadow: `8px 8px 6px ${colors.black}`,
     height: '100px',
-    left: '25%',
     textAlign: 'center',
     width: '500px',
   },
@@ -56,8 +48,7 @@ const styles = {
     display: 'flex',
     flex: 1,
     justifyContent: 'center',
-    maringLeft: '10%',
-    position: 'relative',
+    padding: '4%',
   },
   cardContainer: {
     alignItems: 'center',
@@ -87,13 +78,12 @@ const styles = {
 
   // MIDDLE CONTAINER
   midContainer: {
-    alignItems: 'center',
     display: 'flex',
-    flex: '1',
-    flexDirection: 'row',
-    height: '550px',
+    height: 'max-content',
+    minHeight: '550px',
     justifyContent: 'center',
     position: 'relative',
+    // flexWrap: 'wrap',
   }, 
 
   // LEFT HALF MID
@@ -103,7 +93,8 @@ const styles = {
     flex: 1,
     justifyContent: 'center',
     padding: '25px',
-    width: '1000px',
+    width: '100%',
+    maxWidth: '1000px',
   },
 
   // RIGHT HALF MID
@@ -112,7 +103,9 @@ const styles = {
     display: 'flex',
     flex: 1,
     justifyContent: 'center',
-    maringLeft: '10%',
+    maringLeft: '10px',
+    width: '100%',
+    maxWidth: '1000px',
   },
   icon: {
     display: 'flex',

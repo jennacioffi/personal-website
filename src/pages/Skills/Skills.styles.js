@@ -12,10 +12,6 @@ const styles = {
     height: '100%',
     paddingTop: '1%',
   },
-  inner: {
-    maxWidth: '1440px', 
-    margin: '0 auto'
-  },
 
   // TITLE
   titleContainer: {
@@ -36,7 +32,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'wrap',
-    maxWidth: '1200px',
+    maxWidth: '1000px',
     overflowY: 'auto',
     paddingBottom: '5%',
     justifyContent: 'center',
