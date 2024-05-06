@@ -78,7 +78,7 @@ export function Skills() {
       IconLogo: <FaGithub size={35} />,
     },
     {
-      skillName: 'Projet Management',
+      skillName: 'Project Management',
       IconLogo: <GrUserManager size={35} />,
     },
     {
