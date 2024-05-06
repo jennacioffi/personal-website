@@ -9,7 +9,8 @@ import { Skills } from './pages/Skills/Skills.js';
 function App() {
   return (
     <div 
-      style={{ minWidth: '800px',
+      style={{ 
+        minWidth: '550px',
       }}>
       <Routes>
         <Route index element={<AboutMeAndFAQs />} />
