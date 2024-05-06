@@ -29,11 +29,12 @@ const styles = {
     position: 'absolute',
     width: '200px',
     overflow: 'auto',
+    zIndex: 1000,
   },
   dropdownItem: {
     padding: '8px 12px',
     borderBottom: `1px solid ${colors.white}`,
-    flexDirect: 'row',
+    flexDirection: 'row',
     display: 'flex',
     justifyContent: 'space-around',
     alignItems: 'center',
