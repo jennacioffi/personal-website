@@ -7,7 +7,6 @@ const styles = {
     justifyContent: 'center',
     backgroundColor: colors.palette2,
     minHeight: '100vh',
-    overflowY: 'auto',
   },
   main: {
     height: '100%',
