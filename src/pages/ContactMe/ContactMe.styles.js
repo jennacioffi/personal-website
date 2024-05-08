@@ -14,8 +14,8 @@ const styles = {
     width: '100%', 
   },
   inner: {
-    maxWidth: '1440px', 
-    margin: '0 auto'
+    // maxWidth: '1440px', 
+    // margin: '0 auto'
   },
 
   // TITLE
@@ -43,7 +43,7 @@ const styles = {
   outerFormContainer: {
     padding: '1%',
     width: '100%',
-    maxWidth: '800px',
+    maxWidth: '700px',
   },
   InputTitleContainer: {
     display: 'flex', 

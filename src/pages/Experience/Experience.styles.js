@@ -4,18 +4,17 @@ import { TextStyles } from '../../styles/fonts.js';
 const styles = {
   // MAIN CONTAINER
   outerContainer: {
-    // display: 'flex', 
+    display: 'flex', 
     justifyContent: 'center',
     backgroundColor: colors.palette2,
-    minHeight: '200vh',
+    minHeight: '120vh',
   },
   main: {
     width: '100%',
     height: '100%',
-    minHeight: '100vh',
   },
   inner: {
-    maxWidth: '1440px', 
+    // maxWidth: '1440px', 
     margin: '0 auto',
   },
 
@@ -24,6 +23,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    flexWrap: 'wrap',
   },
 
   // ## TITLE SECTION - EXPITEMS
@@ -61,6 +61,8 @@ const styles = {
     margin: '20px',
     padding: '1%',
     width: '500px',
+    // overflowX: 'hidden',
+    // overflowY: 'auto',
   },
   topHalfContainer: {
     display: 'flex',

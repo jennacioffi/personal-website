@@ -8,7 +8,7 @@ const styles = {
     height: '100%',
     justifyContent: 'center',
     minWidth: 'fit-content', 
-    maxWidth: '1440px',
+    maxWidth: '1200px',
   },
 
   // TOP CONTAINER

@@ -4,7 +4,7 @@ import { TextStyles } from '../../styles/fonts.js';
 const styles = {
   // MAIN CONTAINER
   outerContainer: {
-    display: 'flex', 
+    display: 'flex',
     justifyContent: 'center',
     backgroundColor: colors.palette2,
     minHeight: '150vh',
@@ -15,13 +15,14 @@ const styles = {
     minHeight: '100vh',
   },
   inner: {
-    maxWidth: '1440px', 
+    maxWidth: '1200px', 
     margin: '0 auto',
   },
 
   // PROJECTITEMS
   ProjectItemsContainer: {
     display: 'flex',
+    flexWrap: 'wrap',
     flexDirection: 'column',
     justifyContent: 'center',
     alignContent: 'center',

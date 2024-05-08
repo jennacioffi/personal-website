@@ -7,10 +7,8 @@ const styles = {
     justifyContent: 'center',
     backgroundColor: colors.palette2,
     minHeight: '100vh',
-  },
-  main: {
-    height: '100%',
-    paddingTop: '1%',
+    paddingTop: '1%', 
+    minWidth: 'fit-content', 
   },
 
   // TITLE

@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Skills.styles';
-import { colors } from '../../styles/colors.js';
 import { IoLogoJavascript} from 'react-icons/io';
 import { FaReact, FaGithub, FaFigma, FaNodeJs, FaPython, FaAppStoreIos, FaAndroid } from 'react-icons/fa';
 import { SiCplusplus, SiTypescript } from 'react-icons/si';
@@ -12,8 +11,8 @@ import { HiChatBubbleLeftRight } from 'react-icons/hi2';
 
 const Title = ({ title }) => {
   return (
-    <div style={{ backgroundColor: colors.palette2 }}>
-      <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
+    <div>
+      <div>
         <div style={styles.titleContainer}>
           <div style={styles.titleTEXT}>
             {title}
@@ -103,23 +102,21 @@ export function Skills() {
   ];
 
   return (
-    <div>
+    <>
       <div style={styles.outerContainer}>
-        <div style={styles.main}>
-          <div style={styles.inner}>
-            <Title title="Skills"/>
-            <div style={styles.skillsContainer}>
-              {skills.map((skill, index) => (
-                <SkillItem
-                  key={index}
-                  skillName={skill.skillName}
-                  IconLogo={skill.IconLogo}
-                />
-              ))}
-            </div>
+        <div>
+          <Title title="Skills"/>
+          <div style={styles.skillsContainer}>
+            {skills.map((skill, index) => (
+              <SkillItem
+                key={index}
+                skillName={skill.skillName}
+                IconLogo={skill.IconLogo}
+              />
+            ))}
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
