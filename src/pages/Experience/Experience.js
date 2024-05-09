@@ -13,7 +13,7 @@ const expWorkHistory = [
     expTitle: 'App Developer (iOS & Android)',
     expCompany: 'Atomic Jolt',
     expCompanyLINK: 'https://www.atomicjolt.com/atomic-jolt-apps',
-    expTimeWorked: 'August 2022 - Jan 2024',
+    expTimeWorked: 'August 2022 - Jan 2024 (1yr 5m)',
     skillList: [
       'iOS Development', 
       'Android Development',
@@ -36,7 +36,7 @@ const expWorkHistory = [
     compImg: <FaUniversity size={75} />,
     expTitle: 'TA - CS1440 - Methods in CS',
     expCompany: 'USU Dep. of Science',
-    expTimeWorked: 'Jan 2022 - May 2024',
+    expTimeWorked: 'Jan 2022 - May 2024 (2yrs 5m)',
     skillList: ['Documentation', 'Python', 'CLI', 'Testing', 'Planning', 'git', 'Refactoring', 'Leadership', 'Time Management'],
     expSummary: {
       briefSummary: 'Served as a Teaching Assistant for a course focused on teaching students command line usage, git, and problem-solving techniques. Emphasized the importance of documentation throughout the software development process, from initial planning to post-testing analysis, fostering a culture of thoroughness and clarity in project execution.',

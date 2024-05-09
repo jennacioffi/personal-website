@@ -30,7 +30,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'wrap',
-    maxWidth: '1000px',
+    maxWidth: '1200px',
     overflowY: 'auto',
     paddingBottom: '5%',
     justifyContent: 'center',

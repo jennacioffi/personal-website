@@ -1,17 +1,22 @@
 import React from 'react';
 import styles from './Skills.styles';
 import { IoLogoJavascript} from 'react-icons/io';
-import { FaReact, FaGithub, FaFigma, FaNodeJs, FaPython, FaAppStoreIos, FaAndroid } from 'react-icons/fa';
+import { FaReact, FaGithub, FaFigma, FaNodeJs, FaPython, FaAppStoreIos, FaAndroid, FaDev } from 'react-icons/fa';
 import { SiCplusplus, SiTypescript } from 'react-icons/si';
 import { TbBrandReactNative } from 'react-icons/tb';
 import { GrUserManager } from 'react-icons/gr';
 import { BsFiletypeSql } from 'react-icons/bs';
 import { MdWeb, MdOutlineHtml, MdOutlineCss, MdOutlineDataObject } from 'react-icons/md';
 import { HiChatBubbleLeftRight, HiCommandLine } from 'react-icons/hi2';
-import { GiCycle } from "react-icons/gi";
-import { FaBugSlash } from "react-icons/fa6";
-
-
+import { GiCycle } from 'react-icons/gi';
+import { FaBugSlash } from 'react-icons/fa6';
+import { BiSolidCabinet } from 'react-icons/bi';
+import { PiFileMd } from 'react-icons/pi';
+import { RiEmotionLine } from 'react-icons/ri';
+import { LuClock8 } from 'react-icons/lu';
+import { PiTestTubeFill } from 'react-icons/pi';
+import { TfiThought } from 'react-icons/tfi';
+import { FaHandsHelping } from 'react-icons/fa';
 
 const Title = ({ title }) => {
   return (
@@ -41,91 +46,124 @@ const SkillItem = ({ skillName, IconLogo}) => {
 }
 
 export function Skills() {
+  const logoSize = 35;
 
   const skills = [
     {
       skillName: 'Android Development',
-      IconLogo: <FaAndroid size={35} />,
+      IconLogo: <FaAndroid size={logoSize} />,
     },
     {
       skillName: 'CLI',
-      IconLogo: <HiCommandLine size={35} />
+      IconLogo: <HiCommandLine size={logoSize} />
     },
     {
       skillName: 'Communication',
-      IconLogo: <HiChatBubbleLeftRight size={35}/>
+      IconLogo: <HiChatBubbleLeftRight size={logoSize}/>
+    },
+    {
+      skillName: 'Confidence',
+      IconLogo: <RiEmotionLine size={logoSize}/>,
     },
     {
       skillName: 'CSS',
-      IconLogo: <MdOutlineCss size={35}/>
+      IconLogo: <MdOutlineCss size={logoSize}/>
     },
     {
       skillName: 'C++', 
-      IconLogo: <SiCplusplus size={35}/>, 
+      IconLogo: <SiCplusplus size={logoSize}/>, 
     },
     {
       skillName: 'Debugging',
-      IconLogo: <FaBugSlash size={35}/>
+      IconLogo: <FaBugSlash size={logoSize}/>
+    },
+    {
+      skillName: 'Documentation',
+      IconLogo: <PiFileMd size={logoSize}/>,
+    },
+    {
+      skillName: 'DevOps',
+      IconLogo: <FaDev size={logoSize}/>
     },
     {
       skillName: 'Figma', 
-      IconLogo: <FaFigma size={35}/>, 
+      IconLogo: <FaFigma size={logoSize}/>, 
     },
     { 
       skillName: 'Github',
-      IconLogo: <FaGithub size={35} />,
+      IconLogo: <FaGithub size={logoSize} />,
     },
     {
       skillName: 'HTML',
-      IconLogo: <MdOutlineHtml size={35}/>
+      IconLogo: <MdOutlineHtml size={logoSize}/>
     },
     {
       skillName: 'iOS Development',
-      IconLogo: <FaAppStoreIos size={35} />,
+      IconLogo: <FaAppStoreIos size={logoSize} />,
     },
     {
       skillName: 'Javascript', 
-      IconLogo: <IoLogoJavascript size={35} /> 
+      IconLogo: <IoLogoJavascript size={logoSize} /> 
     },
     {
       skillName: 'Node.js',
-      IconLogo: <FaNodeJs size={35} />,
+      IconLogo: <FaNodeJs size={logoSize} />,
     },
     {
       skillName: 'OOP',
-      IconLogo: <MdOutlineDataObject size={35}/>
+      IconLogo: <MdOutlineDataObject size={logoSize}/>
+    },
+    {
+      skillName: 'Open Minded',
+      IconLogo: <TfiThought size={logoSize}/>
+    },
+    {
+      skillName: 'Organized',
+      IconLogo: <BiSolidCabinet size={logoSize} />,
     },
     {
       skillName: 'Project Management',
-      IconLogo: <GrUserManager size={35} />,
+      IconLogo: <GrUserManager size={logoSize} />,
+    },
+    {
+      skillName: 'Punctual',
+      IconLogo: <LuClock8 size={logoSize}/>,
     },
     {
       skillName: 'Python', 
-      IconLogo: <FaPython size={35} /> 
+      IconLogo: <FaPython size={logoSize} /> 
     },
     {
       skillName: 'React', 
-      IconLogo: <FaReact size={35} /> 
+      IconLogo: <FaReact size={logoSize} /> 
     },
     {
       skillName: 'React Native',
-      IconLogo: <TbBrandReactNative size={35}/>
+      IconLogo: <TbBrandReactNative size={logoSize}/>
+    },
+    {
+      skillName: 'Reliable',
+      IconLogo: <FaHandsHelping size={logoSize}/>,
     },
     {
       skillName: 'SQL',
-      IconLogo: <BsFiletypeSql size={35} />,
+      IconLogo: <BsFiletypeSql size={logoSize} />,
     },
     {
       skillName: 'Software Dev Life Cycle',
-      IconLogo: <GiCycle size={35}/>
+      IconLogo: <GiCycle size={logoSize}/>
+    },
+    {
+      skillName: 'Product Testing',
+      IconLogo: <PiTestTubeFill size={logoSize}/>
     },
     {
       skillName: 'TypeScript', 
-      IconLogo: <SiTypescript size={35}/>, 
+      IconLogo: <SiTypescript size={logoSize}/>, 
     },
     {
       skillName: 'Web Development',
-      IconLogo: <MdWeb size={35} />,
+      IconLogo: <MdWeb size={logoSize} />,
     },
   ];
 
