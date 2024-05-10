@@ -2,21 +2,21 @@ import React from 'react';
 import styles from './Skills.styles';
 import { IoLogoJavascript} from 'react-icons/io';
 import { FaReact, FaGithub, FaFigma, FaNodeJs, FaPython, FaAppStoreIos, FaAndroid, FaDev } from 'react-icons/fa';
-import { SiCplusplus, SiTypescript } from 'react-icons/si';
+import { SiCplusplus, SiTypescript, SiKubernetes } from 'react-icons/si';
 import { TbBrandReactNative } from 'react-icons/tb';
 import { GrUserManager } from 'react-icons/gr';
 import { BsFiletypeSql } from 'react-icons/bs';
 import { MdWeb, MdOutlineHtml, MdOutlineCss, MdOutlineDataObject } from 'react-icons/md';
 import { HiChatBubbleLeftRight, HiCommandLine } from 'react-icons/hi2';
-import { GiCycle } from 'react-icons/gi';
-import { FaBugSlash } from 'react-icons/fa6';
+import { GiCycle, GiNotebook } from 'react-icons/gi';
+import { FaBugSlash, FaFileCode } from 'react-icons/fa6';
 import { BiSolidCabinet } from 'react-icons/bi';
-import { PiFileMd } from 'react-icons/pi';
+import { PiFileMd, PiTestTubeFill } from 'react-icons/pi';
 import { RiEmotionLine } from 'react-icons/ri';
 import { LuClock8 } from 'react-icons/lu';
-import { PiTestTubeFill } from 'react-icons/pi';
 import { TfiThought } from 'react-icons/tfi';
-import { FaHandsHelping } from 'react-icons/fa';
+import { FaHandsHelping, FaCalendarCheck } from 'react-icons/fa';
+import { VscGithubAction } from 'react-icons/vsc';
 
 const Title = ({ title }) => {
   return (
@@ -46,7 +46,7 @@ const SkillItem = ({ skillName, IconLogo}) => {
 }
 
 export function Skills() {
-  const logoSize = 35;
+  const logoSize = 30;
 
   const skills = [
     {
@@ -94,6 +94,10 @@ export function Skills() {
       IconLogo: <FaGithub size={logoSize} />,
     },
     {
+      skillName: 'Github Actions',
+      IconLogo: <VscGithubAction size={logoSize}/>
+    },
+    {
       skillName: 'HTML',
       IconLogo: <MdOutlineHtml size={logoSize}/>
     },
@@ -104,6 +108,14 @@ export function Skills() {
     {
       skillName: 'Javascript', 
       IconLogo: <IoLogoJavascript size={logoSize} /> 
+    },
+    {
+      skillName: 'Jupyter Notebooks',
+      IconLogo: <GiNotebook size={logoSize}/>
+    },
+    {
+      skillName: 'Kuberenetes',
+      IconLogo: <SiKubernetes size={logoSize}/>
     },
     {
       skillName: 'Node.js',
@@ -120,6 +132,10 @@ export function Skills() {
     {
       skillName: 'Organized',
       IconLogo: <BiSolidCabinet size={logoSize} />,
+    },
+    {
+      skillName: 'Product Testing',
+      IconLogo: <PiTestTubeFill size={logoSize}/>
     },
     {
       skillName: 'Project Management',
@@ -142,20 +158,24 @@ export function Skills() {
       IconLogo: <TbBrandReactNative size={logoSize}/>
     },
     {
+      skillName: 'Realse Cycle Management',
+      IconLogo: <FaCalendarCheck size={logoSize}/>
+    },
+    {
       skillName: 'Reliable',
       IconLogo: <FaHandsHelping size={logoSize}/>,
+    },
+    {
+      skillName: 'Scripting',
+      IconLogo: <FaFileCode size={logoSize} />
     },
     {
       skillName: 'SQL',
       IconLogo: <BsFiletypeSql size={logoSize} />,
     },
     {
-      skillName: 'Software Dev Life Cycle',
+      skillName: 'SDLC',
       IconLogo: <GiCycle size={logoSize}/>
-    },
-    {
-      skillName: 'Product Testing',
-      IconLogo: <PiTestTubeFill size={logoSize}/>
     },
     {
       skillName: 'TypeScript', 

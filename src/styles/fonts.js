@@ -47,6 +47,6 @@ export const TextStyles = {
   },
   skillItem: {
     fontFamily: fonts.kuraleFont,
-    fontSize: 34,
+    fontSize: 28,
   },
 };
