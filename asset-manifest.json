@@ -1,29 +1,29 @@
 {
   "files": {
     "main.css": "/personal-website/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/personal-website/static/js/main.c2defa02.chunk.js",
-    "main.js.map": "/personal-website/static/js/main.c2defa02.chunk.js.map",
-    "runtime-main.js": "/personal-website/static/js/runtime-main.c7eec3d8.js",
-    "runtime-main.js.map": "/personal-website/static/js/runtime-main.c7eec3d8.js.map",
+    "main.js": "/personal-website/static/js/main.6fa0dc80.chunk.js",
+    "main.js.map": "/personal-website/static/js/main.6fa0dc80.chunk.js.map",
+    "runtime-main.js": "/personal-website/static/js/runtime-main.13f57ff7.js",
+    "runtime-main.js.map": "/personal-website/static/js/runtime-main.13f57ff7.js.map",
     "static/css/2.e7900cd4.chunk.css": "/personal-website/static/css/2.e7900cd4.chunk.css",
-    "static/js/2.b671bc14.chunk.js": "/personal-website/static/js/2.b671bc14.chunk.js",
-    "static/js/2.b671bc14.chunk.js.map": "/personal-website/static/js/2.b671bc14.chunk.js.map",
-    "static/js/3.9164cf64.chunk.js": "/personal-website/static/js/3.9164cf64.chunk.js",
-    "static/js/3.9164cf64.chunk.js.map": "/personal-website/static/js/3.9164cf64.chunk.js.map",
+    "static/js/2.83c9d19d.chunk.js": "/personal-website/static/js/2.83c9d19d.chunk.js",
+    "static/js/2.83c9d19d.chunk.js.map": "/personal-website/static/js/2.83c9d19d.chunk.js.map",
+    "static/js/3.67f457d1.chunk.js": "/personal-website/static/js/3.67f457d1.chunk.js",
+    "static/js/3.67f457d1.chunk.js.map": "/personal-website/static/js/3.67f457d1.chunk.js.map",
     "index.html": "/personal-website/index.html",
     "static/css/2.e7900cd4.chunk.css.map": "/personal-website/static/css/2.e7900cd4.chunk.css.map",
     "static/css/main.6dea0f05.chunk.css.map": "/personal-website/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.b671bc14.chunk.js.LICENSE.txt": "/personal-website/static/js/2.b671bc14.chunk.js.LICENSE.txt",
+    "static/js/2.83c9d19d.chunk.js.LICENSE.txt": "/personal-website/static/js/2.83c9d19d.chunk.js.LICENSE.txt",
     "static/media/KYL-LOGO.155dde5d.png": "/personal-website/static/media/KYL-LOGO.155dde5d.png",
     "static/media/USU.c5c7b9d3.jpeg": "/personal-website/static/media/USU.c5c7b9d3.jpeg",
     "static/media/jenna-image.1ca563f4.jpeg": "/personal-website/static/media/jenna-image.1ca563f4.jpeg",
     "static/media/index.css": "/personal-website/static/media/kurale-all-400.d33b29e1.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.c7eec3d8.js",
+    "static/js/runtime-main.13f57ff7.js",
     "static/css/2.e7900cd4.chunk.css",
-    "static/js/2.b671bc14.chunk.js",
+    "static/js/2.83c9d19d.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.c2defa02.chunk.js"
+    "static/js/main.6fa0dc80.chunk.js"
   ]
 }
