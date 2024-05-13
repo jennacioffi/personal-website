@@ -15,21 +15,25 @@ const expWorkHistory = [
     expCompanyLINK: 'https://www.atomicjolt.com/atomic-jolt-apps',
     expTimeWorked: 'August 2022 - Jan 2024 (1yr 5m)',
     skillList: [
-      'iOS Development', 
-      'Android Development',
-      'Git',
-      'React-Native',
-      'Problem-Solving',
-      'Project Management',
+      'App Development (iOS & Android)',
+      'React',
+      'App Deployments',
+      'React Native',
+      'Javascript',
+      'Leadership',
+      'Confidence',
+      'Communication',
       'Documentation',
+      'Git',
+      'Testing',
+      'Debugging & Problem Solving',
+      'Cypress',
+      'Organized',
+      'Project Management',
+      'Teamwork',
     ],
     expSummary: {
-      briefSummary: 'Contributed to the development and maintenance of mobile applications for iOS and Android platforms as a Software/App Developer. Engaged in all phases of the software development lifecycle, encompassing coding, testing, and debugging. Proficient in comprehensive testing procedures, including the creation of testing spreadsheets and contributing to Cypress tests. Emphasized meticulous documentation and project organization.',
-      bulletPoints: [
-        '- Initiated the creation of a comprehensive GitHub Wiki documentation, streamlining the onboarding process for new developers and providing a centralized resource for all team members to reference when working on projects under my ownership. This initiative significantly reduced the time required for new developers to acclimate and improved code consistency across projects',
-        '- Assumed a leadership role in the development and management of the Know Your Lemons Breast Cancer Awareness app, serving as the primary point of contact for the client. Directed the creation and deployment of app builds to various app stores, ensuring timely releases. Facilitated bug-fixing efforts and spearheaded client meetings, contributing to the app\'s success and client satisfaction',
-        '- Collaborated with MIT on the development of the Learner Credential Wallet app, pioneering solutions in the emerging field of digital credential management. Played a pivotal role in conceptualizing and implementing the app\'s functionalities, transforming the way users manage and showcase their educational achievements. This initiative represented a significant step forward in the digitization of academic credentials, positioning MIT at the forefront of innovation in education technology.',
-      ]
+      briefSummary: 'Throughout my tenure, I undertook pivotal roles in overseeing two prominent iOS and Android projects, namely KYL and Learner Credential Wallet. My duties extended to comprehensive software testing and the development of educational products, where I spearheaded the implementation of automated tests using Cypress. Moreover, I authored and curated exhaustive company documentation on a dedicated GitHub wiki, providing invaluable resources for new hires during onboarding and offering developers swift access to vital project insights, including setup procedures and bug resolution strategies. Employing both collaborative teamwork and independent initiative, I upheld a commitment to transparent communication and punctual delivery, thereby nurturing enduring and positive client relationships.',
     }
   },
   {
@@ -193,7 +197,7 @@ export function Experience() {
           <div style={styles.experienceSummaryText}>
             {expObj.expSummary.briefSummary}
           </div>
-          {expObj.expSummary.bulletPoints.map((bulletPointItem, index) => (
+          {expObj.expSummary.bulletPoints && expObj.expSummary.bulletPoints.map((bulletPointItem, index) => (
             <div style={styles.bulletPointItem} key={index}>
               {bulletPointItem}
             </div>
