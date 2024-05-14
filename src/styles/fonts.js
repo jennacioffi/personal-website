@@ -1,3 +1,4 @@
+import { colors } from './colors.js';
 import '@openfonts/kurale_all';
 
 export const fonts = {
@@ -5,8 +6,9 @@ export const fonts = {
 };
 
 export const TextStyles = {
-  PageTitle: {
+  NavBarItems: {
     fontFamily: fonts.kuraleFont,
-    fontSize: 80,
+    fontSize: 25,
+    color: colors.white,
   },
 };
