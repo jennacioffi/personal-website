@@ -15,7 +15,8 @@ const styles = {
     width: '100vw',
   },
   TitleText: {
-    margin: '20px',
+    marginTop: '20px',
+    marginBottom: '20px',
     alignContent: 'center',
     color: colors.white,
     ...TextStyles.H2,
@@ -24,7 +25,7 @@ const styles = {
     alignSelf: 'center',
     flex: 1,
     height: '2px',
-    margin: '30px',
+    margin: '20px',
     backgroundColor: colors.white,
   },
 
@@ -116,14 +117,21 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'column',
+    paddingBottom: '25px',
   },
   EXPCarouselContainer: {
-    backgroundColor: 'blue',
     width: '100vw',
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
     alignItems: 'center',
+  },
+  EXPArrows: {
+    margin: '15px',
+    backgroundColor: colors.white,
+    borderRadius: '100%',
+    display: 'flex',
+    alignSelf: 'center',
   },
 };
 

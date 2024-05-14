@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
+// React Icons
+import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
+
 // Component(s)
 import { EXPCard } from '../../components/index.js';
 
@@ -129,12 +132,12 @@ const ExperienceComponent = ({ isMobile }) => {
           isMobile={isMobile}
         />
         <div style={styles.EXPCarouselContainer}>
-          <div>
-            Left Arrow
+          <div style={styles.EXPArrows}>
+            <FaArrowCircleLeft size={isMobile ? 60 : 50} />
           </div>
           <EXPCard />
-          <div>
-            Right Arrow
+          <div style={styles.EXPArrows}>
+            <FaArrowCircleRight size={isMobile ? 60 : 50} />
           </div>
         </div>
       </div>
