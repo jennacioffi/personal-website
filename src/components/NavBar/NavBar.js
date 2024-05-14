@@ -129,7 +129,7 @@ const NavBar = () => {
   );
 
   const HamburgerMenu = ({ navItems }) => (
-    <>
+    <div style={{maxWidth: '950px'}}>
       <BiMenu style={styles.hamburgerIcon} onClick={toggleNavItemsDropdown} />
       {showNavItemsDropDown && (
         <div style={styles.hamburgerDropDown}>
@@ -147,7 +147,7 @@ const NavBar = () => {
           ))}
         </div>
       )}
-    </>
+    </div>
   );
 
   return (

@@ -9,7 +9,9 @@ const styles = {
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'space-between',
-    padding: '15px',
+    paddingTop: '15px',
+    paddingBottom: '15px',
+    width: '100vw',
   },
 
   // NameContainer
