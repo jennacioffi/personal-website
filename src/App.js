@@ -1,10 +1,8 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { AboutMeAndFAQs } from './pages/AbtMeAndFAQs/AboutMeAndFAQs.js';
-import { ContactMe } from './pages/ContactMe/ContactMe.js';
-import { Experience } from './pages/Experience/Experience.js';
+import { HomePage } from './pages/HomePage/HomePage.js';
 import { Projects } from './pages/Projects/Projects.js';
-import { Skills } from './pages/Skills/Skills.js';
+import { FAQs } from './pages/FAQs/FAQs.js';
 import NavBar from './components/NavBar/NavBar';
 
 function App() {
@@ -17,12 +15,9 @@ function App() {
       }}>
       <NavBar/>
       <Routes>
-        <Route index element={<AboutMeAndFAQs />} />
-        <Route path='/about-me-and-faqs' element={<AboutMeAndFAQs />} />
-        <Route path='/contact-me' element={<ContactMe />} />
-        <Route path='/experience' element={<Experience />} />
+        <Route index element={<HomePage />} />
         <Route path='/projects' element={<Projects />} />
-        <Route path='/skills' element={<Skills />} />
+        <Route path='/faqs' element={<FAQs />} />
       </Routes>
     </div>
   );

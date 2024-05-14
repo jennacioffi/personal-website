@@ -1,10 +1,10 @@
 import React from 'react';
 
-export function Projects() {
+export function HomePage() {
 
   return (
     <div>
-      Hello World from Projects
+      Hello World from Home Page
     </div>
   )
 }

@@ -1,10 +1,10 @@
 import React from 'react';
 
-export function Projects() {
+export function FAQs() {
 
   return (
     <div>
-      Hello World from Projects
+      Hello World from FAQs
     </div>
   )
 }
