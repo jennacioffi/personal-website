@@ -48,4 +48,12 @@ export const TextStyles = {
     fontFamily: fonts.kuraleFont,
     fontSize: 26,
   },
+  H6: {
+    fontFamily: fonts.kuraleFont,
+    fontSize: 18,
+  },
+  H7: {
+    fontFamily: fonts.kuraleFont,
+    fontSize: 14,
+  },
 };

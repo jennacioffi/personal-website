@@ -13,6 +13,10 @@ import { colors } from '../../styles/colors.js';
 // Image(s)
 import jennaImage from '../../images/jenna-image.jpeg';
 
+// Data
+import { expWorkHistory } from '../../data/WorkExperience.json';
+
+
 const Title = ({ title, isMobile }) => {
 
   return (
@@ -122,7 +126,16 @@ const IntroComponent = ({ isMobile }) => {
   )
 }
 
-const ExperienceComponent = ({ isMobile }) => {
+const ExperienceComponent = ({ isMobile, EXPHistory }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const goToNextCard = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === EXPHistory.length - 1 ? 0 : prevIndex + 1));
+  };
+
+  const goToPrevCard = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? EXPHistory.length - 1 : prevIndex - 1));
+  };
 
   return (
     <>
@@ -132,12 +145,25 @@ const ExperienceComponent = ({ isMobile }) => {
           isMobile={isMobile}
         />
         <div style={styles.EXPCarouselContainer}>
-          <div style={styles.EXPArrows}>
-            <FaArrowCircleLeft size={isMobile ? 60 : 50} />
+          <div 
+            style={styles.EXPArrows}
+            onClick={goToPrevCard}
+          >
+            <FaArrowCircleLeft size={isMobile ? 35 : 50} />
           </div>
-          <EXPCard />
-          <div style={styles.EXPArrows}>
-            <FaArrowCircleRight size={isMobile ? 60 : 50} />
+          {EXPHistory.map((EXPItem, index) => (
+            <div 
+              key={index}
+              style={index === currentIndex ? { display: 'none' } : {}}
+            >
+              <EXPCard EXPItem={EXPItem} />
+            </div>
+          ))}
+          <div 
+            style={styles.EXPArrows}
+            onClick={goToNextCard}
+          >
+            <FaArrowCircleRight size={isMobile ? 35 : 50} />
           </div>
         </div>
       </div>
@@ -163,7 +189,10 @@ export function HomePage() {
   return (
     <div style={styles.outerContainer}>
       <IntroComponent isMobile={isMobile}/>
-      <ExperienceComponent isMobile={isMobile}/>
+      <ExperienceComponent 
+        isMobile={isMobile}
+        EXPHistory={expWorkHistory}
+      />
     </div>
   )
 }
