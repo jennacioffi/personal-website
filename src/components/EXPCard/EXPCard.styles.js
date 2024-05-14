@@ -49,10 +49,7 @@ const styles = {
     ...TextStyles.H6,
   },
   SummaryBulletPoints: {
-    paddingTop: '5%',
-    paddingBottom: '5%',
-    paddingLeft: '5%',
-    paddingRight: '5%',
+    padding: '1%',
     color: colors.white,
     ...TextStyles.H7,
   },
@@ -124,6 +121,7 @@ const styles = {
     textAlign: 'center',
   },
   EXPSKillItemTEXT: {
+    color: colors.white,
     ...TextStyles.H6
   },
 };
