@@ -2,6 +2,45 @@ import { colors } from '../../styles/colors.js'
 import { TextStyles } from '../../styles/fonts.js'
 
 const styles = {
+  // EXP Skills
+  EXPSkillsContainer: {
+    display: 'flex',
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  EXPSkillsBox: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    backgroundColor: colors.mildGrey,
+    width: '400px',
+    height: '175px',
+    borderRadius: '15px',
+    overflowY: 'scroll',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: '2%',
+  },
+  EXPSkillItemContainer: {
+    display: 'flex',
+    backgroundColor: colors.BlueAccent,
+    width: 'fit-content',
+    height: 'fit-content',
+    borderRadius: '5px',
+    margin: '2%',
+    padding: '2%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignContent: 'center',
+    alignSelf: 'center',
+    textAlign: 'center',
+  },
+  EXPSKillItemTEXT: {
+    color: colors.white,
+    ...TextStyles.H6
+  },
+
+  // EXP Card
   outerContainer: {
     alignItems: 'center',
     display: 'flex',
@@ -86,43 +125,31 @@ const styles = {
     color: colors.black,
     ...TextStyles.H5,
   },
-  
-  // EXP Skills
-  EXPSkillsContainer: {
+
+  // Experience Component
+  ExpComponentContainer: {
+    backgroundColor: colors.black,
     display: 'flex',
-    flex: 1,
+    width: '100vw',
+    height: 'max-content',
     justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
+    paddingBottom: '25px',
+  },
+  EXPCarouselContainer: {
+    width: '100vw',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-around',
     alignItems: 'center',
   },
-  EXPSkillsBox: {
+  EXPArrows: {
+    margin: '15px',
+    backgroundColor: colors.white,
+    borderRadius: '100%',
     display: 'flex',
-    flexWrap: 'wrap',
-    backgroundColor: colors.mildGrey,
-    width: '400px',
-    height: '175px',
-    borderRadius: '15px',
-    overflowY: 'scroll',
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: '2%',
-  },
-  EXPSkillItemContainer: {
-    display: 'flex',
-    backgroundColor: colors.BlueAccent,
-    width: 'fit-content',
-    height: 'fit-content',
-    borderRadius: '5px',
-    margin: '2%',
-    padding: '2%',
-    justifyContent: 'center',
-    alignItems: 'center',
-    alignContent: 'center',
     alignSelf: 'center',
-    textAlign: 'center',
-  },
-  EXPSKillItemTEXT: {
-    color: colors.white,
-    ...TextStyles.H6
   },
 };
 

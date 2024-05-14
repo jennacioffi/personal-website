@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+// Components
+import { Title } from '../index.js';
+
+// React Icons
+import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 
 // Styling
 import styles from './EXPCard.styles';
 
-const EXPSkilItem = ({ isMobile, skillItem }) => {
+// Data
+import { expWorkHistory } from '../../data/WorkExperience.json';
 
+const EXPSkilItem = ({ skillItem }) => {
   return (
     <>
       <div style={styles.EXPSkillItemContainer}>
@@ -71,8 +79,8 @@ const EXPCard = ({ isMobile, EXPItem }) => {
             </div>
             <div style={styles.EXPSkillsContainer}>
               <div style={{...styles.EXPSkillsBox, ...(isMobile && { width: '375px' })}}>
-                {EXPItem.skillList.map((skillItem) => (
-                  <EXPSkilItem isMobile={isMobile} skillItem={skillItem}/>
+                {EXPItem.skillList.map((skillItem, index) => (
+                  <EXPSkilItem key={index} isMobile={isMobile} skillItem={skillItem}/>
                 ))}
               </div>
             </div>
@@ -83,4 +91,87 @@ const EXPCard = ({ isMobile, EXPItem }) => {
   )
 }
 
-export default EXPCard;
+const EXPCarousel = ({ EXPHistory, isMobile }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const goToNextCard = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === EXPHistory.length - 1 ? 0 : prevIndex + 1));
+  };
+
+  const goToPrevCard = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? EXPHistory.length - 1 : prevIndex - 1));
+  };
+
+  return (
+    <>
+      {isMobile ? (
+        <div style={{...styles.EXPCarouselContainer, flexDirection: 'column'}}>
+          <div style={{display: 'flex', flexDirection: 'row', marginBottom: '10px', }}>
+            <div 
+              style={styles.EXPArrows}
+              onClick={goToPrevCard}
+            >
+              <FaArrowCircleLeft size={isMobile ? 35 : 50} />
+            </div>
+            <div 
+              style={styles.EXPArrows}
+              onClick={goToNextCard}
+            >
+              <FaArrowCircleRight size={isMobile ? 35 : 50} />
+            </div>
+          </div>
+          {EXPHistory.map((EXPItem, index) => (
+            <div 
+              key={index}
+              style={index === currentIndex ? { display: 'none' } : {}}
+            >
+              <EXPCard EXPItem={EXPItem} isMobile={isMobile}/>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div style={styles.EXPCarouselContainer}>
+          <div 
+            style={styles.EXPArrows}
+            onClick={goToPrevCard}
+          >
+            <FaArrowCircleLeft size={isMobile ? 35 : 50} />
+          </div>
+          {EXPHistory.map((EXPItem, index) => (
+            <div 
+              key={index}
+              style={index === currentIndex ? { display: 'none' } : {}}
+            >
+              <EXPCard EXPItem={EXPItem} isMobile={isMobile}/>
+            </div>
+          ))}
+          <div 
+            style={styles.EXPArrows}
+            onClick={goToNextCard}
+          >
+            <FaArrowCircleRight size={isMobile ? 35 : 50} />
+          </div>
+        </div>
+      )}
+    </>
+  );
+};
+
+const ExperienceComponent = ({ isMobile }) => {
+  return (
+    <>
+      <div style={styles.ExpComponentContainer}>
+        <Title 
+          title={'Experience'}
+          isMobile={isMobile}
+        />
+        <EXPCarousel 
+          EXPHistory={expWorkHistory}
+          isMobile={isMobile}
+        />
+      </div>
+    </>
+  )
+}
+
+export default ExperienceComponent;
