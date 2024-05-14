@@ -126,7 +126,7 @@ const IntroComponent = ({ isMobile }) => {
   )
 }
 
-const ExperienceComponent = ({ isMobile, EXPHistory }) => {
+const EXPCarousel = ({ EXPHistory, isMobile }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToNextCard = () => {
@@ -139,11 +139,32 @@ const ExperienceComponent = ({ isMobile, EXPHistory }) => {
 
   return (
     <>
-      <div style={styles.ExpComponentContainer}>
-        <Title 
-          title={'Experience'}
-          isMobile={isMobile}
-        />
+      {isMobile ? (
+        <div style={{...styles.EXPCarouselContainer, flexDirection: 'column'}}>
+          <div style={{display: 'flex', flexDirection: 'row', marginBottom: '10px', }}>
+            <div 
+              style={styles.EXPArrows}
+              onClick={goToPrevCard}
+            >
+              <FaArrowCircleLeft size={isMobile ? 35 : 50} />
+            </div>
+            <div 
+              style={styles.EXPArrows}
+              onClick={goToNextCard}
+            >
+              <FaArrowCircleRight size={isMobile ? 35 : 50} />
+            </div>
+          </div>
+          {EXPHistory.map((EXPItem, index) => (
+            <div 
+              key={index}
+              style={index === currentIndex ? { display: 'none' } : {}}
+            >
+              <EXPCard EXPItem={EXPItem} isMobile={isMobile}/>
+            </div>
+          ))}
+        </div>
+      ) : (
         <div style={styles.EXPCarouselContainer}>
           <div 
             style={styles.EXPArrows}
@@ -156,7 +177,7 @@ const ExperienceComponent = ({ isMobile, EXPHistory }) => {
               key={index}
               style={index === currentIndex ? { display: 'none' } : {}}
             >
-              <EXPCard EXPItem={EXPItem} />
+              <EXPCard EXPItem={EXPItem} isMobile={isMobile}/>
             </div>
           ))}
           <div 
@@ -166,6 +187,24 @@ const ExperienceComponent = ({ isMobile, EXPHistory }) => {
             <FaArrowCircleRight size={isMobile ? 35 : 50} />
           </div>
         </div>
+      )}
+    </>
+  );
+};
+
+
+const ExperienceComponent = ({ isMobile, EXPHistory }) => {
+  return (
+    <>
+      <div style={styles.ExpComponentContainer}>
+        <Title 
+          title={'Experience'}
+          isMobile={isMobile}
+        />
+        <EXPCarousel 
+          EXPHistory={EXPHistory}
+          isMobile={isMobile}
+        />
       </div>
     </>
   )

@@ -38,15 +38,15 @@ export const TextStyles = {
   },
   H3: {
     fontFamily: fonts.kuraleFont,
-    fontSize: 40,
+    fontSize: 30,
   },
   H4: {
     fontFamily: fonts.kuraleFont,
-    fontSize: 30,
+    fontSize: 26,
   },
   H5: {
     fontFamily: fonts.kuraleFont,
-    fontSize: 26,
+    fontSize: 20,
   },
   H6: {
     fontFamily: fonts.kuraleFont,
