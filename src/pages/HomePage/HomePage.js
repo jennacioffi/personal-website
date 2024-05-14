@@ -22,40 +22,60 @@ const IntroLeftComponent = () => {
   )
 }
 
-const IntroRightComponent = () => {
+const IntroRightComponent = ({ isMobile }) => {
   const openLink = (url) => {
     window.open(url, '_blank');
   };
   
   return (
-    <div style={styles.IntroRightSide}>
-      <div style={styles.HiImName}>
+    <div style={{
+      ...styles.IntroRightSide, 
+      ...(isMobile && {
+        paddingTop: '15px',
+        paddingBottom: '15px',
+      })
+    }}>
+      <div style={{ 
+        ...styles.HiImName, 
+        ...(isMobile && { fontSize: 60 }) 
+      }}>
         Hi, I'm Jenna
       </div> 
-      <div style={styles.IntroCareerTitle}>
+      <div style={{
+        ...styles.IntroCareerTitle, 
+        ...(isMobile && { fontSize: 20 })
+      }}>
         Web Developer & Software Engineer
       </div>    
-      <div style={styles.IntroLinksContainer}>
+      <div style={{
+        ...styles.IntroLinksContainer, 
+        ...(isMobile && { fontSize: 24 })
+      }}>
         <div
-          style={{ backgroundColor: colors.GitHub, ...styles.buttonContainer }}
-          onClick={() => openLink('https://github.com/jennacioffi')} // Update the link here
+          style={{ 
+            backgroundColor: colors.GitHub, 
+            ...styles.buttonContainer 
+          }}
+          onClick={() => openLink('https://github.com/jennacioffi')}
         >
-
-          {/* window.open('https://github.com/jennacioffi', '_blank'); */}
           GitHub
         </div>
         <div
-          style={{ backgroundColor: colors.LinkedIn, ...styles.buttonContainer }}
-          onClick={() => openLink('https://www.linkedin.com/in/jenna-cioffi/')} // Update the link here
+          style={{ 
+            backgroundColor: colors.LinkedIn, 
+            ...styles.buttonContainer 
+          }}
+          onClick={() => openLink('https://www.linkedin.com/in/jenna-cioffi/')}
         >
-          {/* window.open('https://www.linkedin.com/in/jenna-cioffi/', '_blank'); */}
           LinkedIn
         </div>
         <div
-          style={{ backgroundColor: colors.EmailMe, ...styles.buttonContainer }}
-          onClick={() => openLink('/personal-website/#/contact-me')} // Update the link here
+          style={{ 
+            backgroundColor: colors.EmailMe, 
+            ...styles.buttonContainer 
+          }}
+          onClick={() => openLink('/personal-website/#/contact-me')}
         >
-          {/* window.location.href = '/personal-website/#/contact-me'; */}
           Email Me
         </div>
       </div>
@@ -68,14 +88,22 @@ const IntroComponent = ({ isMobile }) => {
   return (
     <>
       <div 
-        style={isMobile ? 
-          styles.introComponentContainerMOBILE 
-          : 
-          styles.introComponentContainerDESKTOP
-        }>
+        style={{
+          ...styles.introComponentContainer, 
+          ...(isMobile && 
+            {flexDirection: 'column', height: 'max-content',})
+        }}>
         <IntroLeftComponent/>
-        <IntroRightComponent/>
+        <IntroRightComponent isMobile={isMobile}/>
       </div>
+    </>
+  )
+}
+
+const ExperienceComponent = ({ isMobile }) => {
+
+  return (
+    <>
     </>
   )
 }
@@ -98,6 +126,7 @@ export function HomePage() {
   return (
     <div style={styles.outerContainer}>
       <IntroComponent isMobile={isMobile}/>
+      <ExperienceComponent ismbole={isMobile}/>
     </div>
   )
 }

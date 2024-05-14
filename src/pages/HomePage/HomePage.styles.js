@@ -8,28 +8,16 @@ const styles = {
   },
 
   // Intro Component - Outer Container
-  introComponentContainerDESKTOP: {
-    display: 'flex',
+  introComponentContainer: {
     backgroundColor: colors.black,
     color: colors.white,
-    fontSize: 30,
+    display: 'flex',
+    flexWrap: 'wrap',
     fontFamily: fonts.kuraleFont,
-    width: '100%',
+    fontSize: 30,
     height: '450px',
     justifyContent: 'center',
-    flexWrap: 'wrap',
-  },
-  introComponentContainerMOBILE: {
-    display: 'flex',
-    backgroundColor: colors.black,
-    color: colors.white,
-    fontSize: 30,
-    fontFamily: fonts.kuraleFont,
     width: '100vw',
-    height: '850px',
-    justifyContent: 'center',
-    flexWrap: 'wrap',
-    flexDirection: 'column',
   },
 
   // Intro Component - Left Side
@@ -80,6 +68,7 @@ const styles = {
     flexWrap: 'wrap',
     justifyContent: 'center',
     alignContent: 'center',
+    ...TextStyles.IntroLinksButtonText,
   },
   buttonContainer: {
     alignContent: 'center',

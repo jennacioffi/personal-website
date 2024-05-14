@@ -22,6 +22,10 @@ export const TextStyles = {
     fontFamily: fonts.kuraleFont,
     fontSize: 26,
   },
+  IntroLinksButtonText: {
+    fontFamily: fonts.kuraleFont,
+    fontSize: 28,
+  },
 
   // General Usage
   H1: {
