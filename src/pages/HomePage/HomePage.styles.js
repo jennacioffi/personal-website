@@ -2,9 +2,30 @@ import { colors } from '../../styles/colors.js';
 import { fonts, TextStyles } from '../../styles/fonts.js';
 
 const styles = {
+  // General Use
   outerContainer: {
     display: 'flex',
     overflowX: 'auto',
+    flexDirection: 'column',
+  },
+  
+  // Title Component
+  TitleElement: {
+    display: 'flex',
+    width: '100vw',
+  },
+  TitleText: {
+    margin: '20px',
+    alignContent: 'center',
+    color: colors.white,
+    ...TextStyles.H2,
+  },
+  lineTitleItem: {
+    alignSelf: 'center',
+    flex: 1,
+    height: '2px',
+    margin: '30px',
+    backgroundColor: colors.white,
   },
 
   // Intro Component - Outer Container
@@ -39,6 +60,12 @@ const styles = {
     borderRadius: '10px',
   },
   IntroImage: {
+    boxShadow: `
+      2px 2px 7px ${colors.white}, /* Top left */
+      -2px 2px 7px ${colors.white}, /* Top right */
+      2px -2px 7px ${colors.white}, /* Bottom left */
+      -2px -2px 7px ${colors.white} /* Bottom right */
+    `,
     maxWidth: '95%',
     maxHeight: '95%',
     borderRadius: '10px',
@@ -78,6 +105,25 @@ const styles = {
     padding: '10px',
     textAlign: 'center',
     width: 'fit-content',
+  },
+
+  // Experience Component
+  ExpComponentContainer: {
+    backgroundColor: colors.black,
+    display: 'flex',
+    width: '100vw',
+    height: 'max-content',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
+  },
+  EXPCarouselContainer: {
+    backgroundColor: 'blue',
+    width: '100vw',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
   },
 };
 

@@ -1,11 +1,30 @@
 import React, { useState, useEffect } from 'react';
 
+// Component(s)
+import { EXPCard } from '../../components/index.js';
+
 // Styling
 import styles from './HomePage.styles.js';
 import { colors } from '../../styles/colors.js';
 
 // Image(s)
 import jennaImage from '../../images/jenna-image.jpeg';
+
+const Title = ({ title, isMobile }) => {
+
+  return (
+    <div style={styles.TitleElement}>
+      <div style={styles.lineTitleItem}></div>
+      <div style={{
+        ...styles.TitleText,
+        ...(isMobile && { fontSize: 40 }),
+      }}>
+        {title}
+      </div>
+      <div style={styles.lineTitleItem}></div>
+    </div>
+  )
+}
 
 const IntroLeftComponent = () => {
 
@@ -104,6 +123,21 @@ const ExperienceComponent = ({ isMobile }) => {
 
   return (
     <>
+      <div style={styles.ExpComponentContainer}>
+        <Title 
+          title={'Experience'}
+          isMobile={isMobile}
+        />
+        <div style={styles.EXPCarouselContainer}>
+          <div>
+            Left Arrow
+          </div>
+          <EXPCard />
+          <div>
+            Right Arrow
+          </div>
+        </div>
+      </div>
     </>
   )
 }
@@ -126,7 +160,7 @@ export function HomePage() {
   return (
     <div style={styles.outerContainer}>
       <IntroComponent isMobile={isMobile}/>
-      <ExperienceComponent ismbole={isMobile}/>
+      <ExperienceComponent isMobile={isMobile}/>
     </div>
   )
 }
