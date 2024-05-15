@@ -151,6 +151,33 @@ const styles = {
     display: 'flex',
     alignSelf: 'center',
   },
+
+  // Dots for Carousel Navigation
+  dotsContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: '10px',
+    marginBottom: '20px',
+  },
+  activeDot: {
+    height: '10px',
+    width: '10px',
+    backgroundColor: colors.BlueAccent,
+    borderRadius: '50%',
+    display: 'inline-block',
+    margin: '0 5px',
+    cursor: 'pointer',
+  },
+  inactiveDot: {
+    height: '10px',
+    width: '10px',
+    backgroundColor: colors.mildGrey,
+    borderRadius: '50%',
+    display: 'inline-block',
+    margin: '0 5px',
+    cursor: 'pointer',
+  },
 };
 
 export default styles;

@@ -137,54 +137,77 @@ const EXPCarousel = ({ EXPHistory, isMobile }) => {
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? EXPHistory.length - 1 : prevIndex - 1));
   };
 
+  const goToCard = (index) => {
+    setCurrentIndex(index);
+  };
+
+
+  const renderDots = () => (
+    <div style={styles.dotsContainer}>
+      {EXPHistory.map((_, index) => (
+        <div
+          key={index}
+          style={index === currentIndex ? styles.activeDot : styles.inactiveDot}
+          onClick={() => goToCard(index)}
+        />
+      ))}
+    </div>
+  );
+
   return (
     <>
       {isMobile ? (
-        <div style={{...styles.EXPCarouselContainer, flexDirection: 'column'}}>
-          <div style={{display: 'flex', flexDirection: 'row', marginBottom: '10px', }}>
+        <div>
+          {renderDots()}
+          <div style={{...styles.EXPCarouselContainer, flexDirection: 'column'}}>
+            <div style={{display: 'flex', flexDirection: 'row', marginBottom: '10px', }}>
+              <div 
+                style={styles.EXPArrows}
+                onClick={goToPrevCard}
+              >
+                <FaArrowCircleLeft size={isMobile ? 35 : 50} />
+              </div>
+              <div 
+                style={styles.EXPArrows}
+                onClick={goToNextCard}
+              >
+                <FaArrowCircleRight size={isMobile ? 35 : 50} />
+              </div>
+            </div>
+            {EXPHistory.map((EXPItem, index) => (
+              <div 
+                key={index}
+                style={index === currentIndex ? { display: 'none' } : {}}
+              >
+                <EXPCard EXPItem={EXPItem} isMobile={isMobile}/>
+              </div>
+            ))}
+          </div>
+        </div>
+      ) : (
+        <div>
+          {renderDots()}
+          <div style={styles.EXPCarouselContainer}>
             <div 
               style={styles.EXPArrows}
               onClick={goToPrevCard}
             >
               <FaArrowCircleLeft size={isMobile ? 35 : 50} />
             </div>
+            {EXPHistory.map((EXPItem, index) => (
+              <div 
+                key={index}
+                style={index === currentIndex ? { display: 'none' } : {}}
+              >
+                <EXPCard EXPItem={EXPItem} isMobile={isMobile}/>
+              </div>
+            ))}
             <div 
               style={styles.EXPArrows}
               onClick={goToNextCard}
             >
               <FaArrowCircleRight size={isMobile ? 35 : 50} />
             </div>
-          </div>
-          {EXPHistory.map((EXPItem, index) => (
-            <div 
-              key={index}
-              style={index === currentIndex ? { display: 'none' } : {}}
-            >
-              <EXPCard EXPItem={EXPItem} isMobile={isMobile}/>
-            </div>
-          ))}
-        </div>
-      ) : (
-        <div style={styles.EXPCarouselContainer}>
-          <div 
-            style={styles.EXPArrows}
-            onClick={goToPrevCard}
-          >
-            <FaArrowCircleLeft size={isMobile ? 35 : 50} />
-          </div>
-          {EXPHistory.map((EXPItem, index) => (
-            <div 
-              key={index}
-              style={index === currentIndex ? { display: 'none' } : {}}
-            >
-              <EXPCard EXPItem={EXPItem} isMobile={isMobile}/>
-            </div>
-          ))}
-          <div 
-            style={styles.EXPArrows}
-            onClick={goToNextCard}
-          >
-            <FaArrowCircleRight size={isMobile ? 35 : 50} />
           </div>
         </div>
       )}
