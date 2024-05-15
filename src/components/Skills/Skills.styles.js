@@ -6,15 +6,18 @@ const styles = {
     backgroundColor: colors.black,
     display: 'flex',
     width: '100vw',
-    height: '550px',
+    height: '600px',
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'column',
     paddingBottom: '25px',
   },
   outerSkillsContainer: {
-    display: 'flex',
-    width: '95vw',
+    // display: 'flex',
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', // Adjust the min and max width as needed
+    gap: '10px',
+    width: '100vw',
     height: '500px',
     overflowY: 'auto',
     flexWrap: 'wrap',
@@ -23,10 +26,7 @@ const styles = {
   skillContainer: {
     display: 'flex',
     flexDirection: 'column',
-    // backgroundColor: colors.BlueAccent,
     borderRadius: '10px',
-    width: 'fit-content',
-    height: 'fit-content',
     textAlign: 'center',
     margin: '10px',
     padding: '10px',
@@ -34,11 +34,11 @@ const styles = {
   iconContainer: {
     display: 'flex',
     margin: '0 auto',
-    width: 'fit-content',
-    height: 'fit-content',
+    // width: 'max-content',
+    // height: 'max-content',
     backgroundColor: colors.BlueAccent,
     borderRadius: '100%',
-    padding: '10px',
+    padding: '15px',
     boxShadow: `
       2px 2px 7px ${colors.white}, /* Top left */
       -2px 2px 7px ${colors.white}, /* Top right */
