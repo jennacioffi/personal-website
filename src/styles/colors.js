@@ -7,4 +7,8 @@ export const colors = {
   BlueAccent: '#007BA7',
   lightGrey: '#E7E7E7',
   mildGrey: '#C8C8C8',
+  grey: '#363636',
+  submitGreen: '#179900',
+  submitBlue: '#006DFF',
+  submitRed: '#FD3535'
 };

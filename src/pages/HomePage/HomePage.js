@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 // Component(s)
-import { Intro, Experience, Skills } from '../../components/index.js';
+import { Intro, Experience, Skills, ContactMe } from '../../components/index.js';
 
 // Styling
 import styles from './HomePage.styles.js';
@@ -26,6 +26,7 @@ export function HomePage() {
       <Intro isMobile={isMobile}/>
       <Experience isMobile={isMobile}/>
       <Skills isMobile={isMobile}/>
+      <ContactMe isMobile={isMobile}/>
     </div>
   )
 }
