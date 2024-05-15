@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Styling
-import styles from './IntroComponent.styles'
+import styles from './Intro.styles'
 import { colors } from '../../styles/colors';
 
 // Data
@@ -82,7 +82,7 @@ const IntroRightComponent = ({ isMobile }) => {
   )
 }
 
-const IntroComponent = ({ isMobile }) => {
+const Intro = ({ isMobile }) => {
   return (
     <>
       <div 
@@ -98,4 +98,4 @@ const IntroComponent = ({ isMobile }) => {
   )
 }
 
-export default IntroComponent;
+export default Intro;

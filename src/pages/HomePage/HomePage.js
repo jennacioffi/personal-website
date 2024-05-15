@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 // Component(s)
-import { IntroComponent, ExperienceComponent } from '../../components/index.js';
+import { Intro, ExperienceComponent } from '../../components/index.js';
 
 // Styling
 import styles from './HomePage.styles.js';
@@ -23,7 +23,7 @@ export function HomePage() {
 
   return (
     <div style={styles.outerContainer}>
-      <IntroComponent isMobile={isMobile}/>
+      <Intro isMobile={isMobile}/>
       <ExperienceComponent 
         isMobile={isMobile}
       />
