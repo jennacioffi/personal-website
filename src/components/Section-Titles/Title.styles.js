@@ -5,7 +5,7 @@ const styles = {
   // Title Component
   TitleElement: {
     display: 'flex',
-    width: '100vw',
+    width: '95vw',
   },
   TitleText: {
     marginTop: '20px',

@@ -13,12 +13,9 @@ const styles = {
     paddingBottom: '25px',
   },
   outerSkillsContainer: {
-    // display: 'flex',
     display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', // Adjust the min and max width as needed
-    gap: '10px',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
     width: '100vw',
-    height: '500px',
     overflowY: 'auto',
     flexWrap: 'wrap',
     justifyContent: 'center',
@@ -34,8 +31,6 @@ const styles = {
   iconContainer: {
     display: 'flex',
     margin: '0 auto',
-    // width: 'max-content',
-    // height: 'max-content',
     backgroundColor: colors.BlueAccent,
     borderRadius: '100%',
     padding: '15px',

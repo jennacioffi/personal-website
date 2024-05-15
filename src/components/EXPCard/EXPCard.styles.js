@@ -16,7 +16,7 @@ const styles = {
     width: '400px',
     height: '175px',
     borderRadius: '15px',
-    overflowY: 'scroll',
+    overflowX: 'auto',
     justifyContent: 'center',
     alignItems: 'center',
     padding: '2%',
@@ -145,12 +145,12 @@ const styles = {
     alignItems: 'center',
   },
   EXPArrows: {
-    margin: '15px',
     backgroundColor: colors.white,
     borderRadius: '100%',
     display: 'flex',
     alignSelf: 'center',
     cursor: 'pointer',
+    margin: '20px',
   },
 
   // Dots for Carousel Navigation
@@ -162,8 +162,8 @@ const styles = {
     marginBottom: '20px',
   },
   activeDot: {
-    height: '10px',
-    width: '10px',
+    height: '15px',
+    width: '15px',
     backgroundColor: colors.BlueAccent,
     borderRadius: '50%',
     display: 'inline-block',
