@@ -150,6 +150,7 @@ const styles = {
     borderRadius: '100%',
     display: 'flex',
     alignSelf: 'center',
+    cursor: 'pointer',
   },
 
   // Dots for Carousel Navigation

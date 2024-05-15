@@ -215,7 +215,7 @@ const EXPCarousel = ({ EXPHistory, isMobile }) => {
   );
 };
 
-const ExperienceComponent = ({ isMobile }) => {
+const Experience = ({ isMobile }) => {
   return (
     <>
       <div style={styles.ExpComponentContainer}>
@@ -232,4 +232,4 @@ const ExperienceComponent = ({ isMobile }) => {
   )
 }
 
-export default ExperienceComponent;
+export default Experience;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 // Component(s)
-import { Intro, ExperienceComponent } from '../../components/index.js';
+import { Intro, Experience, Skills } from '../../components/index.js';
 
 // Styling
 import styles from './HomePage.styles.js';
@@ -24,9 +24,8 @@ export function HomePage() {
   return (
     <div style={styles.outerContainer}>
       <Intro isMobile={isMobile}/>
-      <ExperienceComponent 
-        isMobile={isMobile}
-      />
+      <Experience isMobile={isMobile}/>
+      <Skills isMobile={isMobile}/>
     </div>
   )
 }
