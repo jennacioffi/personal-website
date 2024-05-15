@@ -39,7 +39,7 @@ const SkillItem = ({ skill }) => {
 }
 
 const Skills = ({ isMobile }) => {
-  const logoSize = 25;
+  const logoSize = 40;
 
   const skills = [
     {

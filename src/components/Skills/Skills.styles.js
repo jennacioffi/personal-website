@@ -23,7 +23,7 @@ const styles = {
   skillContainer: {
     display: 'flex',
     flexDirection: 'column',
-    backgroundColor: colors.BlueAccent,
+    // backgroundColor: colors.BlueAccent,
     borderRadius: '10px',
     width: 'fit-content',
     height: 'fit-content',
@@ -34,12 +34,23 @@ const styles = {
   iconContainer: {
     display: 'flex',
     margin: '0 auto',
+    width: 'fit-content',
+    height: 'fit-content',
+    backgroundColor: colors.BlueAccent,
+    borderRadius: '100%',
+    padding: '10px',
+    boxShadow: `
+      2px 2px 7px ${colors.white}, /* Top left */
+      -2px 2px 7px ${colors.white}, /* Top right */
+      2px -2px 7px ${colors.white}, /* Bottom left */
+      -2px -2px 7px ${colors.white} /* Bottom right */
+    `,
     color: colors.white,
   },
   skillName: {
     color: colors.white,
     marginTop: '5px',
-    ...TextStyles.H6,
+    ...TextStyles.H5,
   },
 }
 
