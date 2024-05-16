@@ -18,10 +18,12 @@ const styles = {
   nameContainer: {
     ...TextStyles.NavBarItems,
     marginLeft: '25px',
+    cursor: 'pointer',
   },
   dropDownArrow: {
     marginLeft: '10px', 
     verticalAlign: 'middle',
+    cursor: 'pointer',
   },
   dropdown: {
     backgroundColor: colors.black,
@@ -31,6 +33,7 @@ const styles = {
     position: 'absolute',
     width: '200px',
     zIndex: 1000,
+    cursor: 'pointer',
   },
 
   // HamburgerMenu
@@ -41,6 +44,7 @@ const styles = {
     position: 'absolute',
     right: '25px',
     width: '35px',
+    cursor: 'pointer',
   },
   hamburgerDropDown: {
     backgroundColor: colors.black,
@@ -74,6 +78,7 @@ const styles = {
     marginLeft: '10px',
     marginRight: '10px',
     textDecoration: 'none', 
+    cursor: 'pointer',
   },
 
   // DropdownSocials
@@ -84,6 +89,7 @@ const styles = {
     flexDirection: 'row',
     justifyContent: 'space-around',
     padding: '8px 12px',
+    cursor: 'pointer',
   },
   dropDownText: {
     ...TextStyles.NavBarItems,

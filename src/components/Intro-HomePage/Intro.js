@@ -73,7 +73,7 @@ const IntroRightComponent = ({ isMobile }) => {
             backgroundColor: colors.EmailMe, 
             ...styles.buttonContainer 
           }}
-          onClick={() => openLink('/personal-website/#/contact-me')}
+          onClick={() => openLink('/personal-website/#contact-me')}
         >
           Email Me
         </div>

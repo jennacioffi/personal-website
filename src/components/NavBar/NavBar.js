@@ -27,7 +27,7 @@ const DropdownSocials = ({ title, onClick }) => {
 
   return (
     <div style={styles.dropdownItem} onClick={onClick}>
-      <div>{iconComponent}</div>
+      <div style={{cursor: 'pointer'}}>{iconComponent}</div>
       <div style={styles.dropDownText}>{title}</div>
     </div>
   );
@@ -95,7 +95,7 @@ const NavBar = () => {
         window.open('https://www.linkedin.com/in/jenna-cioffi/', '_blank');
         break;
       case 'Contact Me':
-        window.location.href = '/personal-website/#/contact-me';
+        window.location.href = '/personal-website/#contact-me';
         break;
       default:
         console.log(`UNKNOWN: ${item.title}`);
@@ -113,7 +113,7 @@ const NavBar = () => {
     { title: 'Contact Me', id: 'contact-me' },
   ];
 
-  const socialItems = ['GitHub', 'LinkedIn'];
+  const socialItems = ['GitHub', 'LinkedIn', 'Contact Me'];
 
   const NameContainer = () => (
     <div 

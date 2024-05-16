@@ -79,6 +79,7 @@ const styles = {
     padding: '10px',
     textAlign: 'center',
     width: 'fit-content',
+    cursor: 'pointer',
   },
 }
 
