@@ -6,27 +6,88 @@ import ProjectData from '../../data/Projects.json';
 
 import styles from './Projects.styles';
 
-const ProjectTitle = ({ project }) => {
+const ProjectTitle = ({ project, isMobile }) => {
   return (
-    <div style={styles.ProjectTitleOuterContainer}>
-      <div style={styles.ProjectTitleContainer}>
+    <div style={styles.ProjectTitleContainer}>
+      <div style={styles.ProjectTitleText}>
         {project.projectName}
       </div>
-      {project.Github && (
-        <>
-        </>
-      )}
-      {project.projectLink && (
-        <>
-        </>
-      )}
-      {project.ProjectRelatedTo && (
-        <>
-        </>
-      )}
+      <ProjectRelatedTo project={project} isMobile={isMobile}/>
     </div>
   )
-}
+};
+
+const ProjectRelatedTo = ({ project, isMobile }) => {
+  return (
+    <>
+      {isMobile ? (
+        project.projectRelatedTo && (
+          <div style={styles.projectRelatedToContainer}>
+            <div style={styles.projectRelatedTo}>
+              {project.projectRelatedTo}
+            </div>
+          </div>
+        )
+      ) : (
+        project.projectRelatedTo && (
+          <div style={styles.projectRelatedToContainer}>
+            <div style={styles.projectRelatedTo}>
+              {project.projectRelatedTo}
+            </div>
+          </div>
+        )
+      )}
+    </>
+  );
+};
+
+const ProjectGithub = ({ project, isMobile }) => {
+  return (
+    <>
+      {isMobile ? (
+        project.projectGithub && (
+          <div style={styles.linkedTextContainer}>
+            <a href={project.projectGithub} target="_blank" rel="noopener noreferrer" style={styles.linkedText}>
+              GitHub
+            </a>
+          </div>
+        )
+      ) : (
+        project.projectGithub && (
+          <div style={styles.linkedTextContainer}>
+            <a href={project.projectGithub} target="_blank" rel="noopener noreferrer" style={styles.linkedText}>
+              GitHub
+            </a>
+          </div>
+        )
+      )}
+    </>
+  );
+};
+
+const ProjectLinkedText = ({ project, isMobile }) => {
+  return (
+    <>
+      {isMobile ? (
+        project.projectLink && (
+          <div style={styles.linkedTextContainer}>
+            <a href={project.projectLink} target="_blank" rel="noopener noreferrer" style={styles.linkedText}>
+              {project.projectLinkText}
+            </a>
+          </div>
+        )
+      ) : (
+        project.projectLink && (
+          <div style={styles.linkedTextContainer}>
+            <a href={project.projectLink} target="_blank" rel="noopener noreferrer" style={styles.linkedText}>
+              {project.projectLinkText}
+            </a>
+          </div>
+        )
+      )}
+    </>
+  );
+};
 
 const ProjectSummary = ({ project, isMobile }) => {
   return (
@@ -35,6 +96,8 @@ const ProjectSummary = ({ project, isMobile }) => {
         <div style={styles.ProjectSummaryContainerMOBILE}>
           <div style={styles.ProjectSummaryTitleContainer}>
             Project Summary
+            <ProjectGithub project={project} isMobile={isMobile}/>
+            <ProjectLinkedText project={project} isMobile={isMobile}/>
           </div>
           <div style={styles.ProjectSummaryInfoText}>
             {project.projectSummary}
@@ -44,6 +107,8 @@ const ProjectSummary = ({ project, isMobile }) => {
         <div style={styles.ProjectSummaryContainer}>
           <div style={styles.ProjectSummaryTitleContainer}>
             Project Summary
+            <ProjectGithub project={project} isMobile={isMobile}/>
+            <ProjectLinkedText project={project} isMobile={isMobile}/>
           </div>
           <div style={styles.ProjectSummaryInfoText}>
             {project.projectSummary}
@@ -64,7 +129,7 @@ const SkillItem = ({ skill }) => {
 
 const KeySkills = ({ project, isMobile }) => {
   return (
-    <div style={{...styles.KeySkillsContainer, ...(isMobile && { width: '350px', height: '350px',})}}>
+    <div style={{...styles.KeySkillsContainer, ...(isMobile && styles.KeySkillsContainerMOBILE)}}>
       <div style={styles.innerKeySkillsBox}>
         <div style={styles.KeySkillsBoxTitle}>
           Key Skills
@@ -82,9 +147,10 @@ const KeySkills = ({ project, isMobile }) => {
 const ProjectItem = ({ isMobile, project }) => {
   return (
     <div style={styles.ProjectItemContainer}>
-      <ProjectTitle project={project} />
+      <ProjectTitle project={project} isMobile={isMobile}/>
+      
       { isMobile ? (
-        <div style={{width: '350px', height: '750px' , ...styles.ProjectInfoContainer}}>
+        <div style={{maxWidth: '350px', height: '750px' , ...styles.ProjectInfoContainer}}>
           <div style={styles.ProjectItemsMOBILE}>
             <KeySkills project={project} isMobile={isMobile} />
             <ProjectSummary project={project} isMobile={isMobile}/>

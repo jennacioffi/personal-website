@@ -17,9 +17,71 @@ const styles = {
     alignItems: 'center',
     flexDirection: 'column',
     paddingBottom: '25px',
+    flexWrap: 'wrap',
+    wordWrap: 'break-word',
+  },
+
+  // ProjectTitle Component
+  ProjectTitleContainer: {
+    display: 'flex',
+    alignItems: 'center',
+    flexDirection: 'column',
+    paddingBottom: '15px',
+  },
+  ProjectTitleText: {    
+    display: 'flex',
+    paddingBottom: '5px',
+    paddingTop: '5px',
+    wordBreak: 'break-word',
+    textAlign: 'center',
+    ...TextStyles.ProjectCardTitle,
+  },
+
+  // Project Related To
+  projectRelatedToContainer: {
+    backgroundColor: colors.white,
+    justifyContent: 'center',
+    width: 'fit-content',
+    alignItems: 'center',
+    margin: '5px',
+    padding: '5px',
+    borderRadius: '5px',
+    display: 'flex',
+    textAlign: 'center',
+  },
+  projectRelatedTo: {
+    paddingBottom: '2px',
+    paddingTop: '2px',
+    display: 'flex',
+    textDecoration: 'none',
+    cursor: 'pointer',
+    ...TextStyles.ProjectRelatedTo,
   },
 
   // ProjectItemContainer Component
+  ProjectItemContainer: {
+    backgroundColor: colors.BlueAccent,
+    alignItems: 'center',
+    borderRadius: '10px',
+    display: 'flex',
+    flexDirection: 'column',
+    marginTop: '25px',
+    marginBottom: '25px',
+    paddingLeft: '25px',
+    paddingRight: '25px',
+    boxShadow: `
+      2px 2px 7px ${colors.white}, /* Top left */
+      -2px 2px 7px ${colors.white}, /* Top right */
+      2px -2px 7px ${colors.white}, /* Bottom left */
+      -2px -2px 7px ${colors.white} /* Bottom right */
+    `,
+  },
+  ProjectInfoContainer: {
+    display: 'flex',
+    width: '100%',
+    height: '100%',
+    marginBottom: '25px',
+  },
   ProjectItemsMOBILE: { 
     display: 'flex', 
     flexDirection: 'column', 
@@ -27,19 +89,6 @@ const styles = {
     alignItems: 'center', 
     width: '100%', 
     height: '100%',
-  },
-  ProjectItemContainer: {
-    backgroundColor: colors.BlueAccent,
-    borderRadius: '10px',
-    display: 'flex',
-    flexDirection: 'column',
-    marginTop: '15px',
-    marginBottom: '15px',
-    paddingLeft: '25px',
-    paddingRight: '25px',
-  },
-  ProjectInfoContainer: {
-    display: 'flex',
   },
   projectCardLeftSide: {
     flex: 1,
@@ -52,21 +101,8 @@ const styles = {
     height: '100%',
   },
 
-  // ProjectTitle Component
-  ProjectTitleOuterContainer: {
-    display: 'flex',
-    justifyContent: 'center',
-  },
-  ProjectTitleContainer: {
-    display: 'flex',
-    justifyContent: 'center',
-    paddingBottom: '15px',
-    paddingTop: '15px',
-    ...TextStyles.ProjectCardTitle,
-  },
-
-  // ProjectSummary Component
-  ProjectSummaryContainer: {
+  // KeySkills Component
+  KeySkillsContainer: {
     display: 'flex',
     justifyContent: 'center',
     backgroundColor: colors.lightGrey,
@@ -75,25 +111,27 @@ const styles = {
     height: '350px',
     overflowY: 'auto',
     flexWrap: 'wrap',
+    marginLeft: '15px',
+    marginRight: '15px',
   },
-  ProjectSummaryContainerMOBILE: {
+  KeySkillsContainerMOBILE: {
+    width: '350px', 
+    height: '350px', 
+    marginTop: '15px', 
+    marginBottom: '15px'
+  },
+  innerKeySkillsBox: {
     display: 'flex',
+    alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: colors.lightGrey,
-    borderRadius: '10px',
-    width: '350px',
-    height: '350px',
-    overflowY: 'auto',
+    flexDirection: 'column',
     flexWrap: 'wrap',
+    width: '98%',
   },
-  ProjectSummaryTitleContainer: {
+  KeySkillsBoxTitle: {
     display: 'flex',
-    paddingTop: '10px',
-    ...TextStyles.ProjectSummaryTitle,
-  },
-  ProjectSummaryInfoText: {
-    padding: '15px',
-    ...TextStyles.ProjectSummaryInfo,
+    paddingBottom: '15px',
+    ...TextStyles.ProjectKeySkillsBoxTitle,
   },
 
   // SkillItem Component
@@ -116,8 +154,18 @@ const styles = {
     textAlign: 'center',
   },
 
-  // KeySkills Component
-  KeySkillsContainer: {
+  // ProjectSummary Component
+  ProjectSummaryContainerMOBILE: {
+    display: 'flex',
+    justifyContent: 'center',
+    backgroundColor: colors.lightGrey,
+    borderRadius: '10px',
+    width: '350px',
+    height: '350px',
+    overflowY: 'auto',
+    flexWrap: 'wrap',
+  },
+  ProjectSummaryContainer: {
     display: 'flex',
     justifyContent: 'center',
     backgroundColor: colors.lightGrey,
@@ -127,18 +175,31 @@ const styles = {
     overflowY: 'auto',
     flexWrap: 'wrap',
   },
-  innerKeySkillsBox: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
+  ProjectSummaryTitleContainer: {
     flexDirection: 'column',
-    flexWrap: 'wrap',
-    width: '90%',
-  },
-  KeySkillsBoxTitle: {
     display: 'flex',
-    paddingBottom: '15px',
-    ...TextStyles.ProjectKeySkillsBoxTitle,
+    paddingTop: '10px',
+    alignItems: 'center',
+    ...TextStyles.ProjectSummaryTitle,
+  },
+  ProjectSummaryInfoText: {
+    padding: '15px',
+    ...TextStyles.ProjectSummaryInfo,
+  },
+
+  // Github & LinkedText Component styling
+  linkedTextContainer: {
+    backgroundColor: colors.BlueAccent,
+    margin: '5px',
+    padding: '5px',
+    borderRadius: '5px',
+    display: 'flex',
+  },
+  linkedText: {
+    display: 'flex',
+    textDecoration: 'none',
+    cursor: 'pointer',
+    ...TextStyles.ProjectInfoLinks,
   },
 }
 

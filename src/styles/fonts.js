@@ -81,5 +81,15 @@ export const TextStyles = {
     fontFamily: fonts.kuraleFont,
     color: colors.black,
     fontSize: 20,
-  }
+  },
+  ProjectInfoLinks: {
+    fontFamily: fonts.kuraleFont,
+    color: colors.white,
+    fontSize: 20,
+  },
+  ProjectRelatedTo: {
+    fontFamily: fonts.kuraleFont,
+    color: colors.BlueAccent,
+    fontSize: 16,
+  },
 };

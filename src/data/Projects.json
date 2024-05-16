@@ -3,7 +3,6 @@
     {
       "projectName": "Personal Website",
       "projectGithub": "https://github.com/jennacioffi/personal-website",
-      "projectLink": "",
       "projectRelatedTo": "Personal Projects",
       "projectSkills": [
         "React",
@@ -15,9 +14,9 @@
     },
     {
       "projectName": "KYL Breast Health",
-      "projectGithub": "",
       "projectCompany": "Know Your Lemons",
       "projectLink": "https://www.knowyourlemons.org/app",
+      "projectLinkText": "See the App",
       "projectRelatedTo": "Atomic Jolt",
       "projectSkills": [
         "React Native",
@@ -34,6 +33,28 @@
         "Documentation"
       ],
       "projectSummary": "While working at Atomic Jolt, I was privileged to learn from and work on an app meant to help people learn the warning signs of breast cancer. There are helpful guides on how to talk to your doctor, what to push for in doctor appointments, finding a nearby free mammogram, and much more."
+    },
+    {
+      "projectName": "MIT Learner Credential Wallet",
+      "projectCompany": "MIT",
+      "projectLink": "https://lcw.app/",
+      "projectLinkText": "See the App",
+      "projectRelatedTo": "Atomic Jolt",
+      "projectSkills": [
+        "React Native",
+        "Javascript",
+        "Communication",
+        "App Development",
+        "iOS Development",
+        "Android Developement",
+        "Builds & Deployments",
+        "Project Management",
+        "Teamwork",
+        "CLI",
+        "Node.js",
+        "Documentation"
+      ],
+      "projectSummary": "MIT's Learner Credential Wallet is the next generation technology for academic credentials. It is open source. Users can share their credentials, such as diplomas, easily. I was one of the developers who helped to create the standards for the SVG templates of credentials and converting those into PDFs."
     }
   ]
 }
