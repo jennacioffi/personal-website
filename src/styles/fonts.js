@@ -6,6 +6,13 @@ export const fonts = {
 };
 
 export const TextStyles = {
+  // TEMO
+  tempText: {
+    fontFamily: fonts.kuraleFont,
+    fontSize: 25,
+    color: colors.white,
+  },
+
   // NavBar Component
   NavBarItems: {
     fontFamily: fonts.kuraleFont,
@@ -57,6 +64,8 @@ export const TextStyles = {
     fontSize: 14,
   },
 
+
+  // Project Component
   ProjectCardTitle: {
     fontFamily: fonts.kuraleFont,
     color: colors.white,
@@ -91,5 +100,12 @@ export const TextStyles = {
     fontFamily: fonts.kuraleFont,
     color: colors.BlueAccent,
     fontSize: 16,
+  },
+
+  // Page Not Found Component
+  PageNotFoundText: {
+    fontFamily: fonts.kuraleFont,
+    color: colors.white,
+    fontSize: 28,
   },
 };

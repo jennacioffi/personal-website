@@ -1,8 +1,8 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { HomePage } from './pages/HomePage/HomePage.js';
-import { Projects } from './pages/Projects/Projects.js';
 import { FAQs } from './pages/FAQs/FAQs.js';
+import { PageNotFound } from './pages/PageNotFound/PageNotFound.js'
 import NavBar from './components/NavBar/NavBar';
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
         <Route path='/skills' element={<HomePage />} />
         <Route path='/projects' element={<HomePage />} />
         <Route path='/contact-me' element={<HomePage />} />
+        <Route path='*' element={<PageNotFound />} />
       </Routes>
     </div>
   );

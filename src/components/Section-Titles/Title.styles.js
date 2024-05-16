@@ -11,6 +11,7 @@ const styles = {
     marginTop: '20px',
     marginBottom: '20px',
     alignContent: 'center',
+    textAlign: 'center',
     color: colors.white,
     ...TextStyles.H2,
   },
