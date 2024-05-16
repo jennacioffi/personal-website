@@ -1,0 +1,69 @@
+{
+  "projects": [
+    {
+      "projectName": "Personal Website",
+      "projectGithub": "https://github.com/jennacioffi/personal-website",
+      "projectRelatedTo": "Personal Projects",
+      "projectSkills": [
+        "React",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Nodejs",
+        "Figma",
+        "Git",
+        "GitHub",
+        "Documentation",
+        "Build & Deployments",
+        "CLI",
+        "Project Management"
+      ],
+      "projectSummary": "I created my personal website to provide a comprehensive view of my skills and experience, allowing my resume to remain succinct and focused. This site showcases my expertise in both design and coding, aligning perfectly with my career aspirations in Web Development, Front-End Work, or Full Stack Engineering. The project was meticulously planned, with a detailed design file available on Figma. For those interested in exploring the technical aspects further, the GitHub link above offers more in-depth information."
+    },
+    {
+      "projectName": "KYL Breast Health",
+      "projectCompany": "Know Your Lemons",
+      "projectLink": "https://www.knowyourlemons.org/app",
+      "projectLinkText": "See the App",
+      "projectRelatedTo": "Atomic Jolt",
+      "projectSkills": [
+        "React Native",
+        "Javascript",
+        "Communication",
+        "App Development",
+        "iOS Development",
+        "Android Developement",
+        "Builds & Deployments",
+        "Project Management",
+        "Teamwork",
+        "CLI",
+        "Node.js",
+        "Documentation"
+      ],
+      "projectSummary": "While working at Atomic Jolt, I was privileged to learn from and work on an app meant to help people learn the warning signs of breast cancer. There are helpful guides on how to talk to your doctor, what to push for in doctor appointments, finding a nearby free mammogram, and much more."
+    },
+    {
+      "projectName": "MIT Learner Credential Wallet",
+      "projectCompany": "MIT",
+      "projectLink": "https://lcw.app/",
+      "projectLinkText": "See the App",
+      "projectRelatedTo": "Atomic Jolt",
+      "projectSkills": [
+        "React Native",
+        "Javascript",
+        "TypeScript",
+        "Communication",
+        "App Development",
+        "iOS Development",
+        "Android Developement",
+        "Builds & Deployments",
+        "Teamwork",
+        "CLI",
+        "Node.js",
+        "Documentation",
+        "Problem Solving"
+      ],
+      "projectSummary": "MIT's Learner Credential Wallet is the next generation technology for academic credentials. It is open source. Users can share their credentials, such as diplomas, easily. I was one of the developers who helped to create the standards for the SVG templates of credentials and converting those into PDFs."
+    }
+  ]
+}

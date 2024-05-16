@@ -1,23 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { colors } from '../../styles/colors.js';
 import styles from './ContactMe.styles';
-import dotenv from 'dotenv';
+import { Title } from '../index.js';
+import { colors } from '../../styles/colors.js';
 
-const Title = () => {
-  return (
-    <div style={{ backgroundColor: colors.palette2 }}>
-      <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
-        <div style={styles.titleContainer}>
-          <div style={styles.titleTEXT}>
-              Contact Me
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-};
-
-function NameInput({ formData, handleChange }) {
+const NameInput = ({ formData, handleChange, isMobile }) => {
   return (
     <div style={styles.outerFormContainer}>
       <div style={styles.InputTitleContainer}>
@@ -31,14 +17,14 @@ function NameInput({ formData, handleChange }) {
           name="name"
           value={formData.name}
           onChange={handleChange}
-          style={styles.input}
+          style={{...styles.input, ...(isMobile && styles.inputMOBILE)}}
         />
       </div>
     </div>
-  );
+  )
 }
 
-function EmailInput({ formData, handleChange }) {
+const EmailInput = ({ formData, handleChange, isMobile }) => {
   return (
     <div style={styles.outerFormContainer}>
       <div style={styles.InputTitleContainer}>
@@ -52,14 +38,14 @@ function EmailInput({ formData, handleChange }) {
           name="email"
           value={formData.email}
           onChange={handleChange}
-          style={styles.input}
+          style={{...styles.input, ...(isMobile && styles.inputMOBILE)}}
         />
       </div>
     </div>
-  );
+  )
 }
 
-function MessageInput({ formData, handleChange }) {
+const MessageInput = ({ formData, handleChange, isMobile }) => {
   return (
     <div style={styles.outerFormContainer}>
       <div style={styles.InputTitleContainer}>
@@ -72,37 +58,36 @@ function MessageInput({ formData, handleChange }) {
           name="message"
           value={formData.message}
           onChange={handleChange}
-          style={{...styles.input, height: '400px'}}
+          style={{...styles.input, height: '200px', ...(isMobile && styles.inputMOBILE)}}
         ></textarea>
       </div>
     </div>
-  );
+  )
 }
 
-function SubmitButton({ isEmailSent, isFormFilled, handleSubmit }) {
+const SubmitButton = ({ isEmailSent, isFormFilled, handleSubmit }) => {
   if (isEmailSent) {
     return (
-      <div style={{...styles.button, backgroundColor: colors.green}}>
-        Email Sent
+      <div style={{...styles.button, backgroundColor: colors.submitGreen}}>
+        Email Sent!
       </div>
     );
   } else if (isFormFilled) {
     return (
-      <button onClick={handleSubmit} style={{...styles.button, backgroundColor: colors.blue}}>
-        Submit
+      <button onClick={handleSubmit} style={{...styles.button, backgroundColor: colors.submitBlue }}>
+        Submit Message
       </button>
     );
   } else {
     return (
-      <button style={{...styles.button, backgroundColor: colors.red}}>
-        Something is Invalid or Empty
+      <button style={{...styles.button, backgroundColor: colors.submitRed }}>
+        Waiting on form details...
       </button>
     );
   }
 }
 
-export function ContactMe() {
-  dotenv.config();
+const ContactMe = ({ isMobile, id }) => {
   const WEB3FORMS_ACCESS_KEY = process.env.REACT_APP_WEB3FORMS_ACCESS_KEY;
   const [isFormFilled, setIsFormFilled] = useState(false);
   const [isEmailValid, setIsEmailValid] = useState(true);
@@ -169,20 +154,32 @@ export function ContactMe() {
   };
 
   return (
-    <div>
-      <div style={styles.outerContainer}>
-        <div style={styles.main}>
-          <div style={styles.inner}>
-            <Title />
-            <div style={styles.outerContactFormContainer}>
-              <NameInput formData={formData} handleChange={handleChange} />
-              <EmailInput formData={formData} handleChange={handleChange} />
-              <MessageInput formData={formData} handleChange={handleChange} />
-              <SubmitButton isEmailSent={isEmailSent} isFormFilled={isFormFilled} handleSubmit={handleSubmit} />
-            </div>
+    <div style={styles.outerContainer}>
+      <Title title={'Contact Me'} isMobile={isMobile} id={id} />
+      {isMobile ? (
+        <div style={styles.outerInputContainer}>
+          <div style={styles.leftHalfInputContainer}>
+            <NameInput formData={formData} handleChange={handleChange} isMobile={isMobile} />
+            <EmailInput formData={formData} handleChange={handleChange} isMobile={isMobile} />
+            <MessageInput formData={formData} handleChange={handleChange} isMobile={isMobile} />
           </div>
         </div>
+      ) : (
+        <div style={styles.outerInputContainer}>
+          <div style={{...styles.leftHalfInputContainer, marginRight: '125px',}}>
+            <NameInput formData={formData} handleChange={handleChange} />
+            <EmailInput formData={formData} handleChange={handleChange} />
+          </div>
+          <div style={styles.rightHalfInputContainer}>
+            <MessageInput formData={formData} handleChange={handleChange} />
+          </div>
+        </div>
+      )}
+      <div style={{display: 'flex', textAlign: 'center' }}>
+        <SubmitButton isEmailSent={isEmailSent} isFormFilled={isFormFilled} handleSubmit={handleSubmit} />
       </div>
     </div>
   )
 }
+
+export default ContactMe;

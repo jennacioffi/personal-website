@@ -2,49 +2,98 @@ import { colors } from '../../styles/colors.js';
 import { TextStyles } from '../../styles/fonts.js';
 
 const styles = {
+  // NavBar
   outerContainer: {
+    ...TextStyles.NavBarItems,
     backgroundColor: colors.black,
-    color: colors.white,
     display: 'flex',
-    justifyContent: 'center',
-    alignContent: 'flex-start',
-    padding: '10px',
-    ...TextStyles.NavBarItems,
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
+    paddingTop: '15px',
+    paddingBottom: '15px',
+    width: '100vw',
   },
-  menuItem: {
-    cursor: 'pointer',
-    textDecoration: 'none', 
-    color: 'inherit',
+
+  // NameContainer
+  nameContainer: {
     ...TextStyles.NavBarItems,
+    marginLeft: '25px',
+    cursor: 'pointer',
   },
   dropDownArrow: {
-    marginLeft: '5px', 
+    marginLeft: '10px', 
     verticalAlign: 'middle',
+    cursor: 'pointer',
   },
   dropdown: {
     backgroundColor: colors.black,
-    color: colors.white,
-    left: '-35px',
+    left: '15px',
     marginTop: '10px',
+    overflow: 'auto',
     position: 'absolute',
     width: '200px',
-    overflow: 'auto',
+    zIndex: 1000,
+    cursor: 'pointer',
+  },
+
+  // HamburgerMenu
+  hamburgerIcon: {
+    alignSelf: 'center',
+    display: 'flex',
+    height: '35px',
+    position: 'absolute',
+    right: '25px',
+    width: '35px',
+    cursor: 'pointer',
+  },
+  hamburgerDropDown: {
+    backgroundColor: colors.black,
+    border: `1px solid ${colors.white}`,
+    display: 'flex',
+    flexDirection: 'column',
+    flexWrap: 'wrap',
+    height: 'fit-content',
+    position: 'absolute',
+    right: '25px',
+    textAlign: 'center',
+    top: '50px',
+    width: 'fit-content',
     zIndex: 1000,
   },
-  dropdownItem: {
-    padding: '8px 12px',
+  hamburgerMenuItem: {
+    ...TextStyles.NavBarItems,
     borderBottom: `1px solid ${colors.white}`,
-    flexDirection: 'row',
-    display: 'flex',
-    justifyContent: 'space-around',
+    marginLeft: '10px',
+    marginRight: '10px',
+    padding: '10px',
+    textDecoration: 'none', 
+  },
+
+  // BarNavItems
+  navMenuItemsContainer: {
+    marginRight: '25px',
+  },
+  navMenuItem: {
+    ...TextStyles.NavBarItems,
+    marginLeft: '10px',
+    marginRight: '10px',
+    textDecoration: 'none', 
+    cursor: 'pointer',
+  },
+
+  // DropdownSocials
+  dropdownItem: {
     alignItems: 'center',
+    borderBottom: `1px solid ${colors.white}`,
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    padding: '8px 12px',
+    cursor: 'pointer',
   },
   dropDownText: {
     ...TextStyles.NavBarItems,
   },
-  dropDownIcon: {
-  },
 };
-
 
 export default styles;

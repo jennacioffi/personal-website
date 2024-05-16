@@ -1,0 +1,59 @@
+{
+  "expWorkHistory": [
+    {
+      "expTitle": "TA - CS1440 - Methods in CS",
+      "expCompany": "USU Dep. of Science",
+      "expTimeWorked": "Jan 2022 - May 2024 (2yrs 5m)",
+      "skillList": [
+        "Documentation",
+        "Planning",
+        "CLI",
+        "Git",
+        "Python",
+        "Refactoring",
+        "Management",
+        "Punctuality",
+        "Team Work",
+        "Scripting",
+        "Communication"
+      ],
+      "expSummary": {
+        "briefSummary": "Served as a Teaching Assistant for a course focused on teaching students command line usage, git, and problem-solving techniques. Emphasized the importance of documentation throughout the software development process, from initial planning to post-testing analysis, fostering a culture of thoroughness and clarity in project execution.",
+        "bulletPoints": [
+          "Conducted regular office hours to provide additional support and assistance to students outside of class, fostering a conducive environment for learning and addressing individual queries and concerns effectively.",
+          "Delivered detailed feedback on student assignments, offering valuable insights to enhance their understanding and proficiency in the course material.",
+          "Collaborated with colleagues to develop and implement grading scripts, optimizing the grading process and enabling TAs and professors to allocate more time towards student assistance and mentoring."
+        ]
+      }
+    },
+    {
+      "expTitle": "App Developer (iOS & Android)",
+      "expCompany": "Atomic Jolt",
+      "expCompanyLINK": "https://www.atomicjolt.com/atomic-jolt-apps",
+      "expTimeWorked": "August 2022 - Jan 2024 (1yr 5m)",
+      "skillList": [
+        "App Development (iOS & Android)",
+        "React",
+        "App Deployments",
+        "React Native",
+        "App Deployments",
+        "Javascript",
+        "Leadership",
+        "Confidence",
+        "Communication",
+        "Documentation",
+        "Git",
+        "Testing",
+        "Product Testing",
+        "Debugging & Problem Solving",
+        "Cypress",
+        "Organized",
+        "Project Management",
+        "Teamwork"
+      ],
+      "expSummary": {
+        "briefSummary": "Throughout my tenure, I undertook pivotal roles in overseeing two prominent iOS and Android projects, namely KYL and Learner Credential Wallet. My duties extended to comprehensive software testing and the development of educational products, where I spearheaded the implementation of automated tests using Cypress. Moreover, I authored and curated exhaustive company documentation on a dedicated GitHub wiki, providing invaluable resources for new hires during onboarding and offering developers swift access to vital project insights, including setup procedures and bug resolution strategies. Employing both collaborative teamwork and independent initiative, I upheld a commitment to transparent communication and punctual delivery, thereby nurturing enduring and positive client relationships."
+      }
+    }
+  ]
+}

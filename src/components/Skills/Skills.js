@@ -1,5 +1,12 @@
 import React from 'react';
+
+// Component(s)
+import { Title } from '../index.js';
+
+// Styling
 import styles from './Skills.styles';
+
+// react-icons
 import { IoLogoJavascript} from 'react-icons/io';
 import { FaReact, FaGithub, FaFigma, FaNodeJs, FaPython, FaAppStoreIos, FaAndroid, FaDev } from 'react-icons/fa';
 import { SiCplusplus, SiTypescript, SiKubernetes } from 'react-icons/si';
@@ -18,35 +25,21 @@ import { TfiThought } from 'react-icons/tfi';
 import { FaHandsHelping, FaCalendarCheck } from 'react-icons/fa';
 import { VscGithubAction } from 'react-icons/vsc';
 
-const Title = ({ title }) => {
+const SkillItem = ({ skill }) => {
   return (
-    <div>
-      <div>
-        <div style={styles.titleContainer}>
-          <div style={styles.titleTEXT}>
-            {title}
-          </div>
-        </div>
+    <div style={styles.skillContainer}>
+      <div style={styles.iconContainer}>
+        {skill.IconLogo}
       </div>
-    </div>
-  )
-};
-
-const SkillItem = ({ skillName, IconLogo}) => {
-  return (
-    <div style={styles.SkillItemContainer}>
-      <div style={styles.icon}>
-        {IconLogo}
-      </div>
-      <div style={styles.text}>
-        {skillName}
+      <div style={styles.skillName}>
+        {skill.skillName}
       </div>
     </div>
   );
 }
 
-export function Skills() {
-  const logoSize = 30;
+const Skills = ({ isMobile, id }) => {
+  const logoSize = 45;
 
   const skills = [
     {
@@ -187,23 +180,16 @@ export function Skills() {
     },
   ];
 
-
   return (
-    <>
-      <div style={styles.outerContainer}>
-        <div>
-          <Title title="Skills"/>
-          <div style={styles.skillsContainer}>
-            {skills.map((skill, index) => (
-              <SkillItem
-                key={index}
-                skillName={skill.skillName}
-                IconLogo={skill.IconLogo}
-              />
-            ))}
-          </div>
-        </div>
+    <div style={styles.outerContainer}>
+      <Title title={'Skills'} isMobile={isMobile} id={id}/>
+      <div style={styles.outerSkillsContainer}>
+        {skills.map((skill, index) => (
+          <SkillItem key={index} skill={skill} />
+        ))}
       </div>
-    </>
+    </div>
   )
 }
+
+export default Skills;

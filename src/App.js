@@ -1,10 +1,8 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { AboutMeAndFAQs } from './pages/AbtMeAndFAQs/AboutMeAndFAQs.js';
-import { ContactMe } from './pages/ContactMe/ContactMe.js';
-import { Experience } from './pages/Experience/Experience.js';
-import { Projects } from './pages/Projects/Projects.js';
-import { Skills } from './pages/Skills/Skills.js';
+import { HomePage } from './pages/HomePage/HomePage.js';
+import { FAQs } from './pages/FAQs/FAQs.js';
+import { PageNotFound } from './pages/PageNotFound/PageNotFound.js'
 import NavBar from './components/NavBar/NavBar';
 
 function App() {
@@ -17,12 +15,15 @@ function App() {
       }}>
       <NavBar/>
       <Routes>
-        <Route index element={<AboutMeAndFAQs />} />
-        <Route path='/about-me-and-faqs' element={<AboutMeAndFAQs />} />
-        <Route path='/contact-me' element={<ContactMe />} />
-        <Route path='/experience' element={<Experience />} />
-        <Route path='/projects' element={<Projects />} />
-        <Route path='/skills' element={<Skills />} />
+        <Route index element={<HomePage />} />
+        <Route path='/faqs' element={<FAQs />} />
+        {/* Add routes for each section with an ID */}
+        <Route path='/about-me' element={<HomePage />} />
+        <Route path='/experience' element={<HomePage />} />
+        <Route path='/skills' element={<HomePage />} />
+        <Route path='/projects' element={<HomePage />} />
+        <Route path='/contact-me' element={<HomePage />} />
+        <Route path='*' element={<PageNotFound />} />
       </Routes>
     </div>
   );

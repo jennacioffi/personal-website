@@ -1,15 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaGithub , FaLinkedin } from 'react-icons/fa'; 
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import { IoIosArrowDropdown } from 'react-icons/io';
+import { BiMenu } from 'react-icons/bi'; // Hamburger menu icon
 
 import dotenv from 'dotenv';
 import styles from './NavBar.styles'; // Import your styles
 
-// Define the dropdown menu item component
-const DropdownItem = ({ title, onClick }) => {
-  // Define the icon component based on the title
+const DropdownSocials = ({ title, onClick }) => {
   let iconComponent;
   switch (title) {
   case 'GitHub':
@@ -28,94 +27,168 @@ const DropdownItem = ({ title, onClick }) => {
 
   return (
     <div style={styles.dropdownItem} onClick={onClick}>
-      {/* Render the icon */}
-      <div style={styles.dropDownIcon}>
-        {iconComponent}
-      </div>
-      <div style={styles.dropDownText}>
-        {title}
-      </div>
+      <div style={{cursor: 'pointer'}}>{iconComponent}</div>
+      <div style={styles.dropDownText}>{title}</div>
     </div>
   );
 };
 
+const BarNavItems = ({ navItems, onClick }) => {
+  return (
+    <div style={styles.navMenuItemsContainer}>
+      {navItems.map((item, index) => (
+        item.to ? (
+          <Link to={item.to} style={styles.navMenuItem} onClick={onClick} key={index}>
+            {'\u00A0'}
+            {item.title}
+            {'\u00A0'}
+          </Link>
+        ) : (
+          <a href={`#${item.id}`} style={styles.navMenuItem} onClick={onClick} key={index}>
+            {'\u00A0'}
+            {item.title}
+            {'\u00A0'}
+          </a>
+        )
+      ))}
+    </div>
+  )
+}
+
 const NavBar = () => {
   dotenv.config();
 
-  // State to manage the visibility of the dropdown
-  const [showDropdown, setShowDropdown] = useState(false);
+  const [showSocialsDropdown, setShowSocialsDropdown] = useState(false);
+  const [showNavItemsDropDown, setShowNavItemsDropDown] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
-  // Function to handle mouse enter event for dropdown menu
-  const handleMouseEnterDropdown = () => {
-    setShowDropdown(true);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 950);
+    };
+
+    handleResize(); // Call once to check initial width
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const toggleSocialsDropdown = () => {
+    setShowSocialsDropdown(!showSocialsDropdown);
   };
 
-  // Function to handle mouse leave event for dropdown menu
-  const handleMouseLeaveDropdown = () => {
-    setShowDropdown(false);
+  const toggleNavItemsDropdown = () => {
+    setShowNavItemsDropDown(!showNavItemsDropDown);
   };
 
-  // Function to handle clicking on an item
   const handleItemClick = (item) => {
-  // Close the dropdown when an item is clicked
-    setShowDropdown(false);
-  
-    // Handle different actions based on the clicked item
-    switch (item.title) {
-    case 'GitHub':
-      window.open('https://github.com/jennacioffi', '_blank');
-      break;
-    case 'LinkedIn':
-      window.open('https://www.linkedin.com/in/jenna-cioffi/', '_blank');
-      break;
-    case 'Contact Me':
-      window.location.href = '/personal-website/#/contact-me';
-      break;
-    default:
-      console.log(`UNKNOWN: ${item.title}`);
-      break;
+    if (item.to) {
+      window.location.href = item.to;
+    } else {
+      switch (item.title) {
+      case 'GitHub':
+        window.open('https://github.com/jennacioffi', '_blank');
+        break;
+      case 'LinkedIn':
+        window.open('https://www.linkedin.com/in/jenna-cioffi/', '_blank');
+        break;
+      case 'Contact Me':
+        window.location.href = '/personal-website/#contact-me';
+        break;
+      default:
+        console.log(`UNKNOWN: ${item.title}`);
+        break;
+      }
     }
   };
 
-  // List of navigation items
   const navItems = [
-    { title: 'About Me & FAQs', to: '/about-me-and-faqs' },
-    { title: 'Experience', to: '/experience' },
+    { title: 'About Me', id: 'about-me' },
+    { title: 'Experience', id: 'experience' },
+    { title: 'Skills', id: 'skills' },
     { title: 'Projects', to: '/projects' },
-    { title: 'Skills', to: '/skills' },
-    { title: 'Socials', hasDropdown: true, items: ['GitHub', 'LinkedIn', 'Contact Me'] },
+    { title: 'FAQs', to: '/faqs' },
+    { title: 'Contact Me', id: 'contact-me' },
   ];
+
+  const socialItems = ['GitHub', 'LinkedIn', 'Contact Me'];
+
+  const NameContainer = () => (
+    <div 
+      style={styles.nameContainer}
+      onClick={toggleSocialsDropdown}
+    >
+      Jenna Cioffi
+      <IoIosArrowDropdown style={styles.dropDownArrow}/>
+      {showSocialsDropdown && (
+        <div style={styles.dropdown}>
+          {socialItems.map((dropdownItem, i) => (
+            <DropdownSocials
+              key={i}
+              title={dropdownItem}
+              onClick={() => handleItemClick({ title: dropdownItem })}
+            />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+
+  const HamburgerMenu = ({ navItems }) => (
+    <div style={{maxWidth: '950px'}}>
+      <BiMenu style={styles.hamburgerIcon} onClick={toggleNavItemsDropdown} />
+      {showNavItemsDropDown && (
+        <div style={styles.hamburgerDropDown}>
+          {navItems.map((navItem, i) => (
+            navItem.to ? (
+              <Link
+                key={i}
+                to={navItem.to}
+                onClick={() => {
+                  toggleNavItemsDropdown(); // Close the dropdown after clicking
+                }}
+                style={styles.hamburgerMenuItem}
+              >
+                {navItem.title}
+              </Link>
+            ) : (
+              <a
+                key={i}
+                href={`#${navItem.id}`}
+                onClick={() => {
+                  toggleNavItemsDropdown(); // Close the dropdown after clicking
+                }}
+                style={styles.hamburgerMenuItem}
+              >
+                {navItem.title}
+              </a>
+            )
+          ))}
+        </div>
+      )}
+    </div>
+  );
 
   return (
     <div style={styles.outerContainer}>
-      {/* Map over navigation items */}
-      {navItems.map((item, index) => (
-        <div
-          key={index}
-          style={{ position: 'relative' }}
-        >
-          {item.hasDropdown ? (
-            <div
-              style={styles.menuItem}
-              onMouseEnter={handleMouseEnterDropdown}
-            >
-              {item.title}
-              <IoIosArrowDropdown style={styles.dropDownArrow} />
-              {showDropdown && (
-                <div style={styles.dropdown} onMouseEnter={handleMouseEnterDropdown} onMouseLeave={handleMouseLeaveDropdown}>
-                  {item.items.map((dropdownItem, i) => (
-                    <DropdownItem key={i} title={dropdownItem} onClick={() => handleItemClick({ title: dropdownItem })} />
-                  ))}
-                </div>
-              )}
-            </div>
-          ) : (
-            <Link to={item.to} style={styles.menuItem} onClick={handleItemClick}>
-              {item.title}{'\u00A0|\u00A0'}
-            </Link>
-          )}
-        </div>
-      ))}
+      {isMobile ? (
+        <>
+          <NameContainer/>
+          <HamburgerMenu
+            navItems={navItems}
+          />
+        </>
+      ) : (
+        <>
+          <NameContainer/>
+          <BarNavItems 
+            navItems={navItems}
+            onClick={handleItemClick}
+          />
+        </>
+      )}
     </div>
   );
 };
