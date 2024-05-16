@@ -215,13 +215,14 @@ const EXPCarousel = ({ EXPHistory, isMobile }) => {
   );
 };
 
-const Experience = ({ isMobile }) => {
+const Experience = ({ isMobile, id }) => {
   return (
     <>
       <div style={styles.ExpComponentContainer}>
         <Title 
           title={'Experience'}
           isMobile={isMobile}
+          id={id}
         />
         <EXPCarousel 
           EXPHistory={expWorkHistory}

@@ -82,10 +82,11 @@ const IntroRightComponent = ({ isMobile }) => {
   )
 }
 
-const Intro = ({ isMobile }) => {
+const Intro = ({ isMobile, id }) => {
   return (
     <>
       <div 
+        id={id}
         style={{
           ...styles.introComponentContainer, 
           ...(isMobile && 

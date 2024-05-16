@@ -23,10 +23,10 @@ export function HomePage() {
 
   return (
     <div style={styles.outerContainer}>
-      <Intro isMobile={isMobile}/>
-      <Experience isMobile={isMobile}/>
-      <Skills isMobile={isMobile}/>
-      <ContactMe isMobile={isMobile}/>
+      <Intro isMobile={isMobile} id={'about-me'}/>
+      <Experience isMobile={isMobile} id={'experience'}/>
+      <Skills isMobile={isMobile} id={'skills'}/>
+      <ContactMe isMobile={isMobile} id={'contact-me'}/>
     </div>
   )
 }

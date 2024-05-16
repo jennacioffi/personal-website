@@ -37,11 +37,19 @@ const BarNavItems = ({ navItems, onClick }) => {
   return (
     <div style={styles.navMenuItemsContainer}>
       {navItems.map((item, index) => (
-        <Link to={item.to} style={styles.navMenuItem} onClick={onClick} key={index}>
-          {'\u00A0'}
-          {item.title}
-          {'\u00A0'}
-        </Link>
+        item.to ? (
+          <Link to={item.to} style={styles.navMenuItem} onClick={onClick} key={index}>
+            {'\u00A0'}
+            {item.title}
+            {'\u00A0'}
+          </Link>
+        ) : (
+          <a href={`#${item.id}`} style={styles.navMenuItem} onClick={onClick} key={index}>
+            {'\u00A0'}
+            {item.title}
+            {'\u00A0'}
+          </a>
+        )
       ))}
     </div>
   )
@@ -97,15 +105,15 @@ const NavBar = () => {
   };
 
   const navItems = [
-    { title: 'About Me', to: '' },
-    { title: 'Experience', to: '' },
-    { title: 'Skills', to: '' },
+    { title: 'About Me', id: 'about-me' },
+    { title: 'Experience', id: 'experience' },
+    { title: 'Skills', id: 'skills' },
     { title: 'Projects', to: '/projects' },
     { title: 'FAQs', to: '/faqs' },
-    { title: 'Contact Me', to: '' },
+    { title: 'Contact Me', id: 'contact-me' },
   ];
 
-  const socialItems = ['GitHub', 'LinkedIn', 'Contact Me'];
+  const socialItems = ['GitHub', 'LinkedIn'];
 
   const NameContainer = () => (
     <div 
@@ -134,16 +142,29 @@ const NavBar = () => {
       {showNavItemsDropDown && (
         <div style={styles.hamburgerDropDown}>
           {navItems.map((navItem, i) => (
-            <Link
-              key={i}
-              to={navItem.to}
-              onClick={() => {
-                toggleNavItemsDropdown(); // Close the dropdown after clicking
-              }}
-              style={styles.hamburgerMenuItem}
-            >
-              {navItem.title}
-            </Link>
+            navItem.to ? (
+              <Link
+                key={i}
+                to={navItem.to}
+                onClick={() => {
+                  toggleNavItemsDropdown(); // Close the dropdown after clicking
+                }}
+                style={styles.hamburgerMenuItem}
+              >
+                {navItem.title}
+              </Link>
+            ) : (
+              <a
+                key={i}
+                href={`#${navItem.id}`}
+                onClick={() => {
+                  toggleNavItemsDropdown(); // Close the dropdown after clicking
+                }}
+                style={styles.hamburgerMenuItem}
+              >
+                {navItem.title}
+              </a>
+            )
           ))}
         </div>
       )}

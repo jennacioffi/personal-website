@@ -87,7 +87,7 @@ const SubmitButton = ({ isEmailSent, isFormFilled, handleSubmit }) => {
   }
 }
 
-const ContactMe = ({ isMobile }) => {
+const ContactMe = ({ isMobile, id }) => {
   const WEB3FORMS_ACCESS_KEY = process.env.REACT_APP_WEB3FORMS_ACCESS_KEY;
   const [isFormFilled, setIsFormFilled] = useState(false);
   const [isEmailValid, setIsEmailValid] = useState(true);
@@ -155,7 +155,7 @@ const ContactMe = ({ isMobile }) => {
 
   return (
     <div style={styles.outerContainer}>
-      <Title title={'Contact Me'} isMobile={isMobile} />
+      <Title title={'Contact Me'} isMobile={isMobile} id={id} />
       {isMobile ? (
         <div style={styles.outerInputContainer}>
           <div style={styles.leftHalfInputContainer}>

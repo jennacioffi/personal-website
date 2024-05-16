@@ -38,7 +38,7 @@ const SkillItem = ({ skill }) => {
   );
 }
 
-const Skills = ({ isMobile }) => {
+const Skills = ({ isMobile, id }) => {
   const logoSize = 45;
 
   const skills = [
@@ -182,7 +182,7 @@ const Skills = ({ isMobile }) => {
 
   return (
     <div style={styles.outerContainer}>
-      <Title title={'Skills'} isMobile={isMobile}/>
+      <Title title={'Skills'} isMobile={isMobile} id={id}/>
       <div style={styles.outerSkillsContainer}>
         {skills.map((skill, index) => (
           <SkillItem key={index} skill={skill} />

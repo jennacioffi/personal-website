@@ -2,10 +2,10 @@ import React from 'react';
 
 import styles from './Title.styles'
 
-const Title = ({ title, isMobile }) => {
+const Title = ({ title, isMobile, id }) => {
 
   return (
-    <div style={styles.TitleElement}>
+    <div id={id} style={styles.TitleElement}>
       <div style={styles.lineTitleItem}></div>
       <div style={{
         ...styles.TitleText,
