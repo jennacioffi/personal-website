@@ -56,4 +56,20 @@ export const TextStyles = {
     fontFamily: fonts.kuraleFont,
     fontSize: 14,
   },
+
+  ProjectCardTitle: {
+    fontFamily: fonts.kuraleFont,
+    color: colors.white,
+    fontSize: 42,
+  },
+  ProjectSkillsText: {
+    fontFamily: fonts.kuraleFont,
+    color: colors.white,
+    fontSize: 20,
+  },
+  ProjectKeySkillsBoxTitle: {
+    fontFamily: fonts.kuraleFont,
+    color: colors.black,
+    fontSize: 30,
+  },
 };

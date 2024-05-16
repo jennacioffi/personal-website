@@ -1,0 +1,39 @@
+{
+  "projects": [
+    {
+      "projectName": "Personal Website",
+      "projectGithub": "https://github.com/jennacioffi/personal-website",
+      "projectLink": "",
+      "projectRelatedTo": "Personal Projects",
+      "projectSkills": [
+        "React",
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
+      "projectSummary": "This is my personal website showcasing my portfolio and projects."
+    },
+    {
+      "projectName": "KYL Breast Health",
+      "projectGithub": "",
+      "projectCompany": "Know Your Lemons",
+      "projectLink": "https://www.knowyourlemons.org/app",
+      "projectRelatedTo": "Atomic Jolt",
+      "projectSkills": [
+        "React Native",
+        "Javascript",
+        "Communication",
+        "App Development",
+        "iOS Development",
+        "Android Developement",
+        "Builds & Deployments",
+        "Project Management",
+        "Teamwork",
+        "CLI",
+        "Node.js",
+        "Documentation"
+      ],
+      "projectSummary": "While working at Atomic Jolt, I was privileged to learn from and work on an app meant to help people learn the warning signs of breast cancer. There are helpful guides on how to talk to your doctor, what to push for in doctor appointments, finding a nearby free mammogram, and much more."
+    }
+  ]
+}
