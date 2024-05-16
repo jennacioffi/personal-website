@@ -17,7 +17,7 @@ const NameInput = ({ formData, handleChange, isMobile }) => {
           name="name"
           value={formData.name}
           onChange={handleChange}
-          style={{...styles.input, ...(isMobile && { width: '300px' })}}
+          style={{...styles.input, ...(isMobile && styles.inputMOBILE)}}
         />
       </div>
     </div>
@@ -38,7 +38,7 @@ const EmailInput = ({ formData, handleChange, isMobile }) => {
           name="email"
           value={formData.email}
           onChange={handleChange}
-          style={{...styles.input, ...(isMobile && { width: '300px' })}}
+          style={{...styles.input, ...(isMobile && styles.inputMOBILE)}}
         />
       </div>
     </div>
@@ -58,7 +58,7 @@ const MessageInput = ({ formData, handleChange, isMobile }) => {
           name="message"
           value={formData.message}
           onChange={handleChange}
-          style={{...styles.input, height: '200px', ...(isMobile && { width: '300px' })}}
+          style={{...styles.input, height: '200px', ...(isMobile && styles.inputMOBILE)}}
         ></textarea>
       </div>
     </div>
@@ -69,19 +69,19 @@ const SubmitButton = ({ isEmailSent, isFormFilled, handleSubmit }) => {
   if (isEmailSent) {
     return (
       <div style={{...styles.button, backgroundColor: colors.submitGreen}}>
-        Email Sent
+        Email Sent!
       </div>
     );
   } else if (isFormFilled) {
     return (
       <button onClick={handleSubmit} style={{...styles.button, backgroundColor: colors.submitBlue }}>
-        Submit
+        Submit Message
       </button>
     );
   } else {
     return (
       <button style={{...styles.button, backgroundColor: colors.submitRed }}>
-        Something is Invalid or Empty
+        Waiting on form details...
       </button>
     );
   }
@@ -166,7 +166,7 @@ const ContactMe = ({ isMobile, id }) => {
         </div>
       ) : (
         <div style={styles.outerInputContainer}>
-          <div style={styles.leftHalfInputContainer}>
+          <div style={{...styles.leftHalfInputContainer, marginRight: '125px',}}>
             <NameInput formData={formData} handleChange={handleChange} />
             <EmailInput formData={formData} handleChange={handleChange} />
           </div>

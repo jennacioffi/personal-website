@@ -14,13 +14,16 @@ const styles = {
   outerInputContainer: {
     display: 'flex',
     alignItems: 'center',
+    justifyContent: 'center',
   },
   leftHalfInputContainer: {
     display: 'flex',
     flexDirection: 'column',
   },
 
-  rightHalfInputContainer: {},
+  rightHalfInputContainer: {
+    display: 'flex',
+  },
 
   outerFormContainer: {
     maxWidth: '750px',
@@ -38,14 +41,18 @@ const styles = {
   },
 
   InputContainer: {
+    display: 'flex',
   },
 
   input: {
-    marginRight: '25px',
+    // marginRight: '25px',
     width: '400px',
     height: '40px',
     borderRadius: '10px',
     ...TextStyles.H6
+  },
+  inputMOBILE: {
+    width: '300px'
   },
   // EMAIL BUTTON
   button: {
