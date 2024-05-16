@@ -8,7 +8,7 @@ import styles from './Projects.styles';
 
 const ProjectTitle = ({ project, isMobile }) => {
   return (
-    <div style={styles.ProjectTitleContainer}>
+    <div style={{...styles.ProjectTitleContainer, ...(isMobile && { maxWidth: '350px', })}}>
       <div style={styles.ProjectTitleText}>
         {project.projectName}
       </div>
