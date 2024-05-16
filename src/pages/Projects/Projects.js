@@ -8,15 +8,48 @@ import styles from './Projects.styles';
 
 const ProjectTitle = ({ project }) => {
   return (
-    <div style={styles.ProjectTitleContainer}>
-      {project.projectName}
+    <div style={styles.ProjectTitleOuterContainer}>
+      <div style={styles.ProjectTitleContainer}>
+        {project.projectName}
+      </div>
+      {project.Github && (
+        <>
+        </>
+      )}
+      {project.projectLink && (
+        <>
+        </>
+      )}
+      {project.ProjectRelatedTo && (
+        <>
+        </>
+      )}
     </div>
   )
 }
 
-const ProjectSummary = ({ project }) => {
+const ProjectSummary = ({ project, isMobile }) => {
   return (
     <>
+      {isMobile ? (
+        <div style={styles.ProjectSummaryContainerMOBILE}>
+          <div style={styles.ProjectSummaryTitleContainer}>
+            Project Summary
+          </div>
+          <div style={styles.ProjectSummaryInfoText}>
+            {project.projectSummary}
+          </div>
+        </div>
+      ) : (
+        <div style={styles.ProjectSummaryContainer}>
+          <div style={styles.ProjectSummaryTitleContainer}>
+            Project Summary
+          </div>
+          <div style={styles.ProjectSummaryInfoText}>
+            {project.projectSummary}
+          </div>
+        </div>
+      )}
     </>
   )
 }
@@ -51,10 +84,10 @@ const ProjectItem = ({ isMobile, project }) => {
     <div style={styles.ProjectItemContainer}>
       <ProjectTitle project={project} />
       { isMobile ? (
-        <div style={{width: '350px', height: '1100px' , ...styles.ProjectInfoContainer}}>
+        <div style={{width: '350px', height: '750px' , ...styles.ProjectInfoContainer}}>
           <div style={styles.ProjectItemsMOBILE}>
             <KeySkills project={project} isMobile={isMobile} />
-            <ProjectSummary project={project}/>
+            <ProjectSummary project={project} isMobile={isMobile}/>
           </div>
         </div>
       ) : (

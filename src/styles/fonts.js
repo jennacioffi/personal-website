@@ -72,4 +72,14 @@ export const TextStyles = {
     color: colors.black,
     fontSize: 30,
   },
+  ProjectSummaryTitle: {
+    fontFamily: fonts.kuraleFont,
+    color: colors.black,
+    fontSize: 30,
+  },
+  ProjectSummaryInfo: {
+    fontFamily: fonts.kuraleFont,
+    color: colors.black,
+    fontSize: 20,
+  }
 };

@@ -23,9 +23,10 @@ const styles = {
   ProjectItemsMOBILE: { 
     display: 'flex', 
     flexDirection: 'column', 
+    justifyContent: 'space-around',
     alignItems: 'center', 
     width: '100%', 
-    height: '100%'
+    height: '100%',
   },
   ProjectItemContainer: {
     backgroundColor: colors.BlueAccent,
@@ -52,14 +53,48 @@ const styles = {
   },
 
   // ProjectTitle Component
+  ProjectTitleOuterContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+  },
   ProjectTitleContainer: {
     display: 'flex',
     justifyContent: 'center',
     paddingBottom: '15px',
+    paddingTop: '15px',
     ...TextStyles.ProjectCardTitle,
   },
 
   // ProjectSummary Component
+  ProjectSummaryContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    backgroundColor: colors.lightGrey,
+    borderRadius: '10px',
+    width: '500px',
+    height: '350px',
+    overflowY: 'auto',
+    flexWrap: 'wrap',
+  },
+  ProjectSummaryContainerMOBILE: {
+    display: 'flex',
+    justifyContent: 'center',
+    backgroundColor: colors.lightGrey,
+    borderRadius: '10px',
+    width: '350px',
+    height: '350px',
+    overflowY: 'auto',
+    flexWrap: 'wrap',
+  },
+  ProjectSummaryTitleContainer: {
+    display: 'flex',
+    paddingTop: '10px',
+    ...TextStyles.ProjectSummaryTitle,
+  },
+  ProjectSummaryInfoText: {
+    padding: '15px',
+    ...TextStyles.ProjectSummaryInfo,
+  },
 
   // SkillItem Component
   SkillItemsOuterContainer: {
