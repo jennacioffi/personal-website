@@ -64,7 +64,7 @@ const styles = {
     borderRadius: '10px',
     display: 'flex',
     flexDirection: 'column',
-    marginTop: '25px',
+    marginTop: '5px',
     marginBottom: '25px',
     paddingLeft: '25px',
     paddingRight: '25px',

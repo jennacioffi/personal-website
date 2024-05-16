@@ -5,3 +5,4 @@ export { default as Title } from './Section-Titles/Title';
 export { default as Skills } from './Skills/Skills';
 export { default as ContactMe } from './ContactMe/ContactMe';
 export { default as Projects } from './Projects/Projects';
+export { default as Carousel } from './Carousel/Carousel';

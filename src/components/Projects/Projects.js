@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Title } from '../index';
+import { Title, Carousel } from '../index';
 
 import ProjectData from '../../data/Projects.json';
 
@@ -176,11 +176,13 @@ export default function Projects({ isMobile, id }) {
   return (
     <div style={styles.outerContainer}>
       <div style={styles.projectsContainer}>
-        <Title title={'Projects'} isMobile={isMobile} id={id}/>
-        {ProjectData.projects.map((project, index) => (
-          <ProjectItem key={index} isMobile={isMobile} project={project} />
-        ))}
+        <Title title={'Projects'} isMobile={isMobile} id={id} />
+        <Carousel
+          items={ProjectData.projects}
+          isMobile={isMobile}
+          renderItem={(project, isMobile) => <ProjectItem project={project} isMobile={isMobile} />}
+        />
       </div>
     </div>
-  )
+  );
 }
