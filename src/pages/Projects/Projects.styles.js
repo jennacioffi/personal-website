@@ -54,7 +54,6 @@ const styles = {
     paddingTop: '2px',
     display: 'flex',
     textDecoration: 'none',
-    cursor: 'pointer',
     ...TextStyles.ProjectRelatedTo,
   },
 
@@ -183,7 +182,10 @@ const styles = {
     ...TextStyles.ProjectSummaryTitle,
   },
   ProjectSummaryInfoText: {
-    padding: '15px',
+    paddingLeft: '15px',
+    paddingRight: '15px',
+    paddingBottom: '15px',
+    paddingTop: '5px',
     ...TextStyles.ProjectSummaryInfo,
   },
 

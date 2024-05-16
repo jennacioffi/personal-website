@@ -8,9 +8,17 @@
         "React",
         "JavaScript",
         "HTML",
-        "CSS"
+        "CSS",
+        "Nodejs",
+        "Figma",
+        "Git",
+        "GitHub",
+        "Documentation",
+        "Build & Deployments",
+        "CLI",
+        "Project Management"
       ],
-      "projectSummary": "This is my personal website showcasing my portfolio and projects.This is my personal website showcasing my portfolio and projects.This is my personal website showcasing my portfolio and projects.This is my personal website showcasing my portfolio and projects.This is my personal website showcasing my portfolio and projects.This is my personal website showcasing my portfolio and projects.This is my personal website showcasing my portfolio and projects.This is my personal website showcasing my portfolio and projects."
+      "projectSummary": "I created my personal website to provide a comprehensive view of my skills and experience, allowing my resume to remain succinct and focused. This site showcases my expertise in both design and coding, aligning perfectly with my career aspirations in Web Development, Front-End Work, or Full Stack Engineering. The project was meticulously planned, with a detailed design file available on Figma. For those interested in exploring the technical aspects further, the GitHub link above offers more in-depth information."
     },
     {
       "projectName": "KYL Breast Health",
@@ -43,16 +51,17 @@
       "projectSkills": [
         "React Native",
         "Javascript",
+        "TypeScript",
         "Communication",
         "App Development",
         "iOS Development",
         "Android Developement",
         "Builds & Deployments",
-        "Project Management",
         "Teamwork",
         "CLI",
         "Node.js",
-        "Documentation"
+        "Documentation",
+        "Problem Solving"
       ],
       "projectSummary": "MIT's Learner Credential Wallet is the next generation technology for academic credentials. It is open source. Users can share their credentials, such as diplomas, easily. I was one of the developers who helped to create the standards for the SVG templates of credentials and converting those into PDFs."
     }
