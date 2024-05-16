@@ -16,12 +16,12 @@ function App() {
       <NavBar/>
       <Routes>
         <Route index element={<HomePage />} />
-        <Route path='/projects' element={<Projects />} />
         <Route path='/faqs' element={<FAQs />} />
         {/* Add routes for each section with an ID */}
         <Route path='/about-me' element={<HomePage />} />
         <Route path='/experience' element={<HomePage />} />
         <Route path='/skills' element={<HomePage />} />
+        <Route path='/projects' element={<HomePage />} />
         <Route path='/contact-me' element={<HomePage />} />
       </Routes>
     </div>

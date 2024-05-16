@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
-import { Title } from '../../components/index';
+import { Title } from '../index';
 
 import ProjectData from '../../data/Projects.json';
 
@@ -172,25 +172,11 @@ const ProjectItem = ({ isMobile, project }) => {
   )
 }
 
-export function Projects() {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 950);
-    }
-    handleResize();
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
+export default function Projects({ isMobile, id }) {
   return (
     <div style={styles.outerContainer}>
       <div style={styles.projectsContainer}>
-        <Title title={'Projects'} isMobile={isMobile}/>
+        <Title title={'Projects'} isMobile={isMobile} id={id}/>
         {ProjectData.projects.map((project, index) => (
           <ProjectItem key={index} isMobile={isMobile} project={project} />
         ))}
