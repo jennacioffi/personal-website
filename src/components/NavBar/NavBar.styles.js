@@ -12,6 +12,10 @@ const styles = {
     paddingTop: '15px',
     paddingBottom: '15px',
     width: '100vw',
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    zIndex: 2000,
   },
 
   // NameContainer
