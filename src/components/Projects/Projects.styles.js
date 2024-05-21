@@ -186,6 +186,7 @@ const styles = {
     paddingRight: '15px',
     paddingBottom: '15px',
     paddingTop: '5px',
+    textAlign: 'center',
     ...TextStyles.ProjectSummaryInfo,
   },
 

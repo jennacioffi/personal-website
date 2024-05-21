@@ -6,7 +6,7 @@ export const fonts = {
 };
 
 export const TextStyles = {
-  // TEMO
+  // TEMP
   tempText: {
     fontFamily: fonts.kuraleFont,
     fontSize: 25,
@@ -32,6 +32,12 @@ export const TextStyles = {
   IntroLinksButtonText: {
     fontFamily: fonts.kuraleFont,
     fontSize: 28,
+  },
+
+  // Experience Card Fonts
+  EXPCardSummaryBulletPts: {
+    fontFamily: fonts.kuraleFont,
+    fontSize: 16,
   },
 
   // General Usage

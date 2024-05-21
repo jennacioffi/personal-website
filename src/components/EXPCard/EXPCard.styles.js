@@ -90,7 +90,7 @@ const styles = {
   SummaryBulletPoints: {
     padding: '1%',
     color: colors.white,
-    ...TextStyles.H7,
+    ...TextStyles.EXPCardSummaryBulletPts,
   },
 
   TitleAndSkillsContainer: {
