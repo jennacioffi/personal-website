@@ -2,6 +2,7 @@ import { colors } from '../../styles/colors';
 import { TextStyles } from '../../styles/fonts';
 
 const styles = {
+  // Main Contact Me Container
   outerContainer: {
     backgroundColor: colors.BlueAccent,
     display: 'flex',
@@ -10,7 +11,6 @@ const styles = {
     flexDirection: 'column',
     paddingBottom: '25px',
   },
-
   outerInputContainer: {
     display: 'flex',
     alignItems: 'center',
@@ -20,17 +20,17 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
   },
-
   rightHalfInputContainer: {
     display: 'flex',
   },
 
+  // Input Components
   outerFormContainer: {
     maxWidth: '750px',
   },
+  InputTitleContainer: {
 
-  InputTitleContainer: {},
-
+  },
   InputTitle: {
     display: 'flex',
     paddingBottom: '10px',
@@ -40,28 +40,34 @@ const styles = {
     ...TextStyles.H4,
   },
 
+  // Shared Input Styling
   InputContainer: {
     display: 'flex',
   },
-
   input: {
-    // marginRight: '25px',
-    width: '400px',
+    width: '100vw',
+    maxWidth: '450px',
     height: '40px',
     borderRadius: '10px',
+    border: `2px solid ${colors.white}`,
+    boxShadow: `0 0 8px ${colors.grey}`,
     ...TextStyles.H6
   },
   inputMOBILE: {
-    width: '300px'
+    maxWidth: '375px'
   },
+
+
   // EMAIL BUTTON
   button: {
-    boxShadow: `3px 3px 4px ${colors.grey}`,
+    boxShadow: `0 0 8px ${colors.white}`,
     borderRadius: '10px',
+    border: `2px solid ${colors.white}`,
     margin: '2%',
     padding: '10px',
-    marginTop: '10px',
+    marginTop: '30px',
     color: colors.white,
+    cursor: 'pointer',
     ...TextStyles.H6,
   }
 }

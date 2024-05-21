@@ -9,7 +9,7 @@ import styles from './Skills.styles';
 // react-icons
 import { IoLogoJavascript} from 'react-icons/io';
 import { FaReact, FaGithub, FaFigma, FaNodeJs, FaPython, FaAppStoreIos, FaAndroid, FaDev } from 'react-icons/fa';
-import { SiCplusplus, SiTypescript, SiKubernetes } from 'react-icons/si';
+import { SiCplusplus, SiTypescript, SiKubernetes, SiRubyonrails } from 'react-icons/si';
 import { TbBrandReactNative } from 'react-icons/tb';
 import { GrUserManager } from 'react-icons/gr';
 import { BsFiletypeSql } from 'react-icons/bs';
@@ -157,6 +157,10 @@ const Skills = ({ isMobile, id }) => {
     {
       skillName: 'Reliable',
       IconLogo: <FaHandsHelping size={logoSize}/>,
+    },
+    {
+      skillName: 'Ruby on Rails',
+      IconLogo: <SiRubyonrails size={logoSize}/>
     },
     {
       skillName: 'Scripting',
