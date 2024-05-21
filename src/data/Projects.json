@@ -4,7 +4,7 @@
       "projectName": "Personal Website",
       "projectGithub": "https://github.com/jennacioffi/personal-website",
       "projectRelatedTo": "Personal Projects",
-      "projectSkills": [
+    "projectSkills": [
         "React",
         "JavaScript",
         "HTML",
@@ -64,6 +64,29 @@
         "Problem Solving"
       ],
       "projectSummary": "MIT's Learner Credential Wallet is the next generation technology for academic credentials. It is open source. Users can share their credentials, such as diplomas, easily. I was one of the developers who helped to create the standards for the SVG templates of credentials and converting those into PDFs."
+    },
+    {
+      "projectName": "Moodee",
+      "projectCompany": "",
+      "projectLink": "https://github.com/AnneMarieJetton/Moodee",
+      "projectLinkText": "Github",
+      "projectRelatedTo": "Personal Projects",
+      "projectSkills": [
+        "React",
+        "Figma",
+        "Teamwork",
+        "Javascript",
+        "Node.js",
+        "Github",
+        "Git",
+        "Full Stack",
+        "SQL",
+        "MongoDB",
+        "Web Development",
+        "CSS",
+        "User Experience (UX) Design"
+      ],
+      "projectSummary": "Moodee is a full-stack web application designed to help users gain insights into their emotional well-being through a comprehensive, interactive survey. Users answer various questions about their day, including selecting three emotions to create a unique gradient background and rating their day on a scale from 0 to 10 to adjust the saturation of the colors. The application aggregates these inputs over time, providing visual statistics that can be filtered by day, past week, past month, and year. Built with React, Node.js, and MongoDB, Moodee offers an engaging and user-friendly experience, helping users track and visualize their mood trends effortlessly. As of writing this project is still in progress."
     }
   ]
 }

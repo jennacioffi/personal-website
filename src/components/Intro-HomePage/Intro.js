@@ -25,6 +25,10 @@ const IntroRightComponent = ({ isMobile }) => {
   const openLink = (url) => {
     window.open(url, '_blank');
   };
+
+  const scrollToContact = () => {
+    document.getElementById('contact-me').scrollIntoView({ behavior: 'smooth' });
+  };
   
   return (
     <div style={{
@@ -73,7 +77,7 @@ const IntroRightComponent = ({ isMobile }) => {
             backgroundColor: colors.EmailMe, 
             ...styles.buttonContainer 
           }}
-          onClick={() => openLink('/personal-website/#contact-me')}
+          onClick={scrollToContact}
         >
           Email Me
         </div>

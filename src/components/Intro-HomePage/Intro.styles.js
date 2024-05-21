@@ -13,6 +13,7 @@ const styles = {
     height: '450px',
     justifyContent: 'center',
     width: '100vw',
+    paddingTop: '100px',
   },
 
   // Intro Component - Left Side

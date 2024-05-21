@@ -157,7 +157,7 @@ const ProjectItem = ({ isMobile, project }) => {
           </div>
         </div>
       ) : (
-        <div style={{height: '400px', width: '1100px' , ...styles.ProjectInfoContainer}}>
+        <div style={{ maxWidth: '900px', height: '400px', ...styles.ProjectInfoContainer}}>
           <div style={styles.projectCardLeftSide}>
             <div>
               <KeySkills project={project} isMobile={isMobile}/>

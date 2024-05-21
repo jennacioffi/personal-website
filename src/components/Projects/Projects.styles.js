@@ -6,6 +6,7 @@ const styles = {
   outerContainer: {
     display: 'flex',
     flexDirection: 'column',
+    overflowX: 'auto',
   },
 
   projectsContainer: {
@@ -106,7 +107,7 @@ const styles = {
     justifyContent: 'center',
     backgroundColor: colors.lightGrey,
     borderRadius: '10px',
-    width: '500px',
+    width: '400px',
     height: '350px',
     overflowY: 'auto',
     flexWrap: 'wrap',
@@ -169,7 +170,7 @@ const styles = {
     justifyContent: 'center',
     backgroundColor: colors.lightGrey,
     borderRadius: '10px',
-    width: '500px',
+    width: '400px',
     height: '350px',
     overflowY: 'auto',
     flexWrap: 'wrap',
@@ -186,6 +187,7 @@ const styles = {
     paddingRight: '15px',
     paddingBottom: '15px',
     paddingTop: '5px',
+    textAlign: 'center',
     ...TextStyles.ProjectSummaryInfo,
   },
 

@@ -1,10 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 // Components
 import { Title, Carousel } from '../index.js';
-
-// React Icons
-import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 
 // Styling
 import styles from './EXPCard.styles';

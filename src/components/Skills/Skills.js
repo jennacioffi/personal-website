@@ -9,8 +9,8 @@ import styles from './Skills.styles';
 // react-icons
 import { IoLogoJavascript} from 'react-icons/io';
 import { FaReact, FaGithub, FaFigma, FaNodeJs, FaPython, FaAppStoreIos, FaAndroid, FaDev } from 'react-icons/fa';
-import { SiCplusplus, SiTypescript, SiKubernetes } from 'react-icons/si';
-import { TbBrandReactNative } from 'react-icons/tb';
+import { SiCplusplus, SiTypescript, SiKubernetes, SiRubyonrails, SiAndroidstudio, SiXcode } from 'react-icons/si';
+import { TbBrandReactNative, TbJson } from 'react-icons/tb';
 import { GrUserManager } from 'react-icons/gr';
 import { BsFiletypeSql } from 'react-icons/bs';
 import { MdWeb, MdOutlineHtml, MdOutlineCss, MdOutlineDataObject } from 'react-icons/md';
@@ -24,6 +24,7 @@ import { LuClock8 } from 'react-icons/lu';
 import { TfiThought } from 'react-icons/tfi';
 import { FaHandsHelping, FaCalendarCheck } from 'react-icons/fa';
 import { VscGithubAction } from 'react-icons/vsc';
+import { IoLogoFirebase, IoColorPaletteOutline } from 'react-icons/io5';
 
 const SkillItem = ({ skill }) => {
   return (
@@ -45,6 +46,10 @@ const Skills = ({ isMobile, id }) => {
     {
       skillName: 'Android Development',
       IconLogo: <FaAndroid size={logoSize} />,
+    },
+    {
+      skillName: 'Android Studio',
+      IconLogo: <SiAndroidstudio size={logoSize}/>
     },
     {
       skillName: 'CLI',
@@ -82,6 +87,10 @@ const Skills = ({ isMobile, id }) => {
       skillName: 'Figma', 
       IconLogo: <FaFigma size={logoSize}/>, 
     },
+    {
+      skillName: 'Firebase',
+      IconLogo: <IoLogoFirebase size={logoSize}/>
+    },
     { 
       skillName: 'Github',
       IconLogo: <FaGithub size={logoSize} />,
@@ -101,6 +110,10 @@ const Skills = ({ isMobile, id }) => {
     {
       skillName: 'Javascript', 
       IconLogo: <IoLogoJavascript size={logoSize} /> 
+    },
+    {
+      skillName: 'JSON',
+      IconLogo: <TbJson size={logoSize}/>
     },
     {
       skillName: 'Jupyter Notebooks',
@@ -159,6 +172,10 @@ const Skills = ({ isMobile, id }) => {
       IconLogo: <FaHandsHelping size={logoSize}/>,
     },
     {
+      skillName: 'Ruby on Rails',
+      IconLogo: <SiRubyonrails size={logoSize}/>
+    },
+    {
       skillName: 'Scripting',
       IconLogo: <FaFileCode size={logoSize} />
     },
@@ -175,14 +192,22 @@ const Skills = ({ isMobile, id }) => {
       IconLogo: <SiTypescript size={logoSize}/>, 
     },
     {
+      skillName: 'UI/UX Designing',
+      IconLogo: <IoColorPaletteOutline size={logoSize}/>
+    },
+    {
       skillName: 'Web Development',
       IconLogo: <MdWeb size={logoSize} />,
+    },
+    {
+      skillName: 'Xcode',
+      IconLogo: <SiXcode size={logoSize}/>
     },
   ];
 
   return (
     <div style={styles.outerContainer}>
-      <Title title={'Skills'} isMobile={isMobile} id={id}/>
+      <Title title={'Skill Exposure'} isMobile={isMobile} id={id}/>
       <div style={styles.outerSkillsContainer}>
         {skills.map((skill, index) => (
           <SkillItem key={index} skill={skill} />

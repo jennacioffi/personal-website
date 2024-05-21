@@ -108,9 +108,9 @@ const NavBar = () => {
     { title: 'About Me', id: 'about-me' },
     { title: 'Experience', id: 'experience' },
     { title: 'Skills', id: 'skills' },
-    { title: 'Projects', to: '/projects' },
-    { title: 'FAQs', to: '/faqs' },
+    { title: 'Projects', id: 'projects' },
     { title: 'Contact Me', id: 'contact-me' },
+    { title: 'FAQs', to: '/faqs' },
   ];
 
   const socialItems = ['GitHub', 'LinkedIn', 'Contact Me'];
