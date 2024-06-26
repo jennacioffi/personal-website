@@ -76,12 +76,12 @@ const Skills = ({ isMobile, id }) => {
       IconLogo: <FaBugSlash size={logoSize}/>
     },
     {
-      skillName: 'Documentation',
-      IconLogo: <PiFileMd size={logoSize}/>,
-    },
-    {
       skillName: 'DevOps',
       IconLogo: <FaDev size={logoSize}/>
+    },
+    {
+      skillName: 'Documentation',
+      IconLogo: <PiFileMd size={logoSize}/>,
     },
     {
       skillName: 'Figma', 
@@ -116,10 +116,6 @@ const Skills = ({ isMobile, id }) => {
       IconLogo: <TbJson size={logoSize}/>
     },
     {
-      skillName: 'Jupyter Notebooks',
-      IconLogo: <GiNotebook size={logoSize}/>
-    },
-    {
       skillName: 'Kuberenetes',
       IconLogo: <SiKubernetes size={logoSize}/>
     },
@@ -144,7 +140,7 @@ const Skills = ({ isMobile, id }) => {
       IconLogo: <PiTestTubeFill size={logoSize}/>
     },
     {
-      skillName: 'Project Management',
+      skillName: 'Project Leadership',
       IconLogo: <GrUserManager size={logoSize} />,
     },
     {
@@ -184,16 +180,8 @@ const Skills = ({ isMobile, id }) => {
       IconLogo: <BsFiletypeSql size={logoSize} />,
     },
     {
-      skillName: 'SDLC',
-      IconLogo: <GiCycle size={logoSize}/>
-    },
-    {
       skillName: 'TypeScript', 
       IconLogo: <SiTypescript size={logoSize}/>, 
-    },
-    {
-      skillName: 'UI/UX Designing',
-      IconLogo: <IoColorPaletteOutline size={logoSize}/>
     },
     {
       skillName: 'Web Development',
