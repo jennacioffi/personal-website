@@ -6,11 +6,21 @@ const styles = {
     backgroundColor: colors.black,
     display: 'flex',
     width: '100vw',
-    height: '600px',
+    maxHeight: '600px',
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'column',
     paddingBottom: '25px',
+  },
+  scrollableSkills: {
+    overflowY: 'auto',
+  },
+  subTitle: {
+    fontSize: '30px',
+    color: colors.white,
+    textAlign: 'center',
+    paddingBottom: '1%',
+    ...TextStyles.skillsSubHeader,
   },
   outerSkillsContainer: {
     display: 'grid',
@@ -19,6 +29,7 @@ const styles = {
     overflowY: 'auto',
     flexWrap: 'wrap',
     justifyContent: 'center',
+    paddingBottom: '2%',
   },
   skillContainer: {
     display: 'flex',
@@ -45,7 +56,7 @@ const styles = {
   skillName: {
     color: colors.white,
     marginTop: '5px',
-    ...TextStyles.H5,
+    ...TextStyles.H4,
   },
 }
 

@@ -70,6 +70,11 @@ export const TextStyles = {
     fontSize: 14,
   },
 
+  skillsSubHeader: {
+    fontFamily: fonts.kuraleFont,
+    fontSize: 36,
+  },
+
 
   // Project Component
   ProjectCardTitle: {
