@@ -15,7 +15,6 @@ import { GrUserManager } from 'react-icons/gr';
 import { BsFiletypeSql } from 'react-icons/bs';
 import { MdWeb, MdOutlineHtml, MdOutlineCss, MdOutlineDataObject } from 'react-icons/md';
 import { HiChatBubbleLeftRight, HiCommandLine } from 'react-icons/hi2';
-import { GiCycle, GiNotebook } from 'react-icons/gi';
 import { FaBugSlash, FaFileCode } from 'react-icons/fa6';
 import { BiSolidCabinet } from 'react-icons/bi';
 import { PiFileMd, PiTestTubeFill } from 'react-icons/pi';
@@ -24,7 +23,7 @@ import { LuClock8 } from 'react-icons/lu';
 import { TfiThought } from 'react-icons/tfi';
 import { FaHandsHelping, FaCalendarCheck } from 'react-icons/fa';
 import { VscGithubAction } from 'react-icons/vsc';
-import { IoLogoFirebase, IoColorPaletteOutline } from 'react-icons/io5';
+import { IoLogoFirebase } from 'react-icons/io5';
 
 const SkillItem = ({ skill }) => {
   return (
